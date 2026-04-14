@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target nodo_test[0m
+[35m[1mConsolidate compiler generated dependencies of target quill[0m
+[35m[1mConsolidate compiler generated dependencies of target cactus_tracing_embedded_perfetto_protos[0m
+[  1%] [32mBuilding CXX object CMakeFiles/nodo_test.dir/test/nodo_test.cpp.o[0m
+[ 31%] Built target cactus_tracing_embedded_perfetto_protos
+[ 75%] Built target quill
+[ 77%] [32mBuilding CXX object vendor/cactus-rt/CMakeFiles/cactus_rt.dir/src/cactus_rt/app.cc.o[0m
+[ 78%] [32mBuilding CXX object vendor/cactus-rt/CMakeFiles/cactus_rt.dir/src/cactus_rt/thread.cc.o[0m
+[ 80%] [32mBuilding CXX object vendor/cactus-rt/CMakeFiles/cactus_rt.dir/src/cactus_rt/cyclic_thread.cc.o[0m
+[ 82%] [32mBuilding CXX object vendor/cactus-rt/CMakeFiles/cactus_rt.dir/src/cactus_rt/signal_handler.cc.o[0m
+[ 84%] [32mBuilding CXX object vendor/cactus-rt/CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/tracing_enabled.cc.o[0m
+[ 85%] [32mBuilding CXX object vendor/cactus-rt/CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/sink.cc.o[0m
+[ 87%] [32mBuilding CXX object vendor/cactus-rt/CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/thread_tracer.cc.o[0m
+[ 89%] [32mBuilding CXX object vendor/cactus-rt/CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/trace_aggregator.cc.o[0m
+[ 91%] [32m[1mLinking CXX static library libcactus_rt.a[0m
+[ 91%] Built target cactus_rt

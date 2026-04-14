@@ -1,0 +1,10 @@
+/code/brickpi/build/brickpi3_motors/CMakeFiles/uninstall.dir
+/code/brickpi/build/brickpi3_motors/CMakeFiles/brickpi3_motors_uninstall.dir
+/code/brickpi/build/brickpi3_motors/CMakeFiles/brickpi3_motors.dir
+/code/brickpi/build/brickpi3_motors/CMakeFiles/test.dir
+/code/brickpi/build/brickpi3_motors/CMakeFiles/edit_cache.dir
+/code/brickpi/build/brickpi3_motors/CMakeFiles/rebuild_cache.dir
+/code/brickpi/build/brickpi3_motors/CMakeFiles/list_install_components.dir
+/code/brickpi/build/brickpi3_motors/CMakeFiles/install.dir
+/code/brickpi/build/brickpi3_motors/CMakeFiles/install/local.dir
+/code/brickpi/build/brickpi3_motors/CMakeFiles/install/strip.dir

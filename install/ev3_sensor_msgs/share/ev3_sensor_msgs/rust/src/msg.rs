@@ -1,0 +1,1 @@
+/code/brickpi/build/ev3_sensor_msgs/rosidl_generator_rs/ev3_sensor_msgs/rust/src/msg.rs

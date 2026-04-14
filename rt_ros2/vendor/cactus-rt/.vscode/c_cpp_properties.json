@@ -1,0 +1,50 @@
+{
+    "configurations": [
+        {
+            "name": "Linux (Debug)",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/build/debug/_deps/**",
+                "${workspaceFolder}/build/debug/_deps/readerwriterqueue-src",
+                "${workspaceFolder}/build/debug/protos"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": "${workspaceFolder}/build/debug/compile_commands.json"
+        },
+        {
+            "name": "Linux (Test)",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/build/test/_deps/**",
+                "${workspaceFolder}/build/test/_deps/readerwriterqueue-src",
+                "${workspaceFolder}/build/test/protos"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": "${workspaceFolder}/build/test/compile_commands.json"
+        },
+        {
+            "name": "Linux (Release)",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/build/release/_deps/**",
+                "${workspaceFolder}/build/release/_deps/readerwriterqueue-src",
+                "${workspaceFolder}/build/release/protos"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": "${workspaceFolder}/build/release/compile_commands.json"
+        }
+    ],
+    "version": 4
+}

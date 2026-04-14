@@ -1,0 +1,19 @@
+[0.060s] Invoking command in '/code/brickpi/rt_ros2/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/rt_ros2/build/rt_ros2 -- -j4 -l4
+[0.483s] [ 29%] Built target cactus_tracing_embedded_perfetto_protos
+[0.495s] [ 31%] [32mBuilding CXX object CMakeFiles/nodo_test.dir/test/nodo_test.cpp.o[0m
+[0.560s] [ 75%] Built target quill
+[0.703s] [ 91%] Built target cactus_rt
+[0.883s] [ 94%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/main.cc.o[0m
+[0.894s] [ 94%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o[0m
+[0.913s] [ 96%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.o[0m
+[37.815s] [01m[K/code/brickpi/rt_ros2/test/nodo_test.cpp:[m[K In constructor ‘[01m[Krt_ros2::TestAutomatico::TestAutomatico()[m[K’:
+[37.818s] [01m[K/code/brickpi/rt_ros2/test/nodo_test.cpp:43:49:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Krt_ros2::TestAutomatico[m[K’ does not have any field named ‘[01m[Ktick_[m[K’
+[37.824s]    43 |     TestAutomatico() : Node("test_automatico"), [01;31m[Ktick_[m[K(0)
+[37.828s]       |                                                 [01;31m[K^~~~~[m[K
+[80.408s] gmake[2]: *** [CMakeFiles/nodo_test.dir/build.make:76: CMakeFiles/nodo_test.dir/test/nodo_test.cpp.o] Error 1
+[80.413s] gmake[1]: *** [CMakeFiles/Makefile2:267: CMakeFiles/nodo_test.dir/all] Error 2
+[80.419s] gmake[1]: *** Waiting for unfinished jobs....
+[151.415s] [ 98%] [32m[1mLinking CXX executable rt_ros2[0m
+[152.785s] [ 98%] Built target rt_ros2
+[152.790s] gmake: *** [Makefile:146: all] Error 2
+[152.798s] Invoked command in '/code/brickpi/rt_ros2/build/rt_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/rt_ros2/build/rt_ros2 -- -j4 -l4

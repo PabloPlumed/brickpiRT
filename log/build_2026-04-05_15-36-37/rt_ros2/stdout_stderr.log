@@ -1,0 +1,120 @@
+[35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/code/brickpi/rt_ros2/include/rt_ros2/nodo_actuador.h:4[m[K,
+                 from [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:1[m[K:
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:[m[K In function ‘[01m[Kvoid rt_ros2::printEstado(const string&, float, float)[m[K’:
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:41:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   41 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Tengo que seguir siguiendo la línea (linear = %.2f, angular = %.2f)", linear, angular);
+      |                     [01;31m[K^~~~[m[K
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:41:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:41:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   41 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Tengo que seguir siguiendo la línea (linear = %.2f, angular = %.2f)", linear, angular);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/code/brickpi/rt_ros2/include/rt_ros2/nodo_actuador.h:4[m[K,
+                 from [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:1[m[K:
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:41:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   41 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Tengo que seguir siguiendo la línea (linear = %.2f, angular = %.2f)", linear, angular);
+      |                     [01;31m[K^~~~[m[K
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:41:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   41 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Tengo que seguir siguiendo la línea (linear = %.2f, angular = %.2f)", linear, angular);
+      |                     [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/code/brickpi/rt_ros2/include/rt_ros2/nodo_actuador.h:4[m[K,
+                 from [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:1[m[K:
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:43:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   43 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Tengo que recuperar mi posicion (linear = %.2f, angular = %.2f)", linear, angular);
+      |                     [01;31m[K^~~~[m[K
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:43:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:43:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   43 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Tengo que recuperar mi posicion (linear = %.2f, angular = %.2f)", linear, angular);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/code/brickpi/rt_ros2/include/rt_ros2/nodo_actuador.h:4[m[K,
+                 from [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:1[m[K:
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:43:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   43 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Tengo que recuperar mi posicion (linear = %.2f, angular = %.2f)", linear, angular);
+      |                     [01;31m[K^~~~[m[K
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:43:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   43 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Tengo que recuperar mi posicion (linear = %.2f, angular = %.2f)", linear, angular);
+      |                     [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/code/brickpi/rt_ros2/include/rt_ros2/nodo_actuador.h:4[m[K,
+                 from [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:1[m[K:
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:45:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   45 |         RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "Envío orden de parar (linear = %.2f, angular = %.2f)", linear, angular);
+      |                     [01;31m[K^~~~[m[K
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:45:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:45:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   45 |         [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "Envío orden de parar (linear = %.2f, angular = %.2f)", linear, angular);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/code/brickpi/rt_ros2/include/rt_ros2/nodo_actuador.h:4[m[K,
+                 from [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:1[m[K:
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:45:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   45 |         RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "Envío orden de parar (linear = %.2f, angular = %.2f)", linear, angular);
+      |                     [01;31m[K^~~~[m[K
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:45:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   45 |         RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "Envío orden de parar (linear = %.2f, angular = %.2f)", linear, angular);
+      |                     [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:90: CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rt_ros2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

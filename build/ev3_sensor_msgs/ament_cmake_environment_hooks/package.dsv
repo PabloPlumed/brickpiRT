@@ -1,0 +1,4 @@
+source;share/ev3_sensor_msgs/local_setup.bash
+source;share/ev3_sensor_msgs/local_setup.dsv
+source;share/ev3_sensor_msgs/local_setup.sh
+source;share/ev3_sensor_msgs/local_setup.zsh

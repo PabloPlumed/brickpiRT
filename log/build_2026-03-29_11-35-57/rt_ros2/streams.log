@@ -1,0 +1,12 @@
+[0.052s] Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[0.249s] [35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[0.382s] [ 25%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.o[0m
+[11.906s] [01m[K/code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp:[m[K In constructor ‘[01m[Krt_ros2::NodoMaquinaEstados::NodoMaquinaEstados()[m[K’:
+[11.907s] [01m[K/code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp:24:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rt_ros2::NodoMaquinaEstados[m[K’ has no member named ‘[01m[Kcreate_timer[m[K’; did you mean ‘[01m[Kcreate_wall_timer[m[K’?
+[11.907s]    24 |     timer_publicacion = this->[01;31m[Kcreate_timer[m[K( std::chrono::milliseconds(FREC_TOPIC_MS), cb_timer);
+[11.908s]       |                               [01;31m[K^~~~~~~~~~~~[m[K
+[11.909s]       |                               [32m[Kcreate_wall_timer[m[K
+[21.866s] gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:104: CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.o] Error 1
+[21.867s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rt_ros2.dir/all] Error 2
+[21.868s] gmake: *** [Makefile:146: all] Error 2
+[21.876s] Invoked command in '/code/brickpi/build/rt_ros2' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4

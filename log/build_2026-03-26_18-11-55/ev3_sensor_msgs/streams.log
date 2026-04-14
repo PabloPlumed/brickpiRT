@@ -1,0 +1,37 @@
+[1.405s] Invoking command in '/code/brickpi/build/ev3_sensor_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /code/brickpi/ev3_sensor_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/code/brickpi/install/ev3_sensor_msgs
+[2.107s] -- The C compiler identification is GNU 11.4.0
+[2.396s] -- The CXX compiler identification is GNU 11.4.0
+[2.433s] -- Detecting C compiler ABI info
+[2.822s] -- Detecting C compiler ABI info - done
+[2.855s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.856s] -- Detecting C compile features
+[2.858s] -- Detecting C compile features - done
+[2.873s] -- Detecting CXX compiler ABI info
+[3.266s] -- Detecting CXX compiler ABI info - done
+[3.304s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.306s] -- Detecting CXX compile features
+[3.308s] -- Detecting CXX compile features - done
+[3.346s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.230s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.561s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.832s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.274s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[5.301s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.364s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.685s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.970s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[7.181s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[8.510s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.920s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.034s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[10.051s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[10.182s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[10.182s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[10.183s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[10.183s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[10.289s] -- Found PythonExtra: .so  
+[10.930s] -- Added test 'lint_cmake' to check CMake code style
+[10.939s] -- Added test 'xmllint' to check XML markup files
+[10.988s] -- Configuring done
+[11.212s] -- Generating done
+[11.269s] -- Build files have been written to: /code/brickpi/build/ev3_sensor_msgs

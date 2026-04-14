@@ -1,0 +1,198 @@
+[1.508s] Invoking command in '/code/brickpi/build/ev3_sensor_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/ev3_sensor_msgs -- -j4 -l4
+[1.758s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.806s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.830s] [  7%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[2.006s] [  7%] Built target ament_cmake_python_symlink_ev3_sensor_msgs
+[4.140s] running egg_info
+[4.145s] creating ev3_sensor_msgs.egg-info
+[4.146s] writing ev3_sensor_msgs.egg-info/PKG-INFO
+[4.149s] writing dependency_links to ev3_sensor_msgs.egg-info/dependency_links.txt
+[4.151s] writing top-level names to ev3_sensor_msgs.egg-info/top_level.txt
+[4.154s] writing manifest file 'ev3_sensor_msgs.egg-info/SOURCES.txt'
+[4.170s] reading manifest file 'ev3_sensor_msgs.egg-info/SOURCES.txt'
+[4.175s] writing manifest file 'ev3_sensor_msgs.egg-info/SOURCES.txt'
+[4.444s] [  7%] Built target ament_cmake_python_build_ev3_sensor_msgs_egg
+[4.939s] [ 10%] [32mBuilding C object CMakeFiles/ev3_sensor_msgs__rosidl_generator_c.dir/rosidl_generator_c/ev3_sensor_msgs/msg/detail/button__functions.c.o[0m
+[5.071s] [ 12%] [32mBuilding C object CMakeFiles/ev3_sensor_msgs__rosidl_generator_c.dir/rosidl_generator_c/ev3_sensor_msgs/msg/detail/color__functions.c.o[0m
+[5.159s] [ 12%] Built target ev3_sensor_msgs__rs
+[5.178s] [ 12%] Built target ev3_sensor_msgs__cpp
+[5.247s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.307s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.670s] [ 20%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.761s] [ 22%] [32m[1mLinking C shared library libev3_sensor_msgs__rosidl_generator_c.so[0m
+[6.286s] [ 22%] Built target ev3_sensor_msgs__rosidl_generator_c
+[6.449s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.886s] [ 30%] [32mBuilding CXX object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ev3_sensor_msgs/msg/detail/dds_fastrtps/button__type_support.cpp.o[0m
+[7.887s] [ 27%] [32mBuilding CXX object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ev3_sensor_msgs/msg/detail/button__type_support.cpp.o[0m
+[8.079s] [ 32%] [32mBuilding CXX object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ev3_sensor_msgs/msg/button__type_support.cpp.o[0m
+[9.018s] [ 35%] [32mBuilding CXX object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ev3_sensor_msgs/msg/detail/button__type_support_c.cpp.o[0m
+[10.826s] [ 37%] [32mBuilding CXX object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ev3_sensor_msgs/msg/color__type_support.cpp.o[0m
+[12.130s] [ 40%] [32mBuilding CXX object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ev3_sensor_msgs/msg/detail/color__type_support_c.cpp.o[0m
+[12.229s] [ 42%] [32mBuilding CXX object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ev3_sensor_msgs/msg/detail/dds_fastrtps/color__type_support.cpp.o[0m
+[12.553s] [ 45%] [32mBuilding CXX object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ev3_sensor_msgs/msg/detail/color__type_support.cpp.o[0m
+[13.039s] [ 47%] [32m[1mLinking CXX shared library libev3_sensor_msgs__rosidl_typesupport_cpp.so[0m
+[13.387s] [ 47%] Built target ev3_sensor_msgs__rosidl_typesupport_cpp
+[13.449s] [ 50%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[14.955s] [ 52%] [32m[1mLinking CXX shared library libev3_sensor_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[15.407s] [ 55%] [32m[1mLinking CXX shared library libev3_sensor_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[15.480s] [ 55%] Built target ev3_sensor_msgs__rosidl_typesupport_fastrtps_c
+[15.601s] [ 57%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[15.922s] [ 60%] [32mBuilding C object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ev3_sensor_msgs/msg/detail/button__type_support.c.o[0m
+[15.949s] [ 60%] Built target ev3_sensor_msgs__rosidl_typesupport_fastrtps_cpp
+[16.000s] [ 62%] [32mBuilding C object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ev3_sensor_msgs/msg/detail/color__type_support.c.o[0m
+[16.018s] [ 65%] [32m[1mLinking CXX shared library libev3_sensor_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[16.275s] [ 67%] [32m[1mLinking C shared library libev3_sensor_msgs__rosidl_typesupport_introspection_c.so[0m
+[16.434s] [ 67%] Built target ev3_sensor_msgs__rosidl_typesupport_introspection_cpp
+[16.470s] [ 67%] Built target ev3_sensor_msgs__rosidl_typesupport_introspection_c
+[17.264s] [ 70%] [32mBuilding CXX object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ev3_sensor_msgs/msg/button__type_support.cpp.o[0m
+[17.267s] [ 72%] [32mBuilding CXX object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ev3_sensor_msgs/msg/color__type_support.cpp.o[0m
+[17.454s] [ 75%] [32m[1mLinking CXX shared library libev3_sensor_msgs__rosidl_typesupport_c.so[0m
+[17.652s] [ 75%] Built target ev3_sensor_msgs__rosidl_typesupport_c
+[17.749s] [ 75%] Built target ev3_sensor_msgs
+[17.846s] [ 77%] [34m[1mGenerating Python code for ROS interfaces[0m
+[20.116s] [ 77%] Built target ev3_sensor_msgs__py
+[20.216s] [ 80%] [32mBuilding C object CMakeFiles/ev3_sensor_msgs__rosidl_generator_py.dir/rosidl_generator_py/ev3_sensor_msgs/msg/_button_s.c.o[0m
+[20.219s] [ 82%] [32mBuilding C object CMakeFiles/ev3_sensor_msgs__rosidl_generator_py.dir/rosidl_generator_py/ev3_sensor_msgs/msg/_color_s.c.o[0m
+[20.951s] [ 85%] [32m[1mLinking C shared library rosidl_generator_py/ev3_sensor_msgs/libev3_sensor_msgs__rosidl_generator_py.so[0m
+[21.183s] [ 85%] Built target ev3_sensor_msgs__rosidl_generator_py
+[21.292s] [ 87%] [32mBuilding C object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ev3_sensor_msgs/_ev3_sensor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[21.295s] [ 90%] [32mBuilding C object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ev3_sensor_msgs/_ev3_sensor_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[21.300s] [ 92%] [32mBuilding C object CMakeFiles/ev3_sensor_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ev3_sensor_msgs/_ev3_sensor_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[21.990s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[21.992s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[22.019s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[22.305s] [100%] Built target ev3_sensor_msgs__rosidl_typesupport_c__pyext
+[22.318s] [100%] Built target ev3_sensor_msgs__rosidl_typesupport_fastrtps_c__pyext
+[22.330s] [100%] Built target ev3_sensor_msgs__rosidl_typesupport_introspection_c__pyext
+[22.384s] Invoked command in '/code/brickpi/build/ev3_sensor_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/ev3_sensor_msgs -- -j4 -l4
+[22.429s] Invoking command in '/code/brickpi/build/ev3_sensor_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/ev3_sensor_msgs
+[22.462s] -- Install configuration: ""
+[22.465s] -- Execute custom install script
+[22.467s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ament_index/resource_index/rosidl_interfaces/ev3_sensor_msgs
+[22.512s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/button.h
+[22.551s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/color.h
+[22.589s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__functions.h
+[22.628s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__struct.h
+[22.667s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__type_support.h
+[22.705s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__functions.h
+[22.744s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__struct.h
+[22.783s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__type_support.h
+[22.822s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/rosidl_generator_c__visibility_control.h
+[22.863s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/library_path.sh
+[22.902s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/library_path.dsv
+[22.945s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__rosidl_typesupport_fastrtps_c.h
+[22.983s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__rosidl_typesupport_fastrtps_c.h
+[23.022s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[23.063s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__rosidl_typesupport_introspection_c.h
+[23.103s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__rosidl_typesupport_introspection_c.h
+[23.144s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[23.186s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/button.hpp
+[23.224s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/color.hpp
+[23.264s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__builder.hpp
+[23.302s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__struct.hpp
+[23.341s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__traits.hpp
+[23.379s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__type_support.hpp
+[23.418s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__builder.hpp
+[23.457s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__struct.hpp
+[23.496s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__traits.hpp
+[23.535s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__type_support.hpp
+[23.574s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[23.616s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__rosidl_typesupport_fastrtps_cpp.hpp
+[23.655s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__rosidl_typesupport_fastrtps_cpp.hpp
+[23.694s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[23.734s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__rosidl_typesupport_introspection_cpp.hpp
+[23.773s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__rosidl_typesupport_introspection_cpp.hpp
+[23.812s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/pythonpath.sh
+[23.851s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/pythonpath.dsv
+[23.893s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[23.931s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[23.971s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[24.009s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[24.054s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/__init__.py
+[24.093s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/_ev3_sensor_msgs_s.ep.rosidl_typesupport_c.c
+[24.133s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/_ev3_sensor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[24.172s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/_ev3_sensor_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[24.210s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[24.249s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[24.288s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[24.326s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/libev3_sensor_msgs__rosidl_generator_py.so
+[24.366s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg/__init__.py
+[24.404s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg/_button.py
+[24.443s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg/_button_s.c
+[24.482s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg/_color.py
+[24.521s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg/_color_s.c
+[24.561s] -- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[24.563s] -- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[24.566s] -- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[24.567s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ament_index/resource_index/rust_packages/ev3_sensor_msgs
+[24.609s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/rust/Cargo.toml
+[24.647s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/rust/build.rs
+[24.686s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/rust/src/lib.rs
+[24.725s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/rust/src/msg.rs
+[24.764s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/rust/src/msg/rmw.rs
+[24.805s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/msg/Button.idl
+[24.845s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/msg/Color.idl
+[24.884s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/msg/Button.msg
+[24.922s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/msg/Color.msg
+[24.961s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ament_index/resource_index/package_run_dependencies/ev3_sensor_msgs
+[25.000s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ament_index/resource_index/parent_prefix_path/ev3_sensor_msgs
+[25.039s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/ament_prefix_path.sh
+[25.078s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/ament_prefix_path.dsv
+[25.117s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/path.sh
+[25.155s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/path.dsv
+[25.194s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/local_setup.bash
+[25.234s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/local_setup.sh
+[25.273s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/local_setup.zsh
+[25.311s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/local_setup.dsv
+[25.350s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/package.dsv
+[25.390s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ament_index/resource_index/packages/ev3_sensor_msgs
+[25.429s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/rosidl_cmake-extras.cmake
+[25.468s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[25.510s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[25.551s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[25.591s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[25.630s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[25.670s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[25.708s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgsConfig.cmake
+[25.747s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgsConfig-version.cmake
+[25.786s] -- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/package.xml
+[25.825s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_generator_c.so
+[25.829s] -- Set runtime path of "/code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_generator_c.so" to ""
+[25.829s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_fastrtps_c.so
+[25.833s] -- Set runtime path of "/code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[25.834s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_introspection_c.so
+[25.837s] -- Set runtime path of "/code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_introspection_c.so" to ""
+[25.838s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_c.so
+[25.841s] -- Set runtime path of "/code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_c.so" to ""
+[25.842s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_fastrtps_cpp.so
+[25.845s] -- Set runtime path of "/code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[25.846s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_introspection_cpp.so
+[25.849s] -- Set runtime path of "/code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[25.850s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_cpp.so
+[25.853s] -- Set runtime path of "/code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_cpp.so" to ""
+[26.058s] Listing '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs'...
+[26.060s] Compiling '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/__init__.py'...
+[26.061s] Listing '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg'...
+[26.062s] Compiling '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg/__init__.py'...
+[26.064s] Compiling '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg/_button.py'...
+[26.065s] Compiling '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg/_color.py'...
+[26.090s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_generator_py.so
+[26.094s] -- Set runtime path of "/code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_generator_py.so" to ""
+[26.094s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_generator_cExport.cmake
+[26.096s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_generator_cExport-noconfig.cmake
+[26.098s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[26.100s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[26.102s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_introspection_cExport.cmake
+[26.104s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[26.106s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_cExport.cmake
+[26.108s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[26.110s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_generator_cppExport.cmake
+[26.112s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[26.114s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[26.116s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[26.118s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[26.120s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_cppExport.cmake
+[26.122s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[26.124s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_generator_pyExport.cmake
+[26.126s] -- Installing: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_generator_pyExport-noconfig.cmake
+[26.139s] Invoked command in '/code/brickpi/build/ev3_sensor_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/ev3_sensor_msgs

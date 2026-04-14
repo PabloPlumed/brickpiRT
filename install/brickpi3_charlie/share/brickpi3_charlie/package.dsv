@@ -1,0 +1,9 @@
+source;share/brickpi3_charlie/hook/pythonpath.ps1
+source;share/brickpi3_charlie/hook/pythonpath.dsv
+source;share/brickpi3_charlie/hook/pythonpath.sh
+source;share/brickpi3_charlie/hook/ament_prefix_path.ps1
+source;share/brickpi3_charlie/hook/ament_prefix_path.dsv
+source;share/brickpi3_charlie/hook/ament_prefix_path.sh
+source;../../build/brickpi3_charlie/share/brickpi3_charlie/hook/pythonpath_develop.ps1
+source;../../build/brickpi3_charlie/share/brickpi3_charlie/hook/pythonpath_develop.dsv
+source;../../build/brickpi3_charlie/share/brickpi3_charlie/hook/pythonpath_develop.sh

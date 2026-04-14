@@ -1,0 +1,7 @@
+[01m[K/code/brickpi/rt_ros2/test/nodo_test.cpp:[m[K In constructor ‘[01m[Krt_ros2::TestAutomatico::TestAutomatico()[m[K’:
+[01m[K/code/brickpi/rt_ros2/test/nodo_test.cpp:43:49:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Krt_ros2::TestAutomatico[m[K’ does not have any field named ‘[01m[Ktick_[m[K’
+   43 |     TestAutomatico() : Node("test_automatico"), [01;31m[Ktick_[m[K(0)
+      |                                                 [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/nodo_test.dir/build.make:76: CMakeFiles/nodo_test.dir/test/nodo_test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:267: CMakeFiles/nodo_test.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

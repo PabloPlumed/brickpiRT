@@ -1,0 +1,4 @@
+source;share/brickpi3_motors/local_setup.bash
+source;share/brickpi3_motors/local_setup.dsv
+source;share/brickpi3_motors/local_setup.sh
+source;share/brickpi3_motors/local_setup.zsh

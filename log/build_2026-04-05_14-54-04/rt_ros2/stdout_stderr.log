@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/main.cc.o[0m
+[01m[K/code/brickpi/rt_ros2/src/main.cc:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/code/brickpi/rt_ros2/src/main.cc:14:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kexecutor[m[K’ was not declared in this scope
+   14 |     [01;31m[Kexecutor[m[K.add_node(nodo_act);
+      |     [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:76: CMakeFiles/rt_ros2.dir/src/main.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rt_ros2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

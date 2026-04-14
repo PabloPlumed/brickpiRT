@@ -1,0 +1,12 @@
+[0.085s] Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[0.346s] [35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[0.559s] [ 25%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/main.cc.o[0m
+[0.605s] [ 50%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o[0m
+[16.809s] [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:[m[K In constructor ‘[01m[Krt_ros2::NodoActuador::NodoActuador()[m[K’:
+[16.810s] [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:13:98:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Krt_ros2::NodoActuador[m[K’ does not have any field named ‘[01m[Kestado_anterior[m[K’
+[16.811s]    13 | NodoActuador::NodoActuador(): Node("nodo_actuador"), estado_actual("PARAR"), error_actual(0.0f), [01;31m[Kestado_anterior[m[K("")
+[16.812s]       |                                                                                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[31.375s] gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:90: CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o] Error 1
+[31.377s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rt_ros2.dir/all] Error 2
+[31.377s] gmake: *** [Makefile:146: all] Error 2
+[31.386s] Invoked command in '/code/brickpi/build/rt_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4

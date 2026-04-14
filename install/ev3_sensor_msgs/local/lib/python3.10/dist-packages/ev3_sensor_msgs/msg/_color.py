@@ -1,0 +1,1 @@
+/code/brickpi/build/ev3_sensor_msgs/rosidl_generator_py/ev3_sensor_msgs/msg/_color.py

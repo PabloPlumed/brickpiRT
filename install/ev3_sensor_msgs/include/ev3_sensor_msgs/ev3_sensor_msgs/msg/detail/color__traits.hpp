@@ -1,0 +1,1 @@
+/code/brickpi/build/ev3_sensor_msgs/rosidl_generator_cpp/ev3_sensor_msgs/msg/detail/color__traits.hpp

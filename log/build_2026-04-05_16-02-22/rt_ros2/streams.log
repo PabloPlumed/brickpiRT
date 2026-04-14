@@ -1,0 +1,41 @@
+[0.103s] Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake /code/brickpi/rt_ros2 -DCMAKE_INSTALL_PREFIX=/code/brickpi/install/rt_ros2
+[0.542s] -- The CXX compiler identification is GNU 11.4.0
+[0.598s] -- Detecting CXX compiler ABI info
+[1.143s] -- Detecting CXX compiler ABI info - done
+[1.181s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.182s] -- Detecting CXX compile features
+[1.184s] -- Detecting CXX compile features - done
+[1.220s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.450s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.360s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[3.845s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.916s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.004s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.131s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.291s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.690s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.721s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.271s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.422s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.672s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.766s] -- Looking for C++ include pthread.h
+[6.247s] -- Looking for C++ include pthread.h - found
+[6.250s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.755s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.764s] -- Found Threads: TRUE  
+[7.141s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[7.224s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[7.670s] -- Configuring done
+[7.737s] -- Generating done
+[7.760s] -- Build files have been written to: /code/brickpi/build/rt_ros2
+[7.793s] Invoked command in '/code/brickpi/build/rt_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake /code/brickpi/rt_ros2 -DCMAKE_INSTALL_PREFIX=/code/brickpi/install/rt_ros2
+[7.802s] Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[8.072s] [ 25%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/main.cc.o[0m
+[8.081s] [ 50%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o[0m
+[8.111s] [ 75%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.o[0m
+[10.130s] gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:76: CMakeFiles/rt_ros2.dir/src/main.cc.o] Interrupt
+[10.131s] gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:90: CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o] Interrupt
+[10.132s] gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:104: CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.o] Interrupt
+[10.132s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rt_ros2.dir/all] Interrupt
+[10.137s] gmake: *** [Makefile:146: all] Interrupt
+[10.149s] Invoked command in '/code/brickpi/build/rt_ros2' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4

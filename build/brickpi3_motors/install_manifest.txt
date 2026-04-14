@@ -1,0 +1,3 @@
+/code/brickpi/install/brickpi3_motors/lib/libbrickpi3_motors.so
+/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/cmake/export_brickpi3_motorsExport.cmake
+/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/cmake/export_brickpi3_motorsExport-noconfig.cmake

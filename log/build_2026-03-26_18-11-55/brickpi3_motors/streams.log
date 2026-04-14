@@ -1,0 +1,14 @@
+[0.096s] Invoking command in '/code/brickpi/build/brickpi3_motors': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /code/brickpi/brickpi3_motors -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/code/brickpi/install/brickpi3_motors
+[1.450s] -- The CXX compiler identification is GNU 11.4.0
+[1.453s] -- Detecting CXX compiler ABI info
+[1.739s] -- Detecting CXX compiler ABI info - done
+[1.773s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.777s] -- Detecting CXX compile features
+[1.785s] -- Detecting CXX compile features - done
+[1.789s] [31mCMake Error at CMakeLists.txt:9 (message):
+[1.790s]   You must set BRICKPI3_ROOT_DIR
+[1.790s] 
+[1.791s] [0m
+[1.791s] -- Configuring incomplete, errors occurred!
+[1.792s] See also "/code/brickpi/build/brickpi3_motors/CMakeFiles/CMakeOutput.log".
+[1.801s] Invoked command in '/code/brickpi/build/brickpi3_motors' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /code/brickpi/brickpi3_motors -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/code/brickpi/install/brickpi3_motors

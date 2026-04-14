@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ev3_sensor_msgs__py",
+		"source" : "/code/brickpi/build/ev3_sensor_msgs/ev3_sensor_msgs__py"
+	}
+}

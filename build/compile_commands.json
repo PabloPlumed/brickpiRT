@@ -1,0 +1,82 @@
+[
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/app.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/app.cc",
+  "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/app.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/thread.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/thread.cc",
+  "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/thread.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/cyclic_thread.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/cyclic_thread.cc",
+  "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/cyclic_thread.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/signal_handler.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/signal_handler.cc",
+  "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/signal_handler.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/tracing_enabled.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/tracing_enabled.cc",
+  "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/tracing_enabled.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/sink.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/sink.cc",
+  "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/sink.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/thread_tracer.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/thread_tracer.cc",
+  "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/thread_tracer.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/trace_aggregator.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/trace_aggregator.cc",
+  "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/trace_aggregator.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/trace.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/trace.pb.cc",
+  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/trace.pb.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/trace_packet.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/trace_packet.pb.cc",
+  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/trace_packet.pb.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/track_descriptor.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/track_descriptor.pb.cc",
+  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/track_descriptor.pb.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/thread_descriptor.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/thread_descriptor.pb.cc",
+  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/thread_descriptor.pb.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/process_descriptor.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/process_descriptor.pb.cc",
+  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/process_descriptor.pb.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/counter_descriptor.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/counter_descriptor.pb.cc",
+  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/counter_descriptor.pb.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/track_event.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/track_event.pb.cc",
+  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/track_event.pb.cc"
+},
+{
+  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/source_location.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/source_location.pb.cc",
+  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/source_location.pb.cc"
+}
+]

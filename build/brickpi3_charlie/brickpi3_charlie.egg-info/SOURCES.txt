@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+brickpi3_charlie/__init__.py
+brickpi3_charlie.egg-info/PKG-INFO
+brickpi3_charlie.egg-info/SOURCES.txt
+brickpi3_charlie.egg-info/dependency_links.txt
+brickpi3_charlie.egg-info/entry_points.txt
+brickpi3_charlie.egg-info/requires.txt
+brickpi3_charlie.egg-info/top_level.txt
+brickpi3_charlie.egg-info/zip-safe
+config/controller_description.yaml
+config/robot_hardware_description.urdf
+launch/motors_launch.py
+resource/brickpi3_charlie

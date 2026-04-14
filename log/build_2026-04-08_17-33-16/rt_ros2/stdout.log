@@ -1,0 +1,5 @@
+[ 30%] Built target cactus_tracing_embedded_perfetto_protos
+[ 76%] Built target quill
+[ 92%] Built target cactus_rt
+[35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[ 94%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/main.cc.o[0m

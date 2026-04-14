@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target nodo_test[0m
+[ 29%] Built target cactus_tracing_embedded_perfetto_protos
+[ 73%] Built target quill
+[ 75%] [32mBuilding CXX object CMakeFiles/nodo_test.dir/test/nodo_test.cpp.o[0m
+[ 91%] Built target cactus_rt
+[35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[ 98%] Built target rt_ros2

@@ -1,0 +1,21 @@
+[0.056s] Invoking command in '/code/brickpi/rt_ros2/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/rt_ros2/build/rt_ros2 -- -j4 -l4
+[0.261s] [35m[1mConsolidate compiler generated dependencies of target nodo_test[0m
+[0.336s] [ 29%] Built target cactus_tracing_embedded_perfetto_protos
+[0.375s] [ 73%] Built target quill
+[0.387s] [ 75%] [32mBuilding CXX object CMakeFiles/nodo_test.dir/test/nodo_test.cpp.o[0m
+[0.507s] [ 91%] Built target cactus_rt
+[0.647s] [ 98%] Built target rt_ros2
+[62.701s] [100%] [32m[1mLinking CXX executable nodo_test[0m
+[63.667s] [100%] Built target nodo_test
+[63.720s] Invoked command in '/code/brickpi/rt_ros2/build/rt_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/rt_ros2/build/rt_ros2 -- -j4 -l4
+[63.760s] Invoking command in '/code/brickpi/rt_ros2/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /code/brickpi/rt_ros2/build/rt_ros2
+[63.789s] -- Install configuration: "Release"
+[63.792s] -- Installing: /code/brickpi/rt_ros2/install/rt_ros2/include/readerwriterqueue/atomicops.h
+[63.793s] -- Installing: /code/brickpi/rt_ros2/install/rt_ros2/include/readerwriterqueue/readerwriterqueue.h
+[63.795s] -- Installing: /code/brickpi/rt_ros2/install/rt_ros2/include/readerwriterqueue/readerwritercircularbuffer.h
+[63.797s] -- Installing: /code/brickpi/rt_ros2/install/rt_ros2/include/readerwriterqueue/LICENSE.md
+[63.802s] -- Installing: /code/brickpi/rt_ros2/install/rt_ros2/lib/rt_ros2/rt_ros2
+[63.829s] -- Set runtime path of "/code/brickpi/rt_ros2/install/rt_ros2/lib/rt_ros2/rt_ros2" to ""
+[63.829s] -- Installing: /code/brickpi/rt_ros2/install/rt_ros2/lib/rt_ros2/nodo_test
+[63.843s] -- Set runtime path of "/code/brickpi/rt_ros2/install/rt_ros2/lib/rt_ros2/nodo_test" to ""
+[63.850s] Invoked command in '/code/brickpi/rt_ros2/build/rt_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /code/brickpi/rt_ros2/build/rt_ros2

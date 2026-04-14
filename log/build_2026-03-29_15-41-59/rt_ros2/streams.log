@@ -1,0 +1,43 @@
+[0.058s] Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[0.253s] [35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[0.425s] [ 25%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.o[0m
+[13.048s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[13.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[13.050s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[13.051s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[13.051s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[13.052s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[13.053s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[13.054s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[13.055s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[13.055s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[13.056s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[13.056s]                  from [01m[K/code/brickpi/rt_ros2/include/rt_ros2/nodo_maquina_estados.h:4[m[K,
+[13.057s]                  from [01m[K/code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp:1[m[K:
+[13.057s] [01m[K/code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp:[m[K In member function ‘[01m[Kvoid rt_ros2::NodoMaquinaEstados::color_callback(sensor_msgs::msg::Illuminance_<std::allocator<void> >::SharedPtr)[m[K’:
+[13.058s] [01m[K/code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp:50:49:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args-Wformat-extra-args]8;;[m[K]
+[13.063s]    50 |                 RCLCPP_INFO(this->get_logger(), [01;35m[K"Línea encontrada de nuevo (iluminancia = %.2f)"[m[K, valor_sensor, valor_sensor - 0.5f);
+[13.064s]       |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[41.300s] [ 50%] [32m[1mLinking CXX executable rt_ros2[0m
+[43.579s] [100%] Built target rt_ros2
+[43.627s] Invoked command in '/code/brickpi/build/rt_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[43.669s] Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/rt_ros2
+[43.699s] -- Install configuration: ""
+[43.700s] -- Installing: /code/brickpi/install/rt_ros2/lib/rt_ros2/rt_ros2
+[43.742s] -- Set runtime path of "/code/brickpi/install/rt_ros2/lib/rt_ros2/rt_ros2" to ""
+[43.743s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/package_run_dependencies/rt_ros2
+[43.746s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/parent_prefix_path/rt_ros2
+[43.748s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/ament_prefix_path.sh
+[43.749s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/ament_prefix_path.dsv
+[43.750s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/path.sh
+[43.750s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/path.dsv
+[43.751s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.bash
+[43.752s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.sh
+[43.752s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.zsh
+[43.753s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.dsv
+[43.756s] -- Installing: /code/brickpi/install/rt_ros2/share/rt_ros2/package.dsv
+[43.758s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/packages/rt_ros2
+[43.760s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/cmake/rt_ros2Config.cmake
+[43.761s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/cmake/rt_ros2Config-version.cmake
+[43.762s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/package.xml
+[43.763s] Invoked command in '/code/brickpi/build/rt_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/rt_ros2

@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/main.cc.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o[0m
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:[m[K In constructor ‘[01m[Krt_ros2::NodoActuador::NodoActuador()[m[K’:
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:13:98:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Krt_ros2::NodoActuador[m[K’ does not have any field named ‘[01m[Kestado_anterior[m[K’
+   13 | NodoActuador::NodoActuador(): Node("nodo_actuador"), estado_actual("PARAR"), error_actual(0.0f), [01;31m[Kestado_anterior[m[K("")
+      |                                                                                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:90: CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rt_ros2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

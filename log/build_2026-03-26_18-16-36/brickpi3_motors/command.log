@@ -1,0 +1,4 @@
+Invoking command in '/code/brickpi/build/brickpi3_motors': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /code/brickpi/brickpi3_motors -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/code/brickpi/install/brickpi3_motors
+Invoked command in '/code/brickpi/build/brickpi3_motors' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /code/brickpi/brickpi3_motors -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/code/brickpi/install/brickpi3_motors
+Invoking command in '/code/brickpi/build/brickpi3_motors': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/brickpi3_motors -- -j4 -l4
+Invoked command in '/code/brickpi/build/brickpi3_motors' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/brickpi3_motors -- -j4 -l4

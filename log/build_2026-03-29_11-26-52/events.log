@@ -1,0 +1,325 @@
+[0.000000] (-) TimerEvent: {}
+[0.001887] (-) JobUnselected: {'identifier': 'brickpi3_charlie'}
+[0.002530] (-) JobUnselected: {'identifier': 'brickpi3_motors'}
+[0.003131] (-) JobUnselected: {'identifier': 'brickpi3_sensors'}
+[0.003351] (-) JobUnselected: {'identifier': 'ev3_sensor_msgs'}
+[0.003598] (rt_ros2) JobQueued: {'identifier': 'rt_ros2', 'dependencies': OrderedDict()}
+[0.003805] (rt_ros2) JobStarted: {'identifier': 'rt_ros2'}
+[0.040767] (rt_ros2) JobProgress: {'identifier': 'rt_ros2', 'progress': 'cmake'}
+[0.043832] (rt_ros2) JobProgress: {'identifier': 'rt_ros2', 'progress': 'build'}
+[0.046859] (rt_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/code/brickpi/build/rt_ros2', '--', '-j4', '-l4'], 'cwd': '/code/brickpi/build/rt_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.10.163 50514 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/code/brickpi/rt_ros2'), ('TERM_PROGRAM_VERSION', '1.112.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-7c5787ae-d643-4678-a560-0ecc51376d7a.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('BRICKPI3_ROOT_DIR', '/home/ubuntu/BrickPi3'), ('PATH', '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-646e1b4f8e.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '21'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/code/brickpi/build/rt_ros2'), ('SSH_CONNECTION', '192.168.10.163 50514 192.168.10.2 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098816] (-) TimerEvent: {}
+[0.162290] (rt_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199029] (-) TimerEvent: {}
+[0.299953] (-) TimerEvent: {}
+[0.400943] (-) TimerEvent: {}
+[0.501882] (-) TimerEvent: {}
+[0.602675] (-) TimerEvent: {}
+[0.703699] (-) TimerEvent: {}
+[0.805882] (-) TimerEvent: {}
+[0.840460] (rt_ros2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.906085] (-) TimerEvent: {}
+[1.001021] (rt_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.006247] (-) TimerEvent: {}
+[1.014193] (rt_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.043638] (rt_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.089257] (rt_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.106443] (-) TimerEvent: {}
+[1.149651] (rt_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.206674] (-) TimerEvent: {}
+[1.304976] (rt_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.306833] (-) TimerEvent: {}
+[1.311898] (rt_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.407037] (-) TimerEvent: {}
+[1.507897] (-) TimerEvent: {}
+[1.608691] (-) TimerEvent: {}
+[1.709466] (-) TimerEvent: {}
+[1.810314] (-) TimerEvent: {}
+[1.854205] (rt_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.910581] (-) TimerEvent: {}
+[2.011440] (-) TimerEvent: {}
+[2.081767] (rt_ros2) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.111675] (-) TimerEvent: {}
+[2.141635] (rt_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.211875] (-) TimerEvent: {}
+[2.312643] (-) TimerEvent: {}
+[2.413470] (-) TimerEvent: {}
+[2.514679] (-) TimerEvent: {}
+[2.548936] (rt_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.614718] (-) TimerEvent: {}
+[2.616111] (rt_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[2.637151] (rt_ros2) StdoutLine: {'line': b'-- Build files have been written to: /code/brickpi/build/rt_ros2\n'}
+[2.714934] (-) TimerEvent: {}
+[2.745016] (rt_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rt_ros2\x1b[0m\n'}
+[2.815172] (-) TimerEvent: {}
+[2.873390] (rt_ros2) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/main.cc.o\x1b[0m\n'}
+[2.879618] (rt_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.o\x1b[0m\n'}
+[2.915457] (-) TimerEvent: {}
+[3.016644] (-) TimerEvent: {}
+[3.117460] (-) TimerEvent: {}
+[3.218356] (-) TimerEvent: {}
+[3.319220] (-) TimerEvent: {}
+[3.420114] (-) TimerEvent: {}
+[3.521037] (-) TimerEvent: {}
+[3.621964] (-) TimerEvent: {}
+[3.722812] (-) TimerEvent: {}
+[3.823657] (-) TimerEvent: {}
+[3.924567] (-) TimerEvent: {}
+[4.025428] (-) TimerEvent: {}
+[4.126432] (-) TimerEvent: {}
+[4.227332] (-) TimerEvent: {}
+[4.328210] (-) TimerEvent: {}
+[4.429157] (-) TimerEvent: {}
+[4.530131] (-) TimerEvent: {}
+[4.631677] (-) TimerEvent: {}
+[4.732546] (-) TimerEvent: {}
+[4.833365] (-) TimerEvent: {}
+[4.934565] (-) TimerEvent: {}
+[5.037546] (-) TimerEvent: {}
+[5.138651] (-) TimerEvent: {}
+[5.239758] (-) TimerEvent: {}
+[5.340820] (-) TimerEvent: {}
+[5.441751] (-) TimerEvent: {}
+[5.542691] (-) TimerEvent: {}
+[5.643790] (-) TimerEvent: {}
+[5.744755] (-) TimerEvent: {}
+[5.845916] (-) TimerEvent: {}
+[5.947315] (-) TimerEvent: {}
+[6.048330] (-) TimerEvent: {}
+[6.149855] (-) TimerEvent: {}
+[6.250869] (-) TimerEvent: {}
+[6.351981] (-) TimerEvent: {}
+[6.452976] (-) TimerEvent: {}
+[6.554350] (-) TimerEvent: {}
+[6.655464] (-) TimerEvent: {}
+[6.756471] (-) TimerEvent: {}
+[6.857573] (-) TimerEvent: {}
+[6.958624] (-) TimerEvent: {}
+[7.059632] (-) TimerEvent: {}
+[7.160693] (-) TimerEvent: {}
+[7.262097] (-) TimerEvent: {}
+[7.363374] (-) TimerEvent: {}
+[7.464432] (-) TimerEvent: {}
+[7.565734] (-) TimerEvent: {}
+[7.666751] (-) TimerEvent: {}
+[7.767693] (-) TimerEvent: {}
+[7.868803] (-) TimerEvent: {}
+[7.969946] (-) TimerEvent: {}
+[8.071441] (-) TimerEvent: {}
+[8.172477] (-) TimerEvent: {}
+[8.273773] (-) TimerEvent: {}
+[8.374731] (-) TimerEvent: {}
+[8.475860] (-) TimerEvent: {}
+[8.576851] (-) TimerEvent: {}
+[8.677856] (-) TimerEvent: {}
+[8.778851] (-) TimerEvent: {}
+[8.879886] (-) TimerEvent: {}
+[8.980817] (-) TimerEvent: {}
+[9.081988] (-) TimerEvent: {}
+[9.182964] (-) TimerEvent: {}
+[9.283957] (-) TimerEvent: {}
+[9.384952] (-) TimerEvent: {}
+[9.485928] (-) TimerEvent: {}
+[9.586884] (-) TimerEvent: {}
+[9.687855] (-) TimerEvent: {}
+[9.789010] (-) TimerEvent: {}
+[9.890016] (-) TimerEvent: {}
+[9.990986] (-) TimerEvent: {}
+[10.092148] (-) TimerEvent: {}
+[10.193150] (-) TimerEvent: {}
+[10.294155] (-) TimerEvent: {}
+[10.395115] (-) TimerEvent: {}
+[10.496193] (-) TimerEvent: {}
+[10.597653] (-) TimerEvent: {}
+[10.698663] (-) TimerEvent: {}
+[10.799716] (-) TimerEvent: {}
+[10.900664] (-) TimerEvent: {}
+[11.001618] (-) TimerEvent: {}
+[11.102620] (-) TimerEvent: {}
+[11.203618] (-) TimerEvent: {}
+[11.304659] (-) TimerEvent: {}
+[11.405635] (-) TimerEvent: {}
+[11.506655] (-) TimerEvent: {}
+[11.607652] (-) TimerEvent: {}
+[11.708657] (-) TimerEvent: {}
+[11.809630] (-) TimerEvent: {}
+[11.910610] (-) TimerEvent: {}
+[12.011577] (-) TimerEvent: {}
+[12.112561] (-) TimerEvent: {}
+[12.213513] (-) TimerEvent: {}
+[12.314513] (-) TimerEvent: {}
+[12.415455] (-) TimerEvent: {}
+[12.516458] (-) TimerEvent: {}
+[12.617544] (-) TimerEvent: {}
+[12.718523] (-) TimerEvent: {}
+[12.819445] (-) TimerEvent: {}
+[12.920460] (-) TimerEvent: {}
+[13.021430] (-) TimerEvent: {}
+[13.122447] (-) TimerEvent: {}
+[13.223437] (-) TimerEvent: {}
+[13.324543] (-) TimerEvent: {}
+[13.425580] (-) TimerEvent: {}
+[13.526678] (-) TimerEvent: {}
+[13.627669] (-) TimerEvent: {}
+[13.728731] (-) TimerEvent: {}
+[13.830069] (-) TimerEvent: {}
+[13.931115] (-) TimerEvent: {}
+[14.032471] (-) TimerEvent: {}
+[14.133557] (-) TimerEvent: {}
+[14.234708] (-) TimerEvent: {}
+[14.335740] (-) TimerEvent: {}
+[14.437033] (-) TimerEvent: {}
+[14.538199] (-) TimerEvent: {}
+[14.639686] (-) TimerEvent: {}
+[14.740693] (-) TimerEvent: {}
+[14.841655] (-) TimerEvent: {}
+[14.942697] (-) TimerEvent: {}
+[15.043708] (-) TimerEvent: {}
+[15.144648] (-) TimerEvent: {}
+[15.245724] (-) TimerEvent: {}
+[15.346698] (-) TimerEvent: {}
+[15.447833] (-) TimerEvent: {}
+[15.548840] (-) TimerEvent: {}
+[15.649901] (-) TimerEvent: {}
+[15.750936] (-) TimerEvent: {}
+[15.818185] (rt_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/code/brickpi/rt_ros2/src/main.cc:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.820013] (rt_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/code/brickpi/rt_ros2/src/main.cc:7:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krt_ros\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krt_ros2\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.822144] (rt_ros2) StderrLine: {'line': b'    7 |   auto nodo = std::make_shared<\x1b[01;31m\x1b[Krt_ros\x1b[m\x1b[K::NodoMaquinaEstados>();\n'}
+[15.823034] (rt_ros2) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[15.824036] (rt_ros2) StderrLine: {'line': b'      |                                \x1b[32m\x1b[Krt_ros2\x1b[m\x1b[K\n'}
+[15.824786] (rt_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/code/brickpi/rt_ros2/src/main.cc:7:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[15.825561] (rt_ros2) StderrLine: {'line': b'    7 |   auto nodo = std::\x1b[01;31m\x1b[Kmake_shared<rt_ros::NodoMaquinaEstados>\x1b[m\x1b[K();\n'}
+[15.826344] (rt_ros2) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.827141] (rt_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/code/brickpi/rt_ros2/src/main.cc:7:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.827905] (rt_ros2) StderrLine: {'line': b'    7 |   auto nodo = \x1b[01;31m\x1b[Kstd::make_shared<rt_ros::NodoMaquinaEstados>()\x1b[m\x1b[K;\n'}
+[15.828641] (rt_ros2) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[15.829329] (rt_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[15.830033] (rt_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[15.830763] (rt_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/code/brickpi/rt_ros2/src/main.cc:1\x1b[m\x1b[K:\n'}
+[15.831469] (rt_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.832171] (rt_ros2) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[15.832828] (rt_ros2) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.833442] (rt_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.834150] (rt_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/code/brickpi/rt_ros2/src/main.cc:7:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[15.834851] (rt_ros2) StderrLine: {'line': b'    7 |   auto nodo = \x1b[01;31m\x1b[Kstd::make_shared<rt_ros::NodoMaquinaEstados>()\x1b[m\x1b[K;\n'}
+[15.835529] (rt_ros2) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[15.851143] (-) TimerEvent: {}
+[15.953427] (-) TimerEvent: {}
+[15.961783] (rt_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Krt_ros2::NodoMaquinaEstados::NodoMaquinaEstados()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.963129] (rt_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp:24:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktimer_publicacion_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.964042] (rt_ros2) StderrLine: {'line': b'   24 |     \x1b[01;31m\x1b[Ktimer_publicacion_\x1b[m\x1b[K = this->create_timer( std::chrono::milliseconds(FREC_TOPIC_MS), cb_timer);\n'}
+[15.964887] (rt_ros2) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.965640] (rt_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp:24:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rt_ros2::NodoMaquinaEstados\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kcreate_timer\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcreate_wall_timer\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.966600] (rt_ros2) StderrLine: {'line': b'   24 |     timer_publicacion_ = this->\x1b[01;31m\x1b[Kcreate_timer\x1b[m\x1b[K( std::chrono::milliseconds(FREC_TOPIC_MS), cb_timer);\n'}
+[15.967333] (rt_ros2) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.968058] (rt_ros2) StderrLine: {'line': b'      |                                \x1b[32m\x1b[Kcreate_wall_timer\x1b[m\x1b[K\n'}
+[16.053695] (-) TimerEvent: {}
+[16.154631] (-) TimerEvent: {}
+[16.255707] (-) TimerEvent: {}
+[16.356661] (-) TimerEvent: {}
+[16.457685] (-) TimerEvent: {}
+[16.558659] (-) TimerEvent: {}
+[16.659696] (-) TimerEvent: {}
+[16.760651] (-) TimerEvent: {}
+[16.861705] (-) TimerEvent: {}
+[16.964685] (-) TimerEvent: {}
+[17.065671] (-) TimerEvent: {}
+[17.166758] (-) TimerEvent: {}
+[17.267709] (-) TimerEvent: {}
+[17.368689] (-) TimerEvent: {}
+[17.469647] (-) TimerEvent: {}
+[17.570647] (-) TimerEvent: {}
+[17.672133] (-) TimerEvent: {}
+[17.773100] (-) TimerEvent: {}
+[17.775599] (rt_ros2) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:76: CMakeFiles/rt_ros2.dir/src/main.cc.o] Error 1\n'}
+[17.776363] (rt_ros2) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[17.873325] (-) TimerEvent: {}
+[17.974229] (-) TimerEvent: {}
+[18.075220] (-) TimerEvent: {}
+[18.176162] (-) TimerEvent: {}
+[18.277056] (-) TimerEvent: {}
+[18.377962] (-) TimerEvent: {}
+[18.478841] (-) TimerEvent: {}
+[18.579708] (-) TimerEvent: {}
+[18.680570] (-) TimerEvent: {}
+[18.781421] (-) TimerEvent: {}
+[18.882283] (-) TimerEvent: {}
+[18.983196] (-) TimerEvent: {}
+[19.084091] (-) TimerEvent: {}
+[19.184991] (-) TimerEvent: {}
+[19.285846] (-) TimerEvent: {}
+[19.386724] (-) TimerEvent: {}
+[19.487621] (-) TimerEvent: {}
+[19.588510] (-) TimerEvent: {}
+[19.689592] (-) TimerEvent: {}
+[19.790523] (-) TimerEvent: {}
+[19.891366] (-) TimerEvent: {}
+[19.992252] (-) TimerEvent: {}
+[20.093134] (-) TimerEvent: {}
+[20.194035] (-) TimerEvent: {}
+[20.294909] (-) TimerEvent: {}
+[20.395740] (-) TimerEvent: {}
+[20.496707] (-) TimerEvent: {}
+[20.597646] (-) TimerEvent: {}
+[20.698612] (-) TimerEvent: {}
+[20.799467] (-) TimerEvent: {}
+[20.900350] (-) TimerEvent: {}
+[21.001239] (-) TimerEvent: {}
+[21.102129] (-) TimerEvent: {}
+[21.203043] (-) TimerEvent: {}
+[21.303956] (-) TimerEvent: {}
+[21.404839] (-) TimerEvent: {}
+[21.505683] (-) TimerEvent: {}
+[21.606536] (-) TimerEvent: {}
+[21.707383] (-) TimerEvent: {}
+[21.808275] (-) TimerEvent: {}
+[21.909197] (-) TimerEvent: {}
+[22.010150] (-) TimerEvent: {}
+[22.111041] (-) TimerEvent: {}
+[22.212015] (-) TimerEvent: {}
+[22.312904] (-) TimerEvent: {}
+[22.413880] (-) TimerEvent: {}
+[22.514747] (-) TimerEvent: {}
+[22.615634] (-) TimerEvent: {}
+[22.716587] (-) TimerEvent: {}
+[22.817454] (-) TimerEvent: {}
+[22.918367] (-) TimerEvent: {}
+[23.019322] (-) TimerEvent: {}
+[23.120292] (-) TimerEvent: {}
+[23.221209] (-) TimerEvent: {}
+[23.322111] (-) TimerEvent: {}
+[23.423036] (-) TimerEvent: {}
+[23.524615] (-) TimerEvent: {}
+[23.625539] (-) TimerEvent: {}
+[23.726435] (-) TimerEvent: {}
+[23.827430] (-) TimerEvent: {}
+[23.928327] (-) TimerEvent: {}
+[24.029191] (-) TimerEvent: {}
+[24.130097] (-) TimerEvent: {}
+[24.230969] (-) TimerEvent: {}
+[24.331851] (-) TimerEvent: {}
+[24.432714] (-) TimerEvent: {}
+[24.533614] (-) TimerEvent: {}
+[24.634465] (-) TimerEvent: {}
+[24.735521] (-) TimerEvent: {}
+[24.836605] (-) TimerEvent: {}
+[24.937415] (-) TimerEvent: {}
+[25.038239] (-) TimerEvent: {}
+[25.139042] (-) TimerEvent: {}
+[25.239843] (-) TimerEvent: {}
+[25.340693] (-) TimerEvent: {}
+[25.441633] (-) TimerEvent: {}
+[25.542571] (-) TimerEvent: {}
+[25.643447] (-) TimerEvent: {}
+[25.744357] (-) TimerEvent: {}
+[25.845260] (-) TimerEvent: {}
+[25.946152] (-) TimerEvent: {}
+[26.047046] (-) TimerEvent: {}
+[26.147988] (-) TimerEvent: {}
+[26.205023] (rt_ros2) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:104: CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.o] Error 1\n'}
+[26.205999] (rt_ros2) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rt_ros2.dir/all] Error 2\n'}
+[26.206848] (rt_ros2) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[26.215123] (rt_ros2) CommandEnded: {'returncode': 2}
+[26.249394] (-) TimerEvent: {}
+[26.261171] (rt_ros2) JobEnded: {'identifier': 'rt_ros2', 'rc': 2}
+[26.272954] (-) EventReactorShutdown: {}

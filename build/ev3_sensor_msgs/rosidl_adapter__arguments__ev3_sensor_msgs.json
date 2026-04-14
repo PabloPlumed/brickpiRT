@@ -1,0 +1,7 @@
+{
+  "package_name": "ev3_sensor_msgs",
+  "non_idl_tuples": [
+    "/code/brickpi/ev3_sensor_msgs:msg/Button.msg",
+    "/code/brickpi/ev3_sensor_msgs:msg/Color.msg"
+  ]
+}

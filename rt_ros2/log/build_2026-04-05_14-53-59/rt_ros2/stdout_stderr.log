@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/main.cc.o[0m
+gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:76: CMakeFiles/rt_ros2.dir/src/main.cc.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rt_ros2.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

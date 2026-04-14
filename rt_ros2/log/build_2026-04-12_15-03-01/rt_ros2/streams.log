@@ -1,0 +1,80 @@
+[0.053s] Invoking command in '/code/brickpi/rt_ros2/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/rt_ros2/build/rt_ros2 -- -j4 -l4
+[0.165s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.785s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.940s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.953s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.982s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.027s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.087s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.239s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.246s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.767s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.990s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.048s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.843s] -- The C compiler identification is GNU 11.4.0
+[2.880s] -- Detecting C compiler ABI info
+[3.231s] -- Detecting C compiler ABI info - done
+[3.262s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.264s] -- Detecting C compile features
+[3.266s] -- Detecting C compile features - done
+[3.284s] -- QUILL_NO_EXCEPTIONS: OFF
+[3.284s] -- QUILL_FMT_EXTERNAL: OFF
+[3.285s] -- QUILL_NO_THREAD_NAME_SUPPORT: OFF
+[3.362s] -- Found Protobuf: /usr/lib/aarch64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[3.701s] -- Configuring done
+[3.886s] -- Generating done
+[3.931s] -- Build files have been written to: /code/brickpi/rt_ros2/build/rt_ros2
+[4.063s] [  1%] [34m[1mRunning cpp protocol buffer compiler on track_event.proto[0m
+[4.073s] [  3%] [34m[1mRunning cpp protocol buffer compiler on counter_descriptor.proto[0m
+[4.124s] [  5%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/detail/backend/BackendWorker.cpp.o[0m
+[4.128s] [  7%] [32mBuilding CXX object CMakeFiles/nodo_test.dir/test/nodo_test.cpp.o[0m
+[4.155s] [  8%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/detail/backend/BacktraceStorage.cpp.o[0m
+[4.158s] [ 10%] [34m[1mRunning cpp protocol buffer compiler on process_descriptor.proto[0m
+[4.222s] [ 12%] [34m[1mRunning cpp protocol buffer compiler on source_location.proto[0m
+[4.284s] [ 14%] [34m[1mRunning cpp protocol buffer compiler on thread_descriptor.proto[0m
+[4.345s] [ 15%] [34m[1mRunning cpp protocol buffer compiler on trace.proto[0m
+[4.440s] [ 17%] [34m[1mRunning cpp protocol buffer compiler on trace_packet.proto[0m
+[4.512s] [ 19%] [34m[1mRunning cpp protocol buffer compiler on track_descriptor.proto[0m
+[4.922s] [ 21%] [32mBuilding CXX object vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/trace.pb.cc.o[0m
+[13.257s] [ 22%] [32mBuilding CXX object vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/trace_packet.pb.cc.o[0m
+[16.399s] [ 24%] [32mBuilding CXX object vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/track_descriptor.pb.cc.o[0m
+[18.150s] [ 26%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/detail/backend/TimestampFormatter.cpp.o[0m
+[22.036s] [ 28%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/detail/backend/StringFromTime.cpp.o[0m
+[23.855s] [01m[K/code/brickpi/rt_ros2/test/nodo_test.cpp:[m[K In constructor ‘[01m[Krt_ros2::TestAutomatico::TestAutomatico()[m[K’:
+[23.859s] [01m[K/code/brickpi/rt_ros2/test/nodo_test.cpp:43:49:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Krt_ros2::TestAutomatico[m[K’ does not have any field named ‘[01m[Ktick_[m[K’
+[23.863s]    43 |     TestAutomatico() : Node("test_automatico"), [01;31m[Ktick_[m[K(0)
+[23.867s]       |                                                 [01;31m[K^~~~~[m[K
+[24.848s] [ 29%] [32mBuilding CXX object vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/thread_descriptor.pb.cc.o[0m
+[27.070s] [ 31%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/detail/backend/TransitEventBuffer.cpp.o[0m
+[32.303s] [ 33%] [32mBuilding CXX object vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/process_descriptor.pb.cc.o[0m
+[33.558s] [ 35%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/detail/misc/FileUtilities.cpp.o[0m
+[37.382s] [ 36%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/detail/misc/Os.cpp.o[0m
+[40.153s] [ 38%] [32mBuilding CXX object vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/counter_descriptor.pb.cc.o[0m
+[43.382s] [ 40%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/detail/misc/RdtscClock.cpp.o[0m
+[46.588s] [ 42%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/detail/misc/Utilities.cpp.o[0m
+[47.588s] gmake[2]: *** [CMakeFiles/nodo_test.dir/build.make:76: CMakeFiles/nodo_test.dir/test/nodo_test.cpp.o] Error 1
+[47.592s] gmake[1]: *** [CMakeFiles/Makefile2:267: CMakeFiles/nodo_test.dir/all] Error 2
+[47.596s] gmake[1]: *** Waiting for unfinished jobs....
+[47.650s] [ 43%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/detail/HandlerCollection.cpp.o[0m
+[47.980s] [ 45%] [32mBuilding CXX object vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/track_event.pb.cc.o[0m
+[52.312s] [ 47%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/detail/LoggerCollection.cpp.o[0m
+[55.730s] [ 49%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/detail/SignalHandler.cpp.o[0m
+[58.133s] [ 50%] [32mBuilding CXX object vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/source_location.pb.cc.o[0m
+[61.034s] [ 52%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/handlers/ConsoleHandler.cpp.o[0m
+[66.314s] [ 54%] [32m[1mLinking CXX static library libcactus_tracing_embedded_perfetto_protos.a[0m
+[66.814s] [ 54%] Built target cactus_tracing_embedded_perfetto_protos
+[66.874s] [ 56%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/handlers/FileHandler.cpp.o[0m
+[67.789s] [ 57%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/handlers/Handler.cpp.o[0m
+[71.812s] [ 59%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/handlers/JsonFileHandler.cpp.o[0m
+[73.434s] [ 61%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/handlers/RotatingFileHandler.cpp.o[0m
+[78.124s] [ 63%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/handlers/StreamHandler.cpp.o[0m
+[78.377s] [ 64%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/LogLevel.cpp.o[0m
+[81.884s] [ 66%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/PatternFormatter.cpp.o[0m
+[88.249s] [ 68%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/Quill.cpp.o[0m
+[95.359s] [ 70%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/Utility.cpp.o[0m
+[95.715s] [ 71%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/bundled/fmt/format.cc.o[0m
+[96.126s] [ 73%] [32mBuilding CXX object vendor/quill/quill/CMakeFiles/quill.dir/src/bundled/fmt/os.cc.o[0m
+[115.437s] [ 75%] [32m[1mLinking CXX static library libquill.a[0m
+[115.690s] [ 75%] Built target quill
+[115.695s] gmake: *** [Makefile:146: all] Error 2
+[115.703s] Invoked command in '/code/brickpi/rt_ros2/build/rt_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/rt_ros2/build/rt_ros2 -- -j4 -l4

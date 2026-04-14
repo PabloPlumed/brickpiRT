@@ -1,0 +1,1 @@
+/code/brickpi/build/ev3_sensor_msgs/rosidl_typesupport_fastrtps_cpp/ev3_sensor_msgs/msg/detail/color__rosidl_typesupport_fastrtps_cpp.hpp

@@ -1,0 +1,1 @@
+Invoking command in '/code/brickpi/build/ev3_sensor_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /code/brickpi/ev3_sensor_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/code/brickpi/install/ev3_sensor_msgs

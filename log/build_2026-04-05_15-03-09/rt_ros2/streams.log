@@ -1,0 +1,26 @@
+[0.057s] Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[0.248s] [35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[0.403s] [ 25%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/main.cc.o[0m
+[14.603s] [ 50%] [32m[1mLinking CXX executable rt_ros2[0m
+[18.474s] [100%] Built target rt_ros2
+[18.521s] Invoked command in '/code/brickpi/build/rt_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[18.562s] Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/rt_ros2
+[18.592s] -- Install configuration: ""
+[18.593s] -- Installing: /code/brickpi/install/rt_ros2/lib/rt_ros2/rt_ros2
+[18.669s] -- Set runtime path of "/code/brickpi/install/rt_ros2/lib/rt_ros2/rt_ros2" to ""
+[18.669s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/package_run_dependencies/rt_ros2
+[18.670s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/parent_prefix_path/rt_ros2
+[18.673s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/ament_prefix_path.sh
+[18.674s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/ament_prefix_path.dsv
+[18.675s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/path.sh
+[18.676s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/path.dsv
+[18.676s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.bash
+[18.677s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.sh
+[18.677s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.zsh
+[18.678s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.dsv
+[18.679s] -- Installing: /code/brickpi/install/rt_ros2/share/rt_ros2/package.dsv
+[18.679s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/packages/rt_ros2
+[18.680s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/cmake/rt_ros2Config.cmake
+[18.681s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/cmake/rt_ros2Config-version.cmake
+[18.682s] -- Up-to-date: /code/brickpi/install/rt_ros2/share/rt_ros2/package.xml
+[18.685s] Invoked command in '/code/brickpi/build/rt_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/rt_ros2

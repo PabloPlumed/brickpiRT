@@ -1,0 +1,7 @@
+[0.052s] Invoking command in '/code/brickpi/rt_ros2/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/rt_ros2/build/rt_ros2 -- -j4 -l4
+[0.251s] [35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[0.401s] [ 25%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/main.cc.o[0m
+[0.660s] gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:76: CMakeFiles/rt_ros2.dir/src/main.cc.o] Interrupt
+[0.662s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rt_ros2.dir/all] Interrupt
+[0.663s] gmake: *** [Makefile:146: all] Interrupt
+[0.670s] Invoked command in '/code/brickpi/rt_ros2/build/rt_ros2' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/rt_ros2/build/rt_ros2 -- -j4 -l4

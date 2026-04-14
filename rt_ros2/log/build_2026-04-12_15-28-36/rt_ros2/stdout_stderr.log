@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target nodo_test[0m
+[ 29%] Built target cactus_tracing_embedded_perfetto_protos
+[ 73%] Built target quill
+[ 75%] [32mBuilding CXX object CMakeFiles/nodo_test.dir/test/nodo_test.cpp.o[0m
+[ 91%] Built target cactus_rt
+[ 98%] Built target rt_ros2
+[100%] [32m[1mLinking CXX executable nodo_test[0m
+[100%] Built target nodo_test
+-- Install configuration: "Release"
+-- Installing: /code/brickpi/rt_ros2/install/rt_ros2/include/readerwriterqueue/atomicops.h
+-- Installing: /code/brickpi/rt_ros2/install/rt_ros2/include/readerwriterqueue/readerwriterqueue.h
+-- Installing: /code/brickpi/rt_ros2/install/rt_ros2/include/readerwriterqueue/readerwritercircularbuffer.h
+-- Installing: /code/brickpi/rt_ros2/install/rt_ros2/include/readerwriterqueue/LICENSE.md
+-- Installing: /code/brickpi/rt_ros2/install/rt_ros2/lib/rt_ros2/rt_ros2
+-- Set runtime path of "/code/brickpi/rt_ros2/install/rt_ros2/lib/rt_ros2/rt_ros2" to ""
+-- Installing: /code/brickpi/rt_ros2/install/rt_ros2/lib/rt_ros2/nodo_test
+-- Set runtime path of "/code/brickpi/rt_ros2/install/rt_ros2/lib/rt_ros2/nodo_test" to ""

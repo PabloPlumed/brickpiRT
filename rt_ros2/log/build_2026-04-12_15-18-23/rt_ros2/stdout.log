@@ -1,0 +1,9 @@
+[ 29%] Built target cactus_tracing_embedded_perfetto_protos
+[ 31%] [32mBuilding CXX object CMakeFiles/nodo_test.dir/test/nodo_test.cpp.o[0m
+[ 75%] Built target quill
+[ 91%] Built target cactus_rt
+[ 94%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/main.cc.o[0m
+[ 94%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o[0m
+[ 96%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.o[0m
+[ 98%] [32m[1mLinking CXX executable rt_ros2[0m
+[ 98%] Built target rt_ros2

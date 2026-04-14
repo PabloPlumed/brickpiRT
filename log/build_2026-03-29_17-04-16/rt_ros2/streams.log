@@ -1,0 +1,24 @@
+[0.055s] Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[0.282s] [35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[0.434s] [ 25%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o[0m
+[12.285s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[12.286s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.286s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.288s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.288s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.289s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.290s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.290s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.291s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.291s]                  from [01m[K/code/brickpi/rt_ros2/include/rt_ros2/nodo_actuador.h:4[m[K,
+[12.292s]                  from [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:1[m[K:
+[12.293s] [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:[m[K In member function ‘[01m[Kvoid rt_ros2::NodoActuador::publicar_cmd_vel()[m[K’:
+[12.293s] [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:47:112:[m[K [01;31m[Kerror: [m[K‘[01m[Kopic_vel[m[K’ was not declared in this scope; did you mean ‘[01m[Ktopic_vel[m[K’?
+[12.294s]    47 |         RCLCPP_INFO(this->get_logger(), "Tengo que seguir siguiendo la línea (linear = %.2f, angular = %.2f)", [01;31m[Kopic_vel[m[K.twist.linear.x, topic_vel.twist.angular.z);
+[12.295s]       |                                                                                                                [01;31m[K^~~~~~~~[m[K
+[25.865s] gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:90: CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o] Error 1
+[25.867s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rt_ros2.dir/all] Error 2
+[25.868s] gmake: *** [Makefile:146: all] Error 2
+[25.877s] Invoked command in '/code/brickpi/build/rt_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4

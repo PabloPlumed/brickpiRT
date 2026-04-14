@@ -1,0 +1,32 @@
+[01m[K/code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp:[m[K In constructor ‘[01m[Krt_ros2::NodoMaquinaEstados::NodoMaquinaEstados()[m[K’:
+[01m[K/code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp:24:100:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Krclcpp::Time[m[K’ and ‘[01m[Krclcpp::WallTimer<rt_ros2::NodoMaquinaEstados::NodoMaquinaEstados()::<lambda()>, 0>::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::WallTimer<rt_ros2::NodoMaquinaEstados::NodoMaquinaEstados()::<lambda()>, 0> >[m[K’})
+   24 |     timer_publicacion = this->create_wall_timer( std::chrono::milliseconds(FREC_TOPIC_MS), cb_timer[01;31m[K)[m[K;
+      |                                                                                                    [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:27[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:30[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/code/brickpi/rt_ros2/include/rt_ros2/nodo_maquina_estados.h:4[m[K,
+                 from [01m[K/code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:91:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Time& rclcpp::Time::operator=(const rclcpp::Time&)[m[K’
+   91 |   [01;36m[Koperator[m[K=(const Time & rhs);
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:91:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::WallTimer<rt_ros2::NodoMaquinaEstados::NodoMaquinaEstados()::<lambda()>, 0>::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::WallTimer<rt_ros2::NodoMaquinaEstados::NodoMaquinaEstados()::<lambda()>, 0> >[m[K’} to ‘[01m[Kconst rclcpp::Time&[m[K’
+   91 |   operator=([01;36m[Kconst Time & rhs[m[K);
+      |             [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:101:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Time& rclcpp::Time::operator=(const Time&)[m[K’
+  101 |   [01;36m[Koperator[m[K=(const builtin_interfaces::msg::Time & time_msg);
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:101:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::WallTimer<rt_ros2::NodoMaquinaEstados::NodoMaquinaEstados()::<lambda()>, 0>::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::WallTimer<rt_ros2::NodoMaquinaEstados::NodoMaquinaEstados()::<lambda()>, 0> >[m[K’} to ‘[01m[Kconst Time&[m[K’ {aka ‘[01m[Kconst builtin_interfaces::msg::Time_<std::allocator<void> >&[m[K’}
+  101 |   operator=([01;36m[Kconst builtin_interfaces::msg::Time & time_msg[m[K);
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:104: CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rt_ros2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
