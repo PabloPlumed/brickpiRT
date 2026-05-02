@@ -42,12 +42,3 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/readerwriterqueue" TYPE FILE FILES
-    "/code/brickpi/rt_ros2/vendor/readerwriterqueue/atomicops.h"
-    "/code/brickpi/rt_ros2/vendor/readerwriterqueue/readerwriterqueue.h"
-    "/code/brickpi/rt_ros2/vendor/readerwriterqueue/readerwritercircularbuffer.h"
-    "/code/brickpi/rt_ros2/vendor/readerwriterqueue/LICENSE.md"
-    )
-endif()
-

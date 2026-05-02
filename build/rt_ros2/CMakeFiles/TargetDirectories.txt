@@ -1,6 +1,7 @@
 /code/brickpi/build/rt_ros2/CMakeFiles/uninstall.dir
 /code/brickpi/build/rt_ros2/CMakeFiles/rt_ros2_uninstall.dir
 /code/brickpi/build/rt_ros2/CMakeFiles/rt_ros2.dir
+/code/brickpi/build/rt_ros2/CMakeFiles/nodo_test.dir
 /code/brickpi/build/rt_ros2/CMakeFiles/test.dir
 /code/brickpi/build/rt_ros2/CMakeFiles/edit_cache.dir
 /code/brickpi/build/rt_ros2/CMakeFiles/rebuild_cache.dir

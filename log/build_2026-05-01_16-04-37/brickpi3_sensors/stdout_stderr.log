@@ -1,0 +1,23 @@
+running develop
+running egg_info
+writing brickpi3_sensors.egg-info/PKG-INFO
+writing dependency_links to brickpi3_sensors.egg-info/dependency_links.txt
+writing entry points to brickpi3_sensors.egg-info/entry_points.txt
+writing requirements to brickpi3_sensors.egg-info/requires.txt
+writing top-level names to brickpi3_sensors.egg-info/top_level.txt
+reading manifest file 'brickpi3_sensors.egg-info/SOURCES.txt'
+writing manifest file 'brickpi3_sensors.egg-info/SOURCES.txt'
+running build_ext
+Creating /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3-sensors.egg-link (link to .)
+Installing battery_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing color_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing compass_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing differential_drive_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing gyro_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing infrared_distance_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing light_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing touch_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing ultrasonic_distance_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+
+Installed /code/brickpi/build/brickpi3_sensors
+running symlink_data

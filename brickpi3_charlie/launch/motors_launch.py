@@ -14,20 +14,36 @@ def generate_launch_description():
     robot_controllers = PathJoinSubstitution(
             [FindPackageShare("brickpi3_charlie"), "config", "controller_description.yaml"])
 
+    robot_description = {"robot_description": robot_description_content}
+
+    # control_node = Node(
+    #     package="controller_manager",
+    #     executable="ros2_control_node",
+    #     parameters=[robot_description, robot_controllers],
+    #     output="both",
+    # )
     control_node = Node(
         package="controller_manager",
         executable="ros2_control_node",
-        parameters=[robot_controllers],
+        parameters=[robot_description, robot_controllers],
         output="both",
+        remappings=[
+            ("~/cmd_vel", "/cmd_vel"),
+            ("/differential_drive_controller/cmd_vel", "/cmd_vel"),
+        ],
     )
+    # robot_controller_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=["differential_drive_controller"],
+    #     remappings=[
+    #         ("/differential_drive_controller/cmd_vel", "/cmd_vel"),
+    #     ],
+    # )
     robot_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=[
-            "differential_drive_controller",
-            "--controller-ros-args",
-            "-r /differential_drive_controller/cmd_vel:=/cmd_vel",
-        ],
+        arguments=["differential_drive_controller"],
     )
 
     robot_description = {"robot_description": robot_description_content}

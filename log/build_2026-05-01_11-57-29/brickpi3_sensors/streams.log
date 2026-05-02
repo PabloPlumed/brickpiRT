@@ -1,0 +1,64 @@
+[3.267s] Invoking command in '/code/brickpi/build/brickpi3_sensors': PYTHONPATH=/code/brickpi/build/brickpi3_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /code/brickpi/build/brickpi3_sensors/build
+[4.428s] running develop
+[5.115s] Removing /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3-sensors.egg-link (link to .)
+[5.251s] Invoked command in '/code/brickpi/build/brickpi3_sensors' returned '0': PYTHONPATH=/code/brickpi/build/brickpi3_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /code/brickpi/build/brickpi3_sensors/build
+[5.258s] Invoking command in '/code/brickpi/brickpi3_sensors': PYTHONPATH=/code/brickpi/build/brickpi3_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/brickpi3_sensors build --build-base /code/brickpi/build/brickpi3_sensors/build install --record /code/brickpi/build/brickpi3_sensors/install.log --single-version-externally-managed install_data --force
+[6.341s] running egg_info
+[6.344s] writing ../build/brickpi3_sensors/brickpi3_sensors.egg-info/PKG-INFO
+[6.345s] writing dependency_links to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/dependency_links.txt
+[6.347s] writing entry points to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/entry_points.txt
+[6.348s] writing requirements to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/requires.txt
+[6.349s] writing top-level names to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/top_level.txt
+[6.358s] reading manifest file '../build/brickpi3_sensors/brickpi3_sensors.egg-info/SOURCES.txt'
+[6.363s] writing manifest file '../build/brickpi3_sensors/brickpi3_sensors.egg-info/SOURCES.txt'
+[6.364s] running build
+[6.364s] running build_py
+[6.365s] creating /code/brickpi/build/brickpi3_sensors/build
+[6.366s] creating /code/brickpi/build/brickpi3_sensors/build/lib
+[6.367s] creating /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+[6.367s] copying brickpi3_sensors/ultrasonic_distance_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+[6.368s] copying brickpi3_sensors/touch_sensor_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+[6.369s] copying brickpi3_sensors/light_sensor_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+[6.370s] copying brickpi3_sensors/infrared_distance_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+[6.370s] copying brickpi3_sensors/compass_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+[6.371s] copying brickpi3_sensors/battery_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+[6.372s] copying brickpi3_sensors/color_sensor_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+[6.373s] copying brickpi3_sensors/__init__.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+[6.374s] copying brickpi3_sensors/gyro_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+[6.376s] running install
+[6.377s] running install_lib
+[6.381s] creating /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+[6.382s] copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/ultrasonic_distance_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+[6.383s] copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/touch_sensor_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+[6.384s] copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/light_sensor_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+[6.385s] copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/infrared_distance_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+[6.387s] copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/compass_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+[6.388s] copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/battery_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+[6.389s] copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/color_sensor_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+[6.390s] copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/__init__.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+[6.390s] copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/gyro_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+[6.393s] byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/ultrasonic_distance_node.py to ultrasonic_distance_node.cpython-310.pyc
+[6.397s] byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/touch_sensor_node.py to touch_sensor_node.cpython-310.pyc
+[6.400s] byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/light_sensor_node.py to light_sensor_node.cpython-310.pyc
+[6.403s] byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/infrared_distance_node.py to infrared_distance_node.cpython-310.pyc
+[6.406s] byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/compass_node.py to compass_node.cpython-310.pyc
+[6.409s] byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/battery_node.py to battery_node.cpython-310.pyc
+[6.411s] byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/color_sensor_node.py to color_sensor_node.cpython-310.pyc
+[6.415s] byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/__init__.py to __init__.cpython-310.pyc
+[6.416s] byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/gyro_node.py to gyro_node.cpython-310.pyc
+[6.420s] running install_data
+[6.420s] copying resource/brickpi3_sensors -> /code/brickpi/install/brickpi3_sensors/share/ament_index/resource_index/packages
+[6.421s] copying package.xml -> /code/brickpi/install/brickpi3_sensors/share/brickpi3_sensors
+[6.422s] running install_egg_info
+[6.430s] Copying ../build/brickpi3_sensors/brickpi3_sensors.egg-info to /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors-0.0.0-py3.10.egg-info
+[6.438s] running install_scripts
+[6.530s] Installing battery_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[6.531s] Installing color_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[6.532s] Installing compass_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[6.534s] Installing differential_drive_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[6.535s] Installing gyro_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[6.536s] Installing infrared_distance_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[6.537s] Installing touch_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[6.538s] Installing ultrasonic_distance_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[6.541s] writing list of installed files to '/code/brickpi/build/brickpi3_sensors/install.log'
+[6.667s] Invoked command in '/code/brickpi/brickpi3_sensors' returned '0': PYTHONPATH=/code/brickpi/build/brickpi3_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/brickpi3_sensors build --build-base /code/brickpi/build/brickpi3_sensors/build install --record /code/brickpi/build/brickpi3_sensors/install.log --single-version-externally-managed install_data --force

@@ -211,6 +211,19 @@ rt_ros2/fast:
 .PHONY : rt_ros2/fast
 
 #=============================================================================
+# Target rules for targets named nodo_test
+
+# Build rule for target.
+nodo_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nodo_test
+.PHONY : nodo_test
+
+# fast build rule for target.
+nodo_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_test.dir/build.make CMakeFiles/nodo_test.dir/build
+.PHONY : nodo_test/fast
+
+#=============================================================================
 # Target rules for targets named quill
 
 # Build rule for target.
@@ -321,6 +334,30 @@ src/nodo_maquina_estados.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.s
 .PHONY : src/nodo_maquina_estados.cpp.s
 
+test/nodo_test.o: test/nodo_test.cpp.o
+.PHONY : test/nodo_test.o
+
+# target to build an object file
+test/nodo_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_test.dir/build.make CMakeFiles/nodo_test.dir/test/nodo_test.cpp.o
+.PHONY : test/nodo_test.cpp.o
+
+test/nodo_test.i: test/nodo_test.cpp.i
+.PHONY : test/nodo_test.i
+
+# target to preprocess a source file
+test/nodo_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_test.dir/build.make CMakeFiles/nodo_test.dir/test/nodo_test.cpp.i
+.PHONY : test/nodo_test.cpp.i
+
+test/nodo_test.s: test/nodo_test.cpp.s
+.PHONY : test/nodo_test.s
+
+# target to generate assembly for a file
+test/nodo_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_test.dir/build.make CMakeFiles/nodo_test.dir/test/nodo_test.cpp.s
+.PHONY : test/nodo_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -338,6 +375,7 @@ help:
 	@echo "... uninstall"
 	@echo "... cactus_rt"
 	@echo "... cactus_tracing_embedded_perfetto_protos"
+	@echo "... nodo_test"
 	@echo "... quill"
 	@echo "... rt_ros2"
 	@echo "... src/main.o"
@@ -349,6 +387,9 @@ help:
 	@echo "... src/nodo_maquina_estados.o"
 	@echo "... src/nodo_maquina_estados.i"
 	@echo "... src/nodo_maquina_estados.s"
+	@echo "... test/nodo_test.o"
+	@echo "... test/nodo_test.i"
+	@echo "... test/nodo_test.s"
 .PHONY : help
 
 

@@ -25,6 +25,7 @@ setup(
         'console_scripts': [
             "battery_node = brickpi3_sensors.battery_node",
             "color_sensor_node = brickpi3_sensors.color_sensor_node",
+            "light_sensor_node = brickpi3_sensors.light_sensor_node",
             "compass_node = brickpi3_sensors.compass_node",
             "differential_drive_node = brickpi3_sensors.differential_drive_node",
             "gyro_node = brickpi3_sensors.gyro_node",

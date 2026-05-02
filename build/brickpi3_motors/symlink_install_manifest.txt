@@ -1,4 +1,6 @@
 /code/brickpi/install/brickpi3_motors/share/brickpi3_motors//brickpi3_motors.xml
+/code/brickpi/install/brickpi3_motors/include/brickpi3_motors/.DS_Store
+/code/brickpi/install/brickpi3_motors/include/brickpi3_motors/._.DS_Store
 /code/brickpi/install/brickpi3_motors/include/brickpi3_motors/brickpi3_motors/brickpi3_motors.hpp
 /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/environment/library_path.sh
 /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/environment/library_path.dsv
