@@ -1,6 +1,0 @@
-/code/brickpi/rt_ros2/install/rt_ros2/include/readerwriterqueue/atomicops.h
-/code/brickpi/rt_ros2/install/rt_ros2/include/readerwriterqueue/readerwriterqueue.h
-/code/brickpi/rt_ros2/install/rt_ros2/include/readerwriterqueue/readerwritercircularbuffer.h
-/code/brickpi/rt_ros2/install/rt_ros2/include/readerwriterqueue/LICENSE.md
-/code/brickpi/rt_ros2/install/rt_ros2/lib/rt_ros2/rt_ros2
-/code/brickpi/rt_ros2/install/rt_ros2/lib/rt_ros2/nodo_test

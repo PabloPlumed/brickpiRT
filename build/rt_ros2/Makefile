@@ -211,6 +211,32 @@ rt_ros2/fast:
 .PHONY : rt_ros2/fast
 
 #=============================================================================
+# Target rules for targets named main_rt
+
+# Build rule for target.
+main_rt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_rt
+.PHONY : main_rt
+
+# fast build rule for target.
+main_rt/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/build
+.PHONY : main_rt/fast
+
+#=============================================================================
+# Target rules for targets named main_be
+
+# Build rule for target.
+main_be: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_be
+.PHONY : main_be
+
+# fast build rule for target.
+main_be/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/build
+.PHONY : main_be/fast
+
+#=============================================================================
 # Target rules for targets named nodo_test
 
 # Build rule for target.
@@ -286,12 +312,62 @@ src/main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/main.cc.s
 .PHONY : src/main.cc.s
 
+src/mainBE.o: src/mainBE.cc.o
+.PHONY : src/mainBE.o
+
+# target to build an object file
+src/mainBE.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/mainBE.cc.o
+.PHONY : src/mainBE.cc.o
+
+src/mainBE.i: src/mainBE.cc.i
+.PHONY : src/mainBE.i
+
+# target to preprocess a source file
+src/mainBE.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/mainBE.cc.i
+.PHONY : src/mainBE.cc.i
+
+src/mainBE.s: src/mainBE.cc.s
+.PHONY : src/mainBE.s
+
+# target to generate assembly for a file
+src/mainBE.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/mainBE.cc.s
+.PHONY : src/mainBE.cc.s
+
+src/mainRT.o: src/mainRT.cc.o
+.PHONY : src/mainRT.o
+
+# target to build an object file
+src/mainRT.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/mainRT.cc.o
+.PHONY : src/mainRT.cc.o
+
+src/mainRT.i: src/mainRT.cc.i
+.PHONY : src/mainRT.i
+
+# target to preprocess a source file
+src/mainRT.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/mainRT.cc.i
+.PHONY : src/mainRT.cc.i
+
+src/mainRT.s: src/mainRT.cc.s
+.PHONY : src/mainRT.s
+
+# target to generate assembly for a file
+src/mainRT.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/mainRT.cc.s
+.PHONY : src/mainRT.cc.s
+
 src/nodo_actuador.o: src/nodo_actuador.cpp.o
 .PHONY : src/nodo_actuador.o
 
 # target to build an object file
 src/nodo_actuador.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_actuador.cpp.o
 .PHONY : src/nodo_actuador.cpp.o
 
 src/nodo_actuador.i: src/nodo_actuador.cpp.i
@@ -300,6 +376,8 @@ src/nodo_actuador.i: src/nodo_actuador.cpp.i
 # target to preprocess a source file
 src/nodo_actuador.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_actuador.cpp.i
 .PHONY : src/nodo_actuador.cpp.i
 
 src/nodo_actuador.s: src/nodo_actuador.cpp.s
@@ -308,6 +386,8 @@ src/nodo_actuador.s: src/nodo_actuador.cpp.s
 # target to generate assembly for a file
 src/nodo_actuador.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_actuador.cpp.s
 .PHONY : src/nodo_actuador.cpp.s
 
 src/nodo_maquina_estados.o: src/nodo_maquina_estados.cpp.o
@@ -316,6 +396,8 @@ src/nodo_maquina_estados.o: src/nodo_maquina_estados.cpp.o
 # target to build an object file
 src/nodo_maquina_estados.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_maquina_estados.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_maquina_estados.cpp.o
 .PHONY : src/nodo_maquina_estados.cpp.o
 
 src/nodo_maquina_estados.i: src/nodo_maquina_estados.cpp.i
@@ -324,6 +406,8 @@ src/nodo_maquina_estados.i: src/nodo_maquina_estados.cpp.i
 # target to preprocess a source file
 src/nodo_maquina_estados.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_maquina_estados.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_maquina_estados.cpp.i
 .PHONY : src/nodo_maquina_estados.cpp.i
 
 src/nodo_maquina_estados.s: src/nodo_maquina_estados.cpp.s
@@ -332,6 +416,8 @@ src/nodo_maquina_estados.s: src/nodo_maquina_estados.cpp.s
 # target to generate assembly for a file
 src/nodo_maquina_estados.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_maquina_estados.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_maquina_estados.cpp.s
 .PHONY : src/nodo_maquina_estados.cpp.s
 
 test/nodo_test.o: test/nodo_test.cpp.o
@@ -375,12 +461,20 @@ help:
 	@echo "... uninstall"
 	@echo "... cactus_rt"
 	@echo "... cactus_tracing_embedded_perfetto_protos"
+	@echo "... main_be"
+	@echo "... main_rt"
 	@echo "... nodo_test"
 	@echo "... quill"
 	@echo "... rt_ros2"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/mainBE.o"
+	@echo "... src/mainBE.i"
+	@echo "... src/mainBE.s"
+	@echo "... src/mainRT.o"
+	@echo "... src/mainRT.i"
+	@echo "... src/mainRT.s"
 	@echo "... src/nodo_actuador.o"
 	@echo "... src/nodo_actuador.i"
 	@echo "... src/nodo_actuador.s"

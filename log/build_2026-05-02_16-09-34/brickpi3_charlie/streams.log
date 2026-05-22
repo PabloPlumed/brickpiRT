@@ -1,0 +1,28 @@
+[3.187s] Invoking command in '/code/brickpi/build/brickpi3_charlie': CMAKE_PREFIX_PATH=/code/brickpi/install/brickpi3_motors:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/rt_ros2/install/rt_ros2 LD_LIBRARY_PATH=/code/brickpi/install/brickpi3_motors/lib:/code/brickpi/install/ev3_sensor_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/code/brickpi/build/brickpi3_charlie/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /code/brickpi/build/brickpi3_charlie/build --no-deps symlink_data
+[4.572s] running develop
+[5.301s] running egg_info
+[5.302s] creating brickpi3_charlie.egg-info
+[5.302s] writing brickpi3_charlie.egg-info/PKG-INFO
+[5.303s] writing dependency_links to brickpi3_charlie.egg-info/dependency_links.txt
+[5.304s] writing entry points to brickpi3_charlie.egg-info/entry_points.txt
+[5.305s] writing requirements to brickpi3_charlie.egg-info/requires.txt
+[5.306s] writing top-level names to brickpi3_charlie.egg-info/top_level.txt
+[5.306s] writing manifest file 'brickpi3_charlie.egg-info/SOURCES.txt'
+[5.314s] reading manifest file 'brickpi3_charlie.egg-info/SOURCES.txt'
+[5.317s] writing manifest file 'brickpi3_charlie.egg-info/SOURCES.txt'
+[5.325s] running build_ext
+[5.326s] Creating /code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages/brickpi3-charlie.egg-link (link to .)
+[5.331s] 
+[5.332s] Installed /code/brickpi/build/brickpi3_charlie
+[5.333s] running symlink_data
+[5.333s] creating /code/brickpi/install/brickpi3_charlie/share/ament_index
+[5.334s] creating /code/brickpi/install/brickpi3_charlie/share/ament_index/resource_index
+[5.335s] creating /code/brickpi/install/brickpi3_charlie/share/ament_index/resource_index/packages
+[5.336s] symbolically linking /code/brickpi/build/brickpi3_charlie/resource/brickpi3_charlie -> /code/brickpi/install/brickpi3_charlie/share/ament_index/resource_index/packages
+[5.336s] symbolically linking /code/brickpi/build/brickpi3_charlie/package.xml -> /code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie
+[5.337s] creating /code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/launch
+[5.338s] symbolically linking /code/brickpi/build/brickpi3_charlie/launch/motors_launch.py -> /code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/launch
+[5.340s] creating /code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/config
+[5.341s] symbolically linking /code/brickpi/build/brickpi3_charlie/config/controller_description.yaml -> /code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/config
+[5.342s] symbolically linking /code/brickpi/build/brickpi3_charlie/config/robot_hardware_description.urdf -> /code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/config
+[5.480s] Invoked command in '/code/brickpi/build/brickpi3_charlie' returned '0': CMAKE_PREFIX_PATH=/code/brickpi/install/brickpi3_motors:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/rt_ros2/install/rt_ros2 LD_LIBRARY_PATH=/code/brickpi/install/brickpi3_motors/lib:/code/brickpi/install/ev3_sensor_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/code/brickpi/build/brickpi3_charlie/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /code/brickpi/build/brickpi3_charlie/build --no-deps symlink_data

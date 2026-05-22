@@ -6,7 +6,7 @@ from launch.substitutions import PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
-    # Utilizar fichero de launch de charlie para levantar los motores
+    # 1. Incluir el launch de los motores de Charlie
     motors_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             PathJoinSubstitution([
@@ -17,7 +17,7 @@ def generate_launch_description():
         ])
     )
 
-    # Launch del sensor de luz en el puerto 2
+    # 2. Nodo del sensor de luz
     light_sensor_node = Node(
         package='brickpi3_sensors',
         executable='light_sensor_node',

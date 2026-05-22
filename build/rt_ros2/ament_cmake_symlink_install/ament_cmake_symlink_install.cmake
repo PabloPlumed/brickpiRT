@@ -318,8 +318,53 @@ message(STATUS "Execute custom install script")
 # install(FILES "atomicops.h" "readerwriterqueue.h" "readerwritercircularbuffer.h" "LICENSE.md" "DESTINATION" "include/readerwriterqueue")
 ament_cmake_symlink_install_files("/code/brickpi/rt_ros2/vendor/readerwriterqueue" FILES "atomicops.h" "readerwriterqueue.h" "readerwritercircularbuffer.h" "LICENSE.md" "DESTINATION" "include/readerwriterqueue")
 
-# install("TARGETS" "rt_ros2" "DESTINATION" "lib/rt_ros2")
+# install("TARGETS" "rt_ros2" "main_rt" "main_be" "DESTINATION" "lib/rt_ros2")
 include("/code/brickpi/build/rt_ros2/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(DIRECTORY "launch/" "DESTINATION" "share/rt_ros2")
+ament_cmake_symlink_install_directory("/code/brickpi/rt_ros2" DIRECTORY "launch/" "DESTINATION" "share/rt_ros2")
 
 # install("TARGETS" "nodo_test" "DESTINATION" "lib/rt_ros2")
 include("/code/brickpi/build/rt_ros2/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(FILES "/code/brickpi/build/rt_ros2/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rt_ros2" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/code/brickpi/rt_ros2" FILES "/code/brickpi/build/rt_ros2/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rt_ros2" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+
+# install(FILES "/code/brickpi/build/rt_ros2/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/rt_ros2" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/code/brickpi/rt_ros2" FILES "/code/brickpi/build/rt_ros2/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/rt_ros2" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/rt_ros2/environment")
+ament_cmake_symlink_install_files("/code/brickpi/rt_ros2" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/rt_ros2/environment")
+
+# install(FILES "/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/rt_ros2/environment")
+ament_cmake_symlink_install_files("/code/brickpi/rt_ros2" FILES "/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/rt_ros2/environment")
+
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/rt_ros2/environment")
+ament_cmake_symlink_install_files("/code/brickpi/rt_ros2" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/rt_ros2/environment")
+
+# install(FILES "/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/rt_ros2/environment")
+ament_cmake_symlink_install_files("/code/brickpi/rt_ros2" FILES "/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/rt_ros2/environment")
+
+# install(FILES "/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/rt_ros2")
+ament_cmake_symlink_install_files("/code/brickpi/rt_ros2" FILES "/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/rt_ros2")
+
+# install(FILES "/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/rt_ros2")
+ament_cmake_symlink_install_files("/code/brickpi/rt_ros2" FILES "/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/rt_ros2")
+
+# install(FILES "/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/rt_ros2")
+ament_cmake_symlink_install_files("/code/brickpi/rt_ros2" FILES "/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/rt_ros2")
+
+# install(FILES "/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/rt_ros2")
+ament_cmake_symlink_install_files("/code/brickpi/rt_ros2" FILES "/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/rt_ros2")
+
+# install(FILES "/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/rt_ros2")
+ament_cmake_symlink_install_files("/code/brickpi/rt_ros2" FILES "/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/rt_ros2")
+
+# install(FILES "/code/brickpi/build/rt_ros2/ament_cmake_index/share/ament_index/resource_index/packages/rt_ros2" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/code/brickpi/rt_ros2" FILES "/code/brickpi/build/rt_ros2/ament_cmake_index/share/ament_index/resource_index/packages/rt_ros2" "DESTINATION" "share/ament_index/resource_index/packages")
+
+# install(FILES "/code/brickpi/build/rt_ros2/ament_cmake_core/rt_ros2Config.cmake" "/code/brickpi/build/rt_ros2/ament_cmake_core/rt_ros2Config-version.cmake" "DESTINATION" "share/rt_ros2/cmake")
+ament_cmake_symlink_install_files("/code/brickpi/rt_ros2" FILES "/code/brickpi/build/rt_ros2/ament_cmake_core/rt_ros2Config.cmake" "/code/brickpi/build/rt_ros2/ament_cmake_core/rt_ros2Config-version.cmake" "DESTINATION" "share/rt_ros2/cmake")
+
+# install(FILES "/code/brickpi/rt_ros2/package.xml" "DESTINATION" "share/rt_ros2")
+ament_cmake_symlink_install_files("/code/brickpi/rt_ros2" FILES "/code/brickpi/rt_ros2/package.xml" "DESTINATION" "share/rt_ros2")

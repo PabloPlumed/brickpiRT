@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/code/brickpi/build/rt_ros2/ament_cmake_environment_hooks/path.dsv

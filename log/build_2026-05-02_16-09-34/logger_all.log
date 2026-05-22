@@ -1,0 +1,436 @@
+[0.497s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.497s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb589ae90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb589a9b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb589a9b0>>)
+[1.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.304s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/code/brickpi'
+[1.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.305s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.305s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.358s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_charlie) by extensions ['ignore', 'ignore_ament_install']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_charlie) by extension 'ignore'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_charlie) by extension 'ignore_ament_install'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_charlie) by extensions ['colcon_pkg']
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_charlie) by extension 'colcon_pkg'
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_charlie) by extensions ['colcon_meta']
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_charlie) by extension 'colcon_meta'
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_charlie) by extensions ['ros']
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_charlie) by extension 'ros'
+[1.378s] DEBUG:colcon.colcon_core.package_identification:Package 'brickpi3_charlie' with type 'ros.ament_python' and name 'brickpi3_charlie'
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_motors) by extensions ['ignore', 'ignore_ament_install']
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_motors) by extension 'ignore'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_motors) by extension 'ignore_ament_install'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_motors) by extensions ['colcon_pkg']
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_motors) by extension 'colcon_pkg'
+[1.382s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_motors) by extensions ['colcon_meta']
+[1.382s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_motors) by extension 'colcon_meta'
+[1.382s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_motors) by extensions ['ros']
+[1.382s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_motors) by extension 'ros'
+[1.385s] DEBUG:colcon.colcon_core.package_identification:Package 'brickpi3_motors' with type 'ros.ament_cmake' and name 'brickpi3_motors'
+[1.386s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_sensors) by extensions ['ignore', 'ignore_ament_install']
+[1.387s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_sensors) by extension 'ignore'
+[1.387s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_sensors) by extension 'ignore_ament_install'
+[1.387s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_sensors) by extensions ['colcon_pkg']
+[1.387s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_sensors) by extension 'colcon_pkg'
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_sensors) by extensions ['colcon_meta']
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_sensors) by extension 'colcon_meta'
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_sensors) by extensions ['ros']
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(brickpi3_sensors) by extension 'ros'
+[1.391s] DEBUG:colcon.colcon_core.package_identification:Package 'brickpi3_sensors' with type 'ros.ament_python' and name 'brickpi3_sensors'
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.393s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['ignore', 'ignore_ament_install']
+[1.393s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'ignore'
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'ignore_ament_install'
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['colcon_pkg']
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'colcon_pkg'
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['colcon_meta']
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'colcon_meta'
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['ros']
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'ros'
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['cmake', 'python']
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'cmake'
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'python'
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['python_setup_py']
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'python_setup_py'
+[1.397s] Level 1:colcon.colcon_core.package_identification:_identify(docker/brickpi3) by extensions ['ignore', 'ignore_ament_install']
+[1.397s] Level 1:colcon.colcon_core.package_identification:_identify(docker/brickpi3) by extension 'ignore'
+[1.398s] Level 1:colcon.colcon_core.package_identification:_identify(docker/brickpi3) by extension 'ignore_ament_install'
+[1.398s] Level 1:colcon.colcon_core.package_identification:_identify(docker/brickpi3) by extensions ['colcon_pkg']
+[1.398s] Level 1:colcon.colcon_core.package_identification:_identify(docker/brickpi3) by extension 'colcon_pkg'
+[1.398s] Level 1:colcon.colcon_core.package_identification:_identify(docker/brickpi3) by extensions ['colcon_meta']
+[1.398s] Level 1:colcon.colcon_core.package_identification:_identify(docker/brickpi3) by extension 'colcon_meta'
+[1.399s] Level 1:colcon.colcon_core.package_identification:_identify(docker/brickpi3) by extensions ['ros']
+[1.399s] Level 1:colcon.colcon_core.package_identification:_identify(docker/brickpi3) by extension 'ros'
+[1.399s] Level 1:colcon.colcon_core.package_identification:_identify(docker/brickpi3) by extensions ['cmake', 'python']
+[1.400s] Level 1:colcon.colcon_core.package_identification:_identify(docker/brickpi3) by extension 'cmake'
+[1.400s] Level 1:colcon.colcon_core.package_identification:_identify(docker/brickpi3) by extension 'python'
+[1.400s] Level 1:colcon.colcon_core.package_identification:_identify(docker/brickpi3) by extensions ['python_setup_py']
+[1.400s] Level 1:colcon.colcon_core.package_identification:_identify(docker/brickpi3) by extension 'python_setup_py'
+[1.401s] Level 1:colcon.colcon_core.package_identification:_identify(ev3_sensor_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.401s] Level 1:colcon.colcon_core.package_identification:_identify(ev3_sensor_msgs) by extension 'ignore'
+[1.402s] Level 1:colcon.colcon_core.package_identification:_identify(ev3_sensor_msgs) by extension 'ignore_ament_install'
+[1.402s] Level 1:colcon.colcon_core.package_identification:_identify(ev3_sensor_msgs) by extensions ['colcon_pkg']
+[1.402s] Level 1:colcon.colcon_core.package_identification:_identify(ev3_sensor_msgs) by extension 'colcon_pkg'
+[1.402s] Level 1:colcon.colcon_core.package_identification:_identify(ev3_sensor_msgs) by extensions ['colcon_meta']
+[1.402s] Level 1:colcon.colcon_core.package_identification:_identify(ev3_sensor_msgs) by extension 'colcon_meta'
+[1.403s] Level 1:colcon.colcon_core.package_identification:_identify(ev3_sensor_msgs) by extensions ['ros']
+[1.403s] Level 1:colcon.colcon_core.package_identification:_identify(ev3_sensor_msgs) by extension 'ros'
+[1.405s] DEBUG:colcon.colcon_core.package_identification:Package 'ev3_sensor_msgs' with type 'ros.ament_cmake' and name 'ev3_sensor_msgs'
+[1.406s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.407s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.407s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.408s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.408s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.409s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.409s] Level 1:colcon.colcon_core.package_identification:_identify(rt_ros2) by extensions ['ignore', 'ignore_ament_install']
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(rt_ros2) by extension 'ignore'
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(rt_ros2) by extension 'ignore_ament_install'
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(rt_ros2) by extensions ['colcon_pkg']
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(rt_ros2) by extension 'colcon_pkg'
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(rt_ros2) by extensions ['colcon_meta']
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(rt_ros2) by extension 'colcon_meta'
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(rt_ros2) by extensions ['ros']
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(rt_ros2) by extension 'ros'
+[1.415s] DEBUG:colcon.colcon_core.package_identification:Package 'rt_ros2' with type 'ros.ament_cmake' and name 'rt_ros2'
+[1.416s] Level 1:colcon.colcon_core.package_identification:_identify(trazas) by extensions ['ignore', 'ignore_ament_install']
+[1.416s] Level 1:colcon.colcon_core.package_identification:_identify(trazas) by extension 'ignore'
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(trazas) by extension 'ignore_ament_install'
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(trazas) by extensions ['colcon_pkg']
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(trazas) by extension 'colcon_pkg'
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(trazas) by extensions ['colcon_meta']
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(trazas) by extension 'colcon_meta'
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(trazas) by extensions ['ros']
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(trazas) by extension 'ros'
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(trazas) by extensions ['cmake', 'python']
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(trazas) by extension 'cmake'
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(trazas) by extension 'python'
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(trazas) by extensions ['python_setup_py']
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(trazas) by extension 'python_setup_py'
+[1.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.510s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.511s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.515s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/code/brickpi/rt_ros2/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[1.516s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/code/brickpi/install/ev3_sensor_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.516s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/code/brickpi/install/brickpi3_sensors' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.517s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/code/brickpi/install/brickpi3_charlie' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.517s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/code/brickpi/install/brickpi3_motors' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.517s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/code/brickpi/rt_ros2/install/rt_ros2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.518s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/code/brickpi/install/ev3_sensor_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.518s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/code/brickpi/install/brickpi3_motors' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.518s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/code/brickpi/rt_ros2/install/rt_ros2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.523s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /code/brickpi/install
+[1.531s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 200 installed packages in /opt/ros/humble
+[1.537s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.726s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_motors' build argument 'cmake_args' from command line to 'None'
+[1.726s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_motors' build argument 'cmake_target' from command line to 'None'
+[1.726s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_motors' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.726s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_motors' build argument 'cmake_clean_cache' from command line to 'False'
+[1.727s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_motors' build argument 'cmake_clean_first' from command line to 'False'
+[1.727s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_motors' build argument 'cmake_force_configure' from command line to 'False'
+[1.727s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_motors' build argument 'ament_cmake_args' from command line to 'None'
+[1.727s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_motors' build argument 'catkin_cmake_args' from command line to 'None'
+[1.727s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_motors' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.727s] DEBUG:colcon.colcon_core.verb:Building package 'brickpi3_motors' with the following arguments: {'ament_cmake_args': None, 'build_base': '/code/brickpi/build/brickpi3_motors', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/code/brickpi/install/brickpi3_motors', 'merge_install': False, 'path': '/code/brickpi/brickpi3_motors', 'symlink_install': True, 'test_result_base': None}
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_sensors' build argument 'cmake_args' from command line to 'None'
+[1.729s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_sensors' build argument 'cmake_target' from command line to 'None'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_sensors' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_sensors' build argument 'cmake_clean_cache' from command line to 'False'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_sensors' build argument 'cmake_clean_first' from command line to 'False'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_sensors' build argument 'cmake_force_configure' from command line to 'False'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_sensors' build argument 'ament_cmake_args' from command line to 'None'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_sensors' build argument 'catkin_cmake_args' from command line to 'None'
+[1.730s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_sensors' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.731s] DEBUG:colcon.colcon_core.verb:Building package 'brickpi3_sensors' with the following arguments: {'ament_cmake_args': None, 'build_base': '/code/brickpi/build/brickpi3_sensors', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/code/brickpi/install/brickpi3_sensors', 'merge_install': False, 'path': '/code/brickpi/brickpi3_sensors', 'symlink_install': True, 'test_result_base': None}
+[1.732s] Level 5:colcon.colcon_core.verb:set package 'ev3_sensor_msgs' build argument 'cmake_args' from command line to 'None'
+[1.733s] Level 5:colcon.colcon_core.verb:set package 'ev3_sensor_msgs' build argument 'cmake_target' from command line to 'None'
+[1.733s] Level 5:colcon.colcon_core.verb:set package 'ev3_sensor_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.733s] Level 5:colcon.colcon_core.verb:set package 'ev3_sensor_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.733s] Level 5:colcon.colcon_core.verb:set package 'ev3_sensor_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.733s] Level 5:colcon.colcon_core.verb:set package 'ev3_sensor_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.733s] Level 5:colcon.colcon_core.verb:set package 'ev3_sensor_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.733s] Level 5:colcon.colcon_core.verb:set package 'ev3_sensor_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.734s] Level 5:colcon.colcon_core.verb:set package 'ev3_sensor_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.734s] DEBUG:colcon.colcon_core.verb:Building package 'ev3_sensor_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/code/brickpi/build/ev3_sensor_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/code/brickpi/install/ev3_sensor_msgs', 'merge_install': False, 'path': '/code/brickpi/ev3_sensor_msgs', 'symlink_install': True, 'test_result_base': None}
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'rt_ros2' build argument 'cmake_args' from command line to 'None'
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'rt_ros2' build argument 'cmake_target' from command line to 'None'
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'rt_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'rt_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'rt_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'rt_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'rt_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[1.737s] Level 5:colcon.colcon_core.verb:set package 'rt_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[1.737s] Level 5:colcon.colcon_core.verb:set package 'rt_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.737s] DEBUG:colcon.colcon_core.verb:Building package 'rt_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/code/brickpi/build/rt_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/code/brickpi/install/rt_ros2', 'merge_install': False, 'path': '/code/brickpi/rt_ros2', 'symlink_install': True, 'test_result_base': None}
+[1.739s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_charlie' build argument 'cmake_args' from command line to 'None'
+[1.739s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_charlie' build argument 'cmake_target' from command line to 'None'
+[1.739s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_charlie' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.739s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_charlie' build argument 'cmake_clean_cache' from command line to 'False'
+[1.739s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_charlie' build argument 'cmake_clean_first' from command line to 'False'
+[1.739s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_charlie' build argument 'cmake_force_configure' from command line to 'False'
+[1.739s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_charlie' build argument 'ament_cmake_args' from command line to 'None'
+[1.740s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_charlie' build argument 'catkin_cmake_args' from command line to 'None'
+[1.740s] Level 5:colcon.colcon_core.verb:set package 'brickpi3_charlie' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.740s] DEBUG:colcon.colcon_core.verb:Building package 'brickpi3_charlie' with the following arguments: {'ament_cmake_args': None, 'build_base': '/code/brickpi/build/brickpi3_charlie', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/code/brickpi/install/brickpi3_charlie', 'merge_install': False, 'path': '/code/brickpi/brickpi3_charlie', 'symlink_install': True, 'test_result_base': None}
+[1.741s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.744s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.746s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/code/brickpi/brickpi3_motors' with build type 'ament_cmake'
+[1.747s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/code/brickpi/brickpi3_motors'
+[1.758s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.759s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.759s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.777s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/code/brickpi/brickpi3_sensors' with build type 'ament_python'
+[1.777s] Level 1:colcon.colcon_core.shell:create_environment_hook('brickpi3_sensors', 'ament_prefix_path')
+[1.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_sensors/share/brickpi3_sensors/hook/ament_prefix_path.ps1'
+[1.783s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/install/brickpi3_sensors/share/brickpi3_sensors/hook/ament_prefix_path.dsv'
+[1.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_sensors/share/brickpi3_sensors/hook/ament_prefix_path.sh'
+[1.790s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.790s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.808s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/code/brickpi/ev3_sensor_msgs' with build type 'ament_cmake'
+[1.809s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/code/brickpi/ev3_sensor_msgs'
+[1.810s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.811s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.828s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/code/brickpi/rt_ros2' with build type 'ament_cmake'
+[1.829s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/code/brickpi/rt_ros2'
+[1.830s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.831s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/code/brickpi/build/brickpi3_motors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake /code/brickpi/brickpi3_motors -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/code/brickpi/install/brickpi3_motors
+[3.461s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/code/brickpi/brickpi3_sensors'
+[3.464s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.464s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/code/brickpi/build/ev3_sensor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake /code/brickpi/ev3_sensor_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/code/brickpi/install/ev3_sensor_msgs
+[3.569s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[5.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/code/brickpi/build/rt_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[5.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/rt_ros2
+[5.830s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rt_ros2)
+[5.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/code/brickpi/build/rt_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/rt_ros2
+[5.851s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/rt_ros2' for CMake module files
+[5.855s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/rt_ros2' for CMake config files
+[5.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('rt_ros2', 'cmake_prefix_path')
+[5.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/rt_ros2/share/rt_ros2/hook/cmake_prefix_path.ps1'
+[5.867s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/install/rt_ros2/share/rt_ros2/hook/cmake_prefix_path.dsv'
+[5.871s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/rt_ros2/share/rt_ros2/hook/cmake_prefix_path.sh'
+[5.876s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/rt_ros2/lib'
+[5.878s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/rt_ros2/bin'
+[5.879s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/rt_ros2/lib/pkgconfig/rt_ros2.pc'
+[5.880s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/rt_ros2/lib/python3.10/site-packages'
+[5.883s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/rt_ros2/bin'
+[5.886s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/rt_ros2/share/rt_ros2/package.ps1'
+[5.894s] INFO:colcon.colcon_core.shell:Creating package descriptor '/code/brickpi/install/rt_ros2/share/rt_ros2/package.dsv'
+[5.899s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/rt_ros2/share/rt_ros2/package.sh'
+[5.904s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/rt_ros2/share/rt_ros2/package.bash'
+[5.909s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/rt_ros2/share/rt_ros2/package.zsh'
+[5.915s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/code/brickpi/install/rt_ros2/share/colcon-core/packages/rt_ros2)
+[5.920s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rt_ros2)
+[5.922s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/rt_ros2' for CMake module files
+[5.932s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/rt_ros2' for CMake config files
+[5.937s] Level 1:colcon.colcon_core.shell:create_environment_hook('rt_ros2', 'cmake_prefix_path')
+[5.939s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/rt_ros2/share/rt_ros2/hook/cmake_prefix_path.ps1'
+[5.952s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/install/rt_ros2/share/rt_ros2/hook/cmake_prefix_path.dsv'
+[5.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/rt_ros2/share/rt_ros2/hook/cmake_prefix_path.sh'
+[5.959s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/rt_ros2/lib'
+[5.960s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/rt_ros2/bin'
+[5.961s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/rt_ros2/lib/pkgconfig/rt_ros2.pc'
+[5.964s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/rt_ros2/lib/python3.10/site-packages'
+[5.969s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/rt_ros2/bin'
+[5.981s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/rt_ros2/share/rt_ros2/package.ps1'
+[5.986s] INFO:colcon.colcon_core.shell:Creating package descriptor '/code/brickpi/install/rt_ros2/share/rt_ros2/package.dsv'
+[5.990s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/rt_ros2/share/rt_ros2/package.sh'
+[5.996s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/rt_ros2/share/rt_ros2/package.bash'
+[6.001s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/rt_ros2/share/rt_ros2/package.zsh'
+[6.005s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/code/brickpi/install/rt_ros2/share/colcon-core/packages/rt_ros2)
+[7.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/code/brickpi/build/brickpi3_sensors': PYTHONPATH=/code/brickpi/build/brickpi3_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /code/brickpi/build/brickpi3_sensors/build --no-deps symlink_data
+[10.280s] Level 1:colcon.colcon_core.shell:create_environment_hook('brickpi3_sensors', 'pythonpath_develop')
+[10.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/build/brickpi3_sensors/share/brickpi3_sensors/hook/pythonpath_develop.ps1'
+[10.283s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/code/brickpi/build/brickpi3_sensors' returned '0': PYTHONPATH=/code/brickpi/build/brickpi3_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /code/brickpi/build/brickpi3_sensors/build --no-deps symlink_data
+[10.286s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/build/brickpi3_sensors/share/brickpi3_sensors/hook/pythonpath_develop.dsv'
+[10.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/build/brickpi3_sensors/share/brickpi3_sensors/hook/pythonpath_develop.sh'
+[10.293s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_sensors' for CMake module files
+[10.297s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_sensors' for CMake config files
+[10.301s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_sensors/lib'
+[10.302s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_sensors/bin'
+[10.303s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_sensors/lib/pkgconfig/brickpi3_sensors.pc'
+[10.304s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages'
+[10.305s] Level 1:colcon.colcon_core.shell:create_environment_hook('brickpi3_sensors', 'pythonpath')
+[10.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_sensors/share/brickpi3_sensors/hook/pythonpath.ps1'
+[10.309s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/install/brickpi3_sensors/share/brickpi3_sensors/hook/pythonpath.dsv'
+[10.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_sensors/share/brickpi3_sensors/hook/pythonpath.sh'
+[10.315s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_sensors/bin'
+[10.316s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(brickpi3_sensors)
+[10.318s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_sensors/share/brickpi3_sensors/package.ps1'
+[10.321s] INFO:colcon.colcon_core.shell:Creating package descriptor '/code/brickpi/install/brickpi3_sensors/share/brickpi3_sensors/package.dsv'
+[10.325s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_sensors/share/brickpi3_sensors/package.sh'
+[10.328s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_sensors/share/brickpi3_sensors/package.bash'
+[10.333s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_sensors/share/brickpi3_sensors/package.zsh'
+[10.335s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/code/brickpi/install/brickpi3_sensors/share/colcon-core/packages/brickpi3_sensors)
+[10.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/code/brickpi/build/brickpi3_motors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake /code/brickpi/brickpi3_motors -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/code/brickpi/install/brickpi3_motors
+[10.879s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/code/brickpi/build/brickpi3_motors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/brickpi3_motors -- -j4 -l4
+[16.314s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/code/brickpi/build/ev3_sensor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake /code/brickpi/ev3_sensor_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/code/brickpi/install/ev3_sensor_msgs
+[16.323s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/code/brickpi/build/ev3_sensor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/ev3_sensor_msgs -- -j4 -l4
+[39.066s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/code/brickpi/build/ev3_sensor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/ev3_sensor_msgs -- -j4 -l4
+[39.077s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/code/brickpi/build/ev3_sensor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/ev3_sensor_msgs
+[42.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/code/brickpi/build/brickpi3_motors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/brickpi3_motors -- -j4 -l4
+[42.396s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/code/brickpi/build/brickpi3_motors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/brickpi3_motors
+[43.199s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ev3_sensor_msgs)
+[43.201s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/ev3_sensor_msgs' for CMake module files
+[43.204s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/code/brickpi/build/ev3_sensor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/ev3_sensor_msgs
+[43.209s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/ev3_sensor_msgs' for CMake config files
+[43.217s] Level 1:colcon.colcon_core.shell:create_environment_hook('ev3_sensor_msgs', 'cmake_prefix_path')
+[43.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/hook/cmake_prefix_path.ps1'
+[43.221s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/hook/cmake_prefix_path.dsv'
+[43.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/hook/cmake_prefix_path.sh'
+[43.227s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/ev3_sensor_msgs/lib'
+[43.228s] Level 1:colcon.colcon_core.shell:create_environment_hook('ev3_sensor_msgs', 'ld_library_path_lib')
+[43.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/hook/ld_library_path_lib.ps1'
+[43.232s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/hook/ld_library_path_lib.dsv'
+[43.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/hook/ld_library_path_lib.sh'
+[43.238s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/ev3_sensor_msgs/bin'
+[43.239s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/ev3_sensor_msgs/lib/pkgconfig/ev3_sensor_msgs.pc'
+[43.240s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/ev3_sensor_msgs/lib/python3.10/site-packages'
+[43.242s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/ev3_sensor_msgs/bin'
+[43.245s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/package.ps1'
+[43.248s] INFO:colcon.colcon_core.shell:Creating package descriptor '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/package.dsv'
+[43.252s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/package.sh'
+[43.255s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/package.bash'
+[43.257s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/package.zsh'
+[43.260s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/code/brickpi/install/ev3_sensor_msgs/share/colcon-core/packages/ev3_sensor_msgs)
+[43.264s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ev3_sensor_msgs)
+[43.265s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/ev3_sensor_msgs' for CMake module files
+[43.270s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/ev3_sensor_msgs' for CMake config files
+[43.279s] Level 1:colcon.colcon_core.shell:create_environment_hook('ev3_sensor_msgs', 'cmake_prefix_path')
+[43.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/hook/cmake_prefix_path.ps1'
+[43.283s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/hook/cmake_prefix_path.dsv'
+[43.286s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/hook/cmake_prefix_path.sh'
+[43.291s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/ev3_sensor_msgs/lib'
+[43.293s] Level 1:colcon.colcon_core.shell:create_environment_hook('ev3_sensor_msgs', 'ld_library_path_lib')
+[43.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/hook/ld_library_path_lib.ps1'
+[43.297s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/hook/ld_library_path_lib.dsv'
+[43.300s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/hook/ld_library_path_lib.sh'
+[43.302s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/ev3_sensor_msgs/bin'
+[43.303s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/ev3_sensor_msgs/lib/pkgconfig/ev3_sensor_msgs.pc'
+[43.304s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/ev3_sensor_msgs/lib/python3.10/site-packages'
+[43.307s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/ev3_sensor_msgs/bin'
+[43.309s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/package.ps1'
+[43.314s] INFO:colcon.colcon_core.shell:Creating package descriptor '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/package.dsv'
+[43.318s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/package.sh'
+[43.322s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/package.bash'
+[43.325s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/package.zsh'
+[43.329s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/code/brickpi/install/ev3_sensor_msgs/share/colcon-core/packages/ev3_sensor_msgs)
+[43.469s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(brickpi3_motors)
+[43.470s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_motors' for CMake module files
+[43.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/code/brickpi/build/brickpi3_motors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/brickpi3_motors
+[43.475s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_motors' for CMake config files
+[43.477s] Level 1:colcon.colcon_core.shell:create_environment_hook('brickpi3_motors', 'cmake_prefix_path')
+[43.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/hook/cmake_prefix_path.ps1'
+[43.480s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/hook/cmake_prefix_path.dsv'
+[43.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/hook/cmake_prefix_path.sh'
+[43.485s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_motors/lib'
+[43.486s] Level 1:colcon.colcon_core.shell:create_environment_hook('brickpi3_motors', 'ld_library_path_lib')
+[43.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/hook/ld_library_path_lib.ps1'
+[43.489s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/hook/ld_library_path_lib.dsv'
+[43.491s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/hook/ld_library_path_lib.sh'
+[43.493s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_motors/bin'
+[43.493s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_motors/lib/pkgconfig/brickpi3_motors.pc'
+[43.495s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_motors/lib/python3.10/site-packages'
+[43.496s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_motors/bin'
+[43.498s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/package.ps1'
+[43.500s] INFO:colcon.colcon_core.shell:Creating package descriptor '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/package.dsv'
+[43.503s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/package.sh'
+[43.505s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/package.bash'
+[43.507s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/package.zsh'
+[43.509s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/code/brickpi/install/brickpi3_motors/share/colcon-core/packages/brickpi3_motors)
+[43.512s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(brickpi3_motors)
+[43.513s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_motors' for CMake module files
+[43.517s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_motors' for CMake config files
+[43.519s] Level 1:colcon.colcon_core.shell:create_environment_hook('brickpi3_motors', 'cmake_prefix_path')
+[43.520s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/hook/cmake_prefix_path.ps1'
+[43.522s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/hook/cmake_prefix_path.dsv'
+[43.524s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/hook/cmake_prefix_path.sh'
+[43.528s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_motors/lib'
+[43.528s] Level 1:colcon.colcon_core.shell:create_environment_hook('brickpi3_motors', 'ld_library_path_lib')
+[43.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/hook/ld_library_path_lib.ps1'
+[43.532s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/hook/ld_library_path_lib.dsv'
+[43.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/hook/ld_library_path_lib.sh'
+[43.536s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_motors/bin'
+[43.537s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_motors/lib/pkgconfig/brickpi3_motors.pc'
+[43.538s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_motors/lib/python3.10/site-packages'
+[43.540s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_motors/bin'
+[43.542s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/package.ps1'
+[43.546s] INFO:colcon.colcon_core.shell:Creating package descriptor '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/package.dsv'
+[43.549s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/package.sh'
+[43.552s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/package.bash'
+[43.554s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_motors/share/brickpi3_motors/package.zsh'
+[43.557s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/code/brickpi/install/brickpi3_motors/share/colcon-core/packages/brickpi3_motors)
+[43.558s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/code/brickpi/brickpi3_charlie' with build type 'ament_python'
+[43.559s] Level 1:colcon.colcon_core.shell:create_environment_hook('brickpi3_charlie', 'ament_prefix_path')
+[43.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/hook/ament_prefix_path.ps1'
+[43.565s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/hook/ament_prefix_path.dsv'
+[43.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/hook/ament_prefix_path.sh'
+[43.571s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[43.571s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[44.892s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/code/brickpi/brickpi3_charlie'
+[44.893s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[44.893s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[46.751s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/code/brickpi/build/brickpi3_charlie': CMAKE_PREFIX_PATH=/code/brickpi/install/brickpi3_motors:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/rt_ros2/install/rt_ros2 LD_LIBRARY_PATH=/code/brickpi/install/brickpi3_motors/lib:/code/brickpi/install/ev3_sensor_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/code/brickpi/build/brickpi3_charlie/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /code/brickpi/build/brickpi3_charlie/build --no-deps symlink_data
+[49.041s] Level 1:colcon.colcon_core.shell:create_environment_hook('brickpi3_charlie', 'pythonpath_develop')
+[49.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/build/brickpi3_charlie/share/brickpi3_charlie/hook/pythonpath_develop.ps1'
+[49.045s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/code/brickpi/build/brickpi3_charlie' returned '0': CMAKE_PREFIX_PATH=/code/brickpi/install/brickpi3_motors:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/rt_ros2/install/rt_ros2 LD_LIBRARY_PATH=/code/brickpi/install/brickpi3_motors/lib:/code/brickpi/install/ev3_sensor_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/code/brickpi/build/brickpi3_charlie/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /code/brickpi/build/brickpi3_charlie/build --no-deps symlink_data
+[49.048s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/build/brickpi3_charlie/share/brickpi3_charlie/hook/pythonpath_develop.dsv'
+[49.051s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/build/brickpi3_charlie/share/brickpi3_charlie/hook/pythonpath_develop.sh'
+[49.056s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_charlie' for CMake module files
+[49.061s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_charlie' for CMake config files
+[49.067s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_charlie/lib'
+[49.068s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_charlie/bin'
+[49.069s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_charlie/lib/pkgconfig/brickpi3_charlie.pc'
+[49.071s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages'
+[49.072s] Level 1:colcon.colcon_core.shell:create_environment_hook('brickpi3_charlie', 'pythonpath')
+[49.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/hook/pythonpath.ps1'
+[49.077s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/hook/pythonpath.dsv'
+[49.080s] INFO:colcon.colcon_core.shell:Creating environment hook '/code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/hook/pythonpath.sh'
+[49.087s] Level 1:colcon.colcon_core.environment:checking '/code/brickpi/install/brickpi3_charlie/bin'
+[49.088s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(brickpi3_charlie)
+[49.090s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/package.ps1'
+[49.093s] INFO:colcon.colcon_core.shell:Creating package descriptor '/code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/package.dsv'
+[49.096s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/package.sh'
+[49.098s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/package.bash'
+[49.100s] INFO:colcon.colcon_core.shell:Creating package script '/code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/package.zsh'
+[49.103s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/code/brickpi/install/brickpi3_charlie/share/colcon-core/packages/brickpi3_charlie)
+[49.105s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[49.106s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[49.107s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[49.107s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[49.132s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[49.132s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[49.133s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[49.134s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[49.137s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[49.138s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[49.139s] INFO:colcon.colcon_core.shell:Creating prefix script '/code/brickpi/install/local_setup.ps1'
+[49.144s] INFO:colcon.colcon_core.shell:Creating prefix util module '/code/brickpi/install/_local_setup_util_ps1.py'
+[49.151s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/code/brickpi/install/setup.ps1'
+[49.158s] INFO:colcon.colcon_core.shell:Creating prefix script '/code/brickpi/install/local_setup.sh'
+[49.161s] INFO:colcon.colcon_core.shell:Creating prefix util module '/code/brickpi/install/_local_setup_util_sh.py'
+[49.164s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/code/brickpi/install/setup.sh'
+[49.172s] INFO:colcon.colcon_core.shell:Creating prefix script '/code/brickpi/install/local_setup.bash'
+[49.175s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/code/brickpi/install/setup.bash'
+[49.181s] INFO:colcon.colcon_core.shell:Creating prefix script '/code/brickpi/install/local_setup.zsh'
+[49.184s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/code/brickpi/install/setup.zsh'

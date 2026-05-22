@@ -1,2 +1,0 @@
-Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
-Invoked command in '/code/brickpi/build/rt_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4

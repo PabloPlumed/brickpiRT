@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4972f57cc45acd22c2dd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "ev3_sensor_msgs__py",
+					"jsonFile" : "directory-ev3_sensor_msgs__py-abdc9462163bfdcfb360.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/code/brickpi/build/ev3_sensor_msgs/ev3_sensor_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "ev3_sensor_msgs__rs",
+					"jsonFile" : "directory-ev3_sensor_msgs__rs-d5d98aa8f7ab29b5982f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/code/brickpi/build/ev3_sensor_msgs/ev3_sensor_msgs__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "ev3_sensor_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ev3_sensor_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ev3_sensor_msgs_egg-db5eb5b82f80f3aa2981.json",
+					"name" : "ament_cmake_python_build_ev3_sensor_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_ev3_sensor_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_ev3_sensor_msgs-34599525fe41eda9bba9.json",
+					"name" : "ament_cmake_python_symlink_ev3_sensor_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ev3_sensor_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ev3_sensor_msgs-6066f635da9e22b1a93b.json",
+					"name" : "ev3_sensor_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ev3_sensor_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ev3_sensor_msgs__cpp-27fc62bd094feeda0714.json",
+					"name" : "ev3_sensor_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ev3_sensor_msgs__py::@bfad9778c5ab86819c4b",
+					"jsonFile" : "target-ev3_sensor_msgs__py-224acc3b9899551a8e32.json",
+					"name" : "ev3_sensor_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ev3_sensor_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ev3_sensor_msgs__rosidl_generator_c-eebe7360a91fd53e8845.json",
+					"name" : "ev3_sensor_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ev3_sensor_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ev3_sensor_msgs__rosidl_generator_py-5acd6a54dbec3682ddc6.json",
+					"name" : "ev3_sensor_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ev3_sensor_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ev3_sensor_msgs__rosidl_typesupport_c-f2854ce694865884e0d0.json",
+					"name" : "ev3_sensor_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ev3_sensor_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ev3_sensor_msgs__rosidl_typesupport_c__pyext-71834d60121f641f3421.json",
+					"name" : "ev3_sensor_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ev3_sensor_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ev3_sensor_msgs__rosidl_typesupport_cpp-d621c9e7b4bde120c490.json",
+					"name" : "ev3_sensor_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ev3_sensor_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ev3_sensor_msgs__rosidl_typesupport_fastrtps_c-96068fa487c2d30ab0f7.json",
+					"name" : "ev3_sensor_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ev3_sensor_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ev3_sensor_msgs__rosidl_typesupport_fastrtps_c__pyext-7bb7cd8d3ea26cdbbf9c.json",
+					"name" : "ev3_sensor_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ev3_sensor_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ev3_sensor_msgs__rosidl_typesupport_fastrtps_cpp-4062e880f650f3e1d120.json",
+					"name" : "ev3_sensor_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ev3_sensor_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ev3_sensor_msgs__rosidl_typesupport_introspection_c-7fb20f5922606d798876.json",
+					"name" : "ev3_sensor_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ev3_sensor_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ev3_sensor_msgs__rosidl_typesupport_introspection_c__pyext-d9da25a4e11c99db2973.json",
+					"name" : "ev3_sensor_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ev3_sensor_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ev3_sensor_msgs__rosidl_typesupport_introspection_cpp-151a5bffffd5f59ddbec.json",
+					"name" : "ev3_sensor_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ev3_sensor_msgs__rs::@fe2fb03e1fe3c28aaa7c",
+					"jsonFile" : "target-ev3_sensor_msgs__rs-b6c45014cc473d276d8c.json",
+					"name" : "ev3_sensor_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ev3_sensor_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ev3_sensor_msgs_uninstall-457b6716cc68856243b5.json",
+					"name" : "ev3_sensor_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-cb0846375ed1b2fe4c5e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/code/brickpi/build/ev3_sensor_msgs",
+		"source" : "/code/brickpi/ev3_sensor_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
