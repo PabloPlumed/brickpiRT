@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /code/brickpi/build
 all: CMakeFiles/rt_ros2.dir/all
 all: CMakeFiles/main_rt.dir/all
 all: CMakeFiles/main_be.dir/all
+all: CMakeFiles/nodo_ruido.dir/all
 all: CMakeFiles/nodo_test.dir/all
 all: vendor/all
 .PHONY : all
@@ -80,6 +81,7 @@ clean: CMakeFiles/rt_ros2_uninstall.dir/clean
 clean: CMakeFiles/rt_ros2.dir/clean
 clean: CMakeFiles/main_rt.dir/clean
 clean: CMakeFiles/main_be.dir/clean
+clean: CMakeFiles/nodo_ruido.dir/clean
 clean: CMakeFiles/nodo_test.dir/clean
 clean: vendor/clean
 .PHONY : clean
@@ -243,7 +245,7 @@ CMakeFiles/rt_ros2.dir/all: vendor/cactus-rt/CMakeFiles/cactus_rt.dir/all
 CMakeFiles/rt_ros2.dir/all: vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/code/brickpi/build/CMakeFiles --progress-num=62,63,64,65 "Built target rt_ros2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/code/brickpi/build/CMakeFiles --progress-num=64,65,66,67 "Built target rt_ros2"
 .PHONY : CMakeFiles/rt_ros2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -319,13 +321,41 @@ CMakeFiles/main_be.dir/clean:
 .PHONY : CMakeFiles/main_be.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/nodo_ruido.dir
+
+# All Build rule for target.
+CMakeFiles/nodo_ruido.dir/all: vendor/quill/quill/CMakeFiles/quill.dir/all
+CMakeFiles/nodo_ruido.dir/all: vendor/cactus-rt/CMakeFiles/cactus_rt.dir/all
+CMakeFiles/nodo_ruido.dir/all: vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_ruido.dir/build.make CMakeFiles/nodo_ruido.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_ruido.dir/build.make CMakeFiles/nodo_ruido.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/code/brickpi/build/CMakeFiles --progress-num=35,36 "Built target nodo_ruido"
+.PHONY : CMakeFiles/nodo_ruido.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/nodo_ruido.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /code/brickpi/build/CMakeFiles 53
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nodo_ruido.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /code/brickpi/build/CMakeFiles 0
+.PHONY : CMakeFiles/nodo_ruido.dir/rule
+
+# Convenience name for target.
+nodo_ruido: CMakeFiles/nodo_ruido.dir/rule
+.PHONY : nodo_ruido
+
+# clean rule for target.
+CMakeFiles/nodo_ruido.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_ruido.dir/build.make CMakeFiles/nodo_ruido.dir/clean
+.PHONY : CMakeFiles/nodo_ruido.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/nodo_test.dir
 
 # All Build rule for target.
 CMakeFiles/nodo_test.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_test.dir/build.make CMakeFiles/nodo_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_test.dir/build.make CMakeFiles/nodo_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/code/brickpi/build/CMakeFiles --progress-num=35,36 "Built target nodo_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/code/brickpi/build/CMakeFiles --progress-num=37,38 "Built target nodo_test"
 .PHONY : CMakeFiles/nodo_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -351,7 +381,7 @@ CMakeFiles/nodo_test.dir/clean:
 vendor/quill/quill/CMakeFiles/quill.dir/all:
 	$(MAKE) $(MAKESILENT) -f vendor/quill/quill/CMakeFiles/quill.dir/build.make vendor/quill/quill/CMakeFiles/quill.dir/depend
 	$(MAKE) $(MAKESILENT) -f vendor/quill/quill/CMakeFiles/quill.dir/build.make vendor/quill/quill/CMakeFiles/quill.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/code/brickpi/build/CMakeFiles --progress-num=37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61 "Built target quill"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/code/brickpi/build/CMakeFiles --progress-num=39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63 "Built target quill"
 .PHONY : vendor/quill/quill/CMakeFiles/quill.dir/all
 
 # Build rule for subdir invocation for target.

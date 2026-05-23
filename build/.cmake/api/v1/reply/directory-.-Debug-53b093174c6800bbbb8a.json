@@ -36,25 +36,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 59,
+				"line" : 63,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 67,
+				"line" : 72,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 78,
+				"line" : 83,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 81,
+				"line" : 86,
 				"parent" : 0
 			},
 			{
@@ -244,7 +244,7 @@
 				"rt_ros2"
 			],
 			"targetId" : "rt_ros2::@6890427a1f51a3e7e1df",
-			"targetIndex" : 6,
+			"targetIndex" : 7,
 			"type" : "target"
 		},
 		{
@@ -272,6 +272,18 @@
 			"type" : "target"
 		},
 		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/rt_ros2",
+			"paths" : 
+			[
+				"nodo_ruido"
+			],
+			"targetId" : "nodo_ruido::@6890427a1f51a3e7e1df",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
 			"backtrace" : 2,
 			"component" : "Unspecified",
 			"destination" : "share/rt_ros2",
@@ -293,7 +305,7 @@
 				"nodo_test"
 			],
 			"targetId" : "nodo_test::@6890427a1f51a3e7e1df",
-			"targetIndex" : 4,
+			"targetIndex" : 5,
 			"type" : "target"
 		},
 		{

@@ -11,7 +11,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
-# FIND DEPENDENCIES
+# Busqueda de dependencias
 set(THIS_PACKAGE_INCLUDE_DEPENDS
   rclcpp
   sensor_msgs
@@ -19,34 +19,38 @@ set(THIS_PACKAGE_INCLUDE_DEPENDS
   std_msgs
 )
 
-# VENDOR (para cactus-rt)
+# VENDOR 
 add_subdirectory(vendor)
 
 # --- EJECUTABLES ---
 
-# 1. Ejecutable original
+# Ejecutable original
 add_executable(rt_ros2
   src/main.cc
   src/nodo_actuador.cpp
   src/nodo_maquina_estados.cpp
 )
 
-# 2. Ejecutable para experimentos de Tiempo Real (RT)
+# Ejecutable para experimentos RT
 add_executable(main_rt
   src/mainRT.cc
   src/nodo_actuador.cpp
   src/nodo_maquina_estados.cpp
 )
 
-# 3. Ejecutable para experimentos Normales (Best-Effort)
+# Ejecutable para experimentos normales
 add_executable(main_be
   src/mainBE.cc
   src/nodo_actuador.cpp
   src/nodo_maquina_estados.cpp
 )
 
-# Configuración de los ejecutables
-foreach(exe rt_ros2 main_rt main_be)
+# Ejecutable para introducir ruido en los experimentos
+add_executable(nodo_ruido
+  src/nodo_ruido.cpp
+)
+
+foreach(exe rt_ros2 main_rt main_be nodo_ruido)
   target_include_directories(${exe} PRIVATE include)
   target_compile_features(${exe} PRIVATE cxx_std_17)
   ament_target_dependencies(${exe} ${THIS_PACKAGE_INCLUDE_DEPENDS})
@@ -60,10 +64,11 @@ install(TARGETS
   rt_ros2
   main_rt
   main_be
+  nodo_ruido
   DESTINATION lib/${PROJECT_NAME}
 )
 
-# Instalar la carpeta launch (Imprescindible para ros2 launch)
+# Instalar la carpeta launch 
 install(DIRECTORY launch/
   DESTINATION share/${PROJECT_NAME}
 )

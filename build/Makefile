@@ -237,6 +237,19 @@ main_be/fast:
 .PHONY : main_be/fast
 
 #=============================================================================
+# Target rules for targets named nodo_ruido
+
+# Build rule for target.
+nodo_ruido: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nodo_ruido
+.PHONY : nodo_ruido
+
+# fast build rule for target.
+nodo_ruido/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_ruido.dir/build.make CMakeFiles/nodo_ruido.dir/build
+.PHONY : nodo_ruido/fast
+
+#=============================================================================
 # Target rules for targets named nodo_test
 
 # Build rule for target.
@@ -420,6 +433,30 @@ src/nodo_maquina_estados.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_maquina_estados.cpp.s
 .PHONY : src/nodo_maquina_estados.cpp.s
 
+src/nodo_ruido.o: src/nodo_ruido.cpp.o
+.PHONY : src/nodo_ruido.o
+
+# target to build an object file
+src/nodo_ruido.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_ruido.dir/build.make CMakeFiles/nodo_ruido.dir/src/nodo_ruido.cpp.o
+.PHONY : src/nodo_ruido.cpp.o
+
+src/nodo_ruido.i: src/nodo_ruido.cpp.i
+.PHONY : src/nodo_ruido.i
+
+# target to preprocess a source file
+src/nodo_ruido.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_ruido.dir/build.make CMakeFiles/nodo_ruido.dir/src/nodo_ruido.cpp.i
+.PHONY : src/nodo_ruido.cpp.i
+
+src/nodo_ruido.s: src/nodo_ruido.cpp.s
+.PHONY : src/nodo_ruido.s
+
+# target to generate assembly for a file
+src/nodo_ruido.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_ruido.dir/build.make CMakeFiles/nodo_ruido.dir/src/nodo_ruido.cpp.s
+.PHONY : src/nodo_ruido.cpp.s
+
 test/nodo_test.o: test/nodo_test.cpp.o
 .PHONY : test/nodo_test.o
 
@@ -463,6 +500,7 @@ help:
 	@echo "... cactus_tracing_embedded_perfetto_protos"
 	@echo "... main_be"
 	@echo "... main_rt"
+	@echo "... nodo_ruido"
 	@echo "... nodo_test"
 	@echo "... quill"
 	@echo "... rt_ros2"
@@ -481,6 +519,9 @@ help:
 	@echo "... src/nodo_maquina_estados.o"
 	@echo "... src/nodo_maquina_estados.i"
 	@echo "... src/nodo_maquina_estados.s"
+	@echo "... src/nodo_ruido.o"
+	@echo "... src/nodo_ruido.i"
+	@echo "... src/nodo_ruido.s"
 	@echo "... test/nodo_test.o"
 	@echo "... test/nodo_test.i"
 	@echo "... test/nodo_test.s"

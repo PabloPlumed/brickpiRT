@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "main_rt"
+			"path" : "nodo_test"
 		}
 	],
 	"backtrace" : 1,
@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 35,
+				"line" : 79,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 59,
+				"line" : 83,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 52,
+				"line" : 82,
 				"parent" : 0
 			},
 			{
@@ -50,12 +50,6 @@
 				"file" : 1,
 				"line" : 145,
 				"parent" : 3
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 53,
-				"parent" : 0
 			},
 			{
 				"command" : 4,
@@ -66,7 +60,7 @@
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 50,
+				"line" : 80,
 				"parent" : 0
 			},
 			{
@@ -86,20 +80,16 @@
 					"fragment" : "-g"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 5,
 					"fragment" : "-Wall"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 5,
 					"fragment" : "-Wextra"
 				}
 			],
 			"defines" : 
 			[
-				{
-					"backtrace" : 5,
-					"define" : "CACTUS_RT_TRACING_ENABLED=1"
-				},
 				{
 					"backtrace" : 4,
 					"define" : "DEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp"
@@ -109,10 +99,6 @@
 					"define" : "FASTCDR_DYN_LINK"
 				},
 				{
-					"backtrace" : 5,
-					"define" : "QUILL_USE_BOUNDED_QUEUE"
-				},
-				{
 					"backtrace" : 4,
 					"define" : "RCUTILS_ENABLE_FAULT_INJECTION"
 				}
@@ -120,30 +106,26 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 7,
+					"backtrace" : 6,
 					"path" : "/code/brickpi/rt_ros2/include"
 				},
 				{
-					"backtrace" : 5,
-					"path" : "/code/brickpi/rt_ros2/vendor/cactus-rt/include"
-				},
-				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "/opt/ros/humble/include/rclcpp"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "/opt/ros/humble/include/sensor_msgs"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "/opt/ros/humble/include/geometry_msgs"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "/opt/ros/humble/include/std_msgs"
 				},
@@ -266,48 +248,16 @@
 					"backtrace" : 4,
 					"isSystem" : true,
 					"path" : "/opt/ros/humble/include/rosidl_typesupport_c"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/code/brickpi/rt_ros2/vendor/quill/quill/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/code/brickpi/rt_ros2/vendor/readerwriterqueue"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/code/brickpi/build/vendor/cactus-rt/protos"
 				}
 			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
-				0,
-				1,
-				2
+				0
 			]
 		}
 	],
-	"dependencies" : 
-	[
-		{
-			"backtrace" : 5,
-			"id" : "quill::@1258a61c3f23066ad3da"
-		},
-		{
-			"backtrace" : 5,
-			"id" : "cactus_rt::@23a450d1280fcf66a13e"
-		},
-		{
-			"backtrace" : 5,
-			"id" : "cactus_tracing_embedded_perfetto_protos::@b7c54c46426fb5263dc2"
-		}
-	],
-	"id" : "main_rt::@6890427a1f51a3e7e1df",
+	"id" : "nodo_test::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -416,11 +366,6 @@
 			{
 				"backtrace" : 4,
 				"fragment" : "/opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 5,
-				"fragment" : "vendor/cactus-rt/libcactus_rt.a",
 				"role" : "libraries"
 			},
 			{
@@ -687,24 +632,12 @@
 			{
 				"fragment" : "-latomic",
 				"role" : "libraries"
-			},
-			{
-				"fragment" : "vendor/quill/quill/libquill.a",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "vendor/cactus-rt/protos/libcactus_tracing_embedded_perfetto_protos.a",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "/usr/lib/aarch64-linux-gnu/libprotobuf.so",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "main_rt",
-	"nameOnDisk" : "main_rt",
+	"name" : "nodo_test",
+	"nameOnDisk" : "nodo_test",
 	"paths" : 
 	{
 		"build" : ".",
@@ -716,9 +649,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1,
-				2
+				0
 			]
 		}
 	],
@@ -727,19 +658,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/mainRT.cc",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/nodo_actuador.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/nodo_maquina_estados.cpp",
+			"path" : "test/nodo_test.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

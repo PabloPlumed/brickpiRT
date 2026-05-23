@@ -51,10 +51,10 @@ class ColorSensorNode(Node):
             value = self.bp.get_sensor(self.lego_port)
             if self.detection_mode == "REFLECTED":
                 msg = Illuminance()
-                # User measurements: Negro ~ 2.7, Blanco ~ 1.9
-                # We want Negro < 0.5 and Blanco > 0.7
-                # Formula: 3.1 - value
-                msg.illuminance = 3.1 - (float(value) / 1023.0)
+                # Normalizamos el valor del sensor, 1.0 -> blanco, 0.0 -> Negro
+                NEGRO_PURO = 2634   # Obtenidos empiricamente
+                BLANCO_PURO = 1926  
+                msg.illuminance = (NEGRO_PURO - value) / (NEGRO_PURO - BLANCO_PURO)
 
             msg.header.stamp = self.get_clock().now().to_msg()
             msg.header.frame_id = "color_sensor"
