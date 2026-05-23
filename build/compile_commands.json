@@ -1,82 +1,252 @@
 [
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
-  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/app.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/app.cc",
+  "directory": "/code/brickpi/build",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DFASTCDR_DYN_LINK -DQUILL_USE_BOUNDED_QUEUE -DRCUTILS_ENABLE_FAULT_INJECTION -I/code/brickpi/rt_ros2/include -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/rt_ros2.dir/src/main.cc.o -c /code/brickpi/rt_ros2/src/main.cc",
+  "file": "/code/brickpi/rt_ros2/src/main.cc"
+},
+{
+  "directory": "/code/brickpi/build",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DFASTCDR_DYN_LINK -DQUILL_USE_BOUNDED_QUEUE -DRCUTILS_ENABLE_FAULT_INJECTION -I/code/brickpi/rt_ros2/include -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o -c /code/brickpi/rt_ros2/src/nodo_actuador.cpp",
+  "file": "/code/brickpi/rt_ros2/src/nodo_actuador.cpp"
+},
+{
+  "directory": "/code/brickpi/build",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DFASTCDR_DYN_LINK -DQUILL_USE_BOUNDED_QUEUE -DRCUTILS_ENABLE_FAULT_INJECTION -I/code/brickpi/rt_ros2/include -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.o -c /code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp",
+  "file": "/code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp"
+},
+{
+  "directory": "/code/brickpi/build",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DFASTCDR_DYN_LINK -DQUILL_USE_BOUNDED_QUEUE -DRCUTILS_ENABLE_FAULT_INJECTION -I/code/brickpi/rt_ros2/include -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/main_rt.dir/src/mainRT.cc.o -c /code/brickpi/rt_ros2/src/mainRT.cc",
+  "file": "/code/brickpi/rt_ros2/src/mainRT.cc"
+},
+{
+  "directory": "/code/brickpi/build",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DFASTCDR_DYN_LINK -DQUILL_USE_BOUNDED_QUEUE -DRCUTILS_ENABLE_FAULT_INJECTION -I/code/brickpi/rt_ros2/include -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.o -c /code/brickpi/rt_ros2/src/nodo_actuador.cpp",
+  "file": "/code/brickpi/rt_ros2/src/nodo_actuador.cpp"
+},
+{
+  "directory": "/code/brickpi/build",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DFASTCDR_DYN_LINK -DQUILL_USE_BOUNDED_QUEUE -DRCUTILS_ENABLE_FAULT_INJECTION -I/code/brickpi/rt_ros2/include -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/main_rt.dir/src/nodo_maquina_estados.cpp.o -c /code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp",
+  "file": "/code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp"
+},
+{
+  "directory": "/code/brickpi/build",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DFASTCDR_DYN_LINK -DQUILL_USE_BOUNDED_QUEUE -DRCUTILS_ENABLE_FAULT_INJECTION -I/code/brickpi/rt_ros2/include -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/main_be.dir/src/mainBE.cc.o -c /code/brickpi/rt_ros2/src/mainBE.cc",
+  "file": "/code/brickpi/rt_ros2/src/mainBE.cc"
+},
+{
+  "directory": "/code/brickpi/build",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DFASTCDR_DYN_LINK -DQUILL_USE_BOUNDED_QUEUE -DRCUTILS_ENABLE_FAULT_INJECTION -I/code/brickpi/rt_ros2/include -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/main_be.dir/src/nodo_actuador.cpp.o -c /code/brickpi/rt_ros2/src/nodo_actuador.cpp",
+  "file": "/code/brickpi/rt_ros2/src/nodo_actuador.cpp"
+},
+{
+  "directory": "/code/brickpi/build",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DFASTCDR_DYN_LINK -DQUILL_USE_BOUNDED_QUEUE -DRCUTILS_ENABLE_FAULT_INJECTION -I/code/brickpi/rt_ros2/include -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/main_be.dir/src/nodo_maquina_estados.cpp.o -c /code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp",
+  "file": "/code/brickpi/rt_ros2/src/nodo_maquina_estados.cpp"
+},
+{
+  "directory": "/code/brickpi/build",
+  "command": "/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DFASTCDR_DYN_LINK -DRCUTILS_ENABLE_FAULT_INJECTION -I/code/brickpi/rt_ros2/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -g -Wall -Wextra -o CMakeFiles/nodo_test.dir/test/nodo_test.cpp.o -c /code/brickpi/rt_ros2/test/nodo_test.cpp",
+  "file": "/code/brickpi/rt_ros2/test/nodo_test.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/detail/backend/BackendWorker.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/detail/backend/BackendWorker.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/detail/backend/BackendWorker.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/detail/backend/BacktraceStorage.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/detail/backend/BacktraceStorage.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/detail/backend/BacktraceStorage.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/detail/backend/TimestampFormatter.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/detail/backend/TimestampFormatter.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/detail/backend/TimestampFormatter.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/detail/backend/StringFromTime.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/detail/backend/StringFromTime.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/detail/backend/StringFromTime.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/detail/backend/TransitEventBuffer.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/detail/backend/TransitEventBuffer.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/detail/backend/TransitEventBuffer.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/detail/misc/FileUtilities.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/detail/misc/FileUtilities.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/detail/misc/FileUtilities.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/detail/misc/Os.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/detail/misc/Os.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/detail/misc/Os.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/detail/misc/RdtscClock.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/detail/misc/RdtscClock.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/detail/misc/RdtscClock.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/detail/misc/Utilities.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/detail/misc/Utilities.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/detail/misc/Utilities.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/detail/HandlerCollection.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/detail/HandlerCollection.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/detail/HandlerCollection.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/detail/LoggerCollection.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/detail/LoggerCollection.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/detail/LoggerCollection.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/detail/SignalHandler.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/detail/SignalHandler.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/detail/SignalHandler.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/handlers/ConsoleHandler.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/handlers/ConsoleHandler.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/handlers/ConsoleHandler.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/handlers/FileHandler.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/handlers/FileHandler.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/handlers/FileHandler.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/handlers/Handler.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/handlers/Handler.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/handlers/Handler.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/handlers/JsonFileHandler.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/handlers/JsonFileHandler.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/handlers/JsonFileHandler.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/handlers/RotatingFileHandler.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/handlers/RotatingFileHandler.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/handlers/RotatingFileHandler.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/handlers/StreamHandler.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/handlers/StreamHandler.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/handlers/StreamHandler.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/LogLevel.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/LogLevel.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/LogLevel.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/PatternFormatter.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/PatternFormatter.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/PatternFormatter.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/Quill.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/Quill.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/Quill.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/Utility.cpp.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/Utility.cpp",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/Utility.cpp"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/bundled/fmt/format.cc.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/bundled/fmt/format.cc",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/bundled/fmt/format.cc"
+},
+{
+  "directory": "/code/brickpi/build/vendor/quill/quill",
+  "command": "/usr/bin/c++  -I/code/brickpi/rt_ros2/vendor/quill/quill/include -I/code/brickpi/rt_ros2/vendor/quill/quill -g -fPIC -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -Wno-unused-private-field -Wno-gnu-zero-variadic-macro-arguments -Wno-unused-parameter -std=gnu++17 -o CMakeFiles/quill.dir/src/bundled/fmt/os.cc.o -c /code/brickpi/rt_ros2/vendor/quill/quill/src/bundled/fmt/os.cc",
+  "file": "/code/brickpi/rt_ros2/vendor/quill/quill/src/bundled/fmt/os.cc"
+},
+{
+  "directory": "/code/brickpi/build/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/app.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/app.cc",
   "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/app.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
-  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/thread.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/thread.cc",
+  "directory": "/code/brickpi/build/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/thread.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/thread.cc",
   "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/thread.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
-  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/cyclic_thread.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/cyclic_thread.cc",
+  "directory": "/code/brickpi/build/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/cyclic_thread.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/cyclic_thread.cc",
   "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/cyclic_thread.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
-  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/signal_handler.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/signal_handler.cc",
+  "directory": "/code/brickpi/build/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/signal_handler.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/signal_handler.cc",
   "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/signal_handler.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
-  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/tracing_enabled.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/tracing_enabled.cc",
+  "directory": "/code/brickpi/build/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/tracing_enabled.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/tracing_enabled.cc",
   "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/tracing_enabled.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
-  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/sink.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/sink.cc",
+  "directory": "/code/brickpi/build/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/sink.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/sink.cc",
   "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/sink.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
-  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/thread_tracer.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/thread_tracer.cc",
+  "directory": "/code/brickpi/build/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/thread_tracer.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/thread_tracer.cc",
   "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/thread_tracer.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt",
-  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/trace_aggregator.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/trace_aggregator.cc",
+  "directory": "/code/brickpi/build/vendor/cactus-rt",
+  "command": "/usr/bin/c++ -DCACTUS_RT_TRACING_ENABLED=1 -DQUILL_USE_BOUNDED_QUEUE -I/code/brickpi/rt_ros2/vendor/cactus-rt/include -isystem /code/brickpi/rt_ros2/vendor/quill/quill/include -isystem /code/brickpi/rt_ros2/vendor/readerwriterqueue -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -o CMakeFiles/cactus_rt.dir/src/cactus_rt/tracing/trace_aggregator.cc.o -c /code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/trace_aggregator.cc",
   "file": "/code/brickpi/rt_ros2/vendor/cactus-rt/src/cactus_rt/tracing/trace_aggregator.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
-  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/trace.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/trace.pb.cc",
-  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/trace.pb.cc"
+  "directory": "/code/brickpi/build/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/trace.pb.cc.o -c /code/brickpi/build/vendor/cactus-rt/protos/trace.pb.cc",
+  "file": "/code/brickpi/build/vendor/cactus-rt/protos/trace.pb.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
-  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/trace_packet.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/trace_packet.pb.cc",
-  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/trace_packet.pb.cc"
+  "directory": "/code/brickpi/build/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/trace_packet.pb.cc.o -c /code/brickpi/build/vendor/cactus-rt/protos/trace_packet.pb.cc",
+  "file": "/code/brickpi/build/vendor/cactus-rt/protos/trace_packet.pb.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
-  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/track_descriptor.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/track_descriptor.pb.cc",
-  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/track_descriptor.pb.cc"
+  "directory": "/code/brickpi/build/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/track_descriptor.pb.cc.o -c /code/brickpi/build/vendor/cactus-rt/protos/track_descriptor.pb.cc",
+  "file": "/code/brickpi/build/vendor/cactus-rt/protos/track_descriptor.pb.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
-  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/thread_descriptor.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/thread_descriptor.pb.cc",
-  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/thread_descriptor.pb.cc"
+  "directory": "/code/brickpi/build/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/thread_descriptor.pb.cc.o -c /code/brickpi/build/vendor/cactus-rt/protos/thread_descriptor.pb.cc",
+  "file": "/code/brickpi/build/vendor/cactus-rt/protos/thread_descriptor.pb.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
-  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/process_descriptor.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/process_descriptor.pb.cc",
-  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/process_descriptor.pb.cc"
+  "directory": "/code/brickpi/build/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/process_descriptor.pb.cc.o -c /code/brickpi/build/vendor/cactus-rt/protos/process_descriptor.pb.cc",
+  "file": "/code/brickpi/build/vendor/cactus-rt/protos/process_descriptor.pb.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
-  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/counter_descriptor.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/counter_descriptor.pb.cc",
-  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/counter_descriptor.pb.cc"
+  "directory": "/code/brickpi/build/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/counter_descriptor.pb.cc.o -c /code/brickpi/build/vendor/cactus-rt/protos/counter_descriptor.pb.cc",
+  "file": "/code/brickpi/build/vendor/cactus-rt/protos/counter_descriptor.pb.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
-  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/track_event.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/track_event.pb.cc",
-  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/track_event.pb.cc"
+  "directory": "/code/brickpi/build/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/track_event.pb.cc.o -c /code/brickpi/build/vendor/cactus-rt/protos/track_event.pb.cc",
+  "file": "/code/brickpi/build/vendor/cactus-rt/protos/track_event.pb.cc"
 },
 {
-  "directory": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos",
-  "command": "/usr/bin/c++  -isystem /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos -O3 -DNDEBUG -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/source_location.pb.cc.o -c /code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/source_location.pb.cc",
-  "file": "/code/brickpi/build/rt_ros2/vendor/cactus-rt/protos/source_location.pb.cc"
+  "directory": "/code/brickpi/build/vendor/cactus-rt/protos",
+  "command": "/usr/bin/c++  -isystem /code/brickpi/build/vendor/cactus-rt/protos -g -Wall -Wextra -o CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/source_location.pb.cc.o -c /code/brickpi/build/vendor/cactus-rt/protos/source_location.pb.cc",
+  "file": "/code/brickpi/build/vendor/cactus-rt/protos/source_location.pb.cc"
 }
 ]

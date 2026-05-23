@@ -7,8 +7,8 @@ controller_manager:
 
 differential_drive_controller:
   ros__parameters:
-    left_wheel_names: ["PORT_A"]
-    right_wheel_names: ["PORT_D"]
+    left_wheel_names: ["PORT_D"]
+    right_wheel_names: ["PORT_A"]
 
     wheel_separation: 0.132
     wheel_radius: 0.02

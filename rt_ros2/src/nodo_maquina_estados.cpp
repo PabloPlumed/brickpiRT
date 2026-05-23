@@ -39,40 +39,36 @@ void NodoMaquinaEstados::color_callback(const sensor_msgs::msg::Illuminance::Sha
 
     switch (estado_actual) {
         case Estado::SEGUIR_LINEA:
-            // Si se sale de la línea, transiciona al estado recuperar
+            // Solo entra en recuperación si ve blanco puro (muy lejos de la línea)
             if (valor_sensor > UMBRAL_BLANCO) {
                 estado_actual = Estado::RECUPERAR;
                 stamp_recuperar = this->now();
-                RCLCPP_INFO(this->get_logger(), "Fuera de la línea, hay que recuperar! (iluminancia = %.2f, error = %.2f)", valor_sensor, valor_sensor - 0.5f);
+                RCLCPP_INFO(this->get_logger(), "¡Blanco puro! Perdiendo línea (valor = %.2f)", valor_sensor);
             }
             break;
 
         case Estado::RECUPERAR:
-            // Si encuentra la línea, recuperamos el estado para seguirla
-            if (valor_sensor <= UMBRAL_NEGRO) {
+            // Si ve cualquier rastro de negro, vuelve a seguir línea
+            if (valor_sensor <= UMBRAL_BLANCO) {
                 estado_actual = Estado::SEGUIR_LINEA;
-                RCLCPP_INFO(this->get_logger(), "Línea encontrada de nuevo (iluminancia = %.2f, error = %.2f)", valor_sensor, valor_sensor - 0.5f);
+                RCLCPP_INFO(this->get_logger(), "Línea o borde detectado, volviendo a control proporcional (valor = %.2f)", valor_sensor);
             }
-            // Si llevamosun rato sin encontrarla, paramos
+            // Si lleva un rato en blanco puro, paramos por seguridad
             else {
                 double secs_recuperando = (this->now() - stamp_recuperar).seconds();
                 if (secs_recuperando > RECUPERAR_TO) {
                     estado_actual = Estado::PARAR;
-                    RCLCPP_WARN(this->get_logger(), "La línea ha desaparecido, así que paramos (timeout %.1fs)", secs_recuperando);
+                    RCLCPP_WARN(this->get_logger(), "Timeout: Línea no encontrada (%.1fs)", secs_recuperando);
                 }
             }
             break;
 
         case Estado::PARAR:
-            RCLCPP_INFO(this->get_logger(), "ROBOT PARADO (iluminancia = %.2f, error = %.2f)", valor_sensor, valor_sensor - 0.5f);
             if (valor_sensor <= UMBRAL_BLANCO) {
                 estado_actual = Estado::SEGUIR_LINEA;
-                RCLCPP_INFO(this->get_logger(), "Estoy en una linea de nuevo, seguimos siguiendo (iluminancia = %.2f, error = %.2f)", valor_sensor, valor_sensor - 0.5f);
+                RCLCPP_INFO(this->get_logger(), "Reiniciando seguimiento (valor = %.2f)", valor_sensor);
             }
             break;
-        
-        default:
-            RCLCPP_WARN(this->get_logger(), "¡ESTADO NO DEFINIDO!");
     }
 }
 
@@ -84,22 +80,22 @@ void NodoMaquinaEstados::publicar_estado_robot()
     // Publicar topic /robot_estado
     auto topic_estado = std_msgs::msg::String();
     switch (estado_actual) {
-        case Estado::SEGUIR_LINEA:
-            topic_estado.data = "SEGUIR_LINEA";
-            break;
-        case Estado::RECUPERAR:
-            topic_estado.data = "RECUPERAR";
-            break;
-        case Estado::PARAR:
-            topic_estado.data = "PARAR";
-            break;
+        case Estado::SEGUIR_LINEA: topic_estado.data = "SEGUIR_LINEA"; break;
+        case Estado::RECUPERAR:    topic_estado.data = "RECUPERAR";    break;
+        case Estado::PARAR:        topic_estado.data = "PARAR";        break;
     }
     robot_estado->publish(topic_estado);
 
     // Publicar topic /error_pos
     auto topic_error = std_msgs::msg::Float32();
-    // error_pos = {-0.5, ..., 0.5}, 0.0 centrado (cuanto más cercano a los extramos, gira más)
-    topic_error.data = valor_sensor - 0.5f;
+    
+    // IMPORTANTE: Definimos el "Punto de ajuste" (Set Point)
+    // Si el sensor da 0.6 (más blanco que negro), el error será positivo (0.1) -> giro a un lado.
+    // Si el sensor da 0.4 (más negro que blanco), el error será negativo (-0.1) -> giro al otro.
+    // Si el sensor da 0.5 (mitad y mitad), el error es 0.0 -> recto.
+    float set_point = 0.5f; 
+    topic_error.data = valor_sensor - set_point;
+    
     error_pos->publish(topic_error);
 }
 

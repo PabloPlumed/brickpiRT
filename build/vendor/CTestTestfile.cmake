@@ -1,0 +1,9 @@
+# CMake generated Testfile for 
+# Source directory: /code/brickpi/rt_ros2/vendor
+# Build directory: /code/brickpi/build/vendor
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+subdirs("quill")
+subdirs("readerwriterqueue")
+subdirs("cactus-rt")

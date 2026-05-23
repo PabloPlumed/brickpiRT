@@ -1,0 +1,46 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"vendor/readerwriterqueue/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/readerwriterqueue",
+			"paths" : 
+			[
+				"vendor/readerwriterqueue/atomicops.h",
+				"vendor/readerwriterqueue/readerwriterqueue.h",
+				"vendor/readerwriterqueue/readerwritercircularbuffer.h",
+				"vendor/readerwriterqueue/LICENSE.md"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "vendor/readerwriterqueue",
+		"source" : "vendor/readerwriterqueue"
+	}
+}

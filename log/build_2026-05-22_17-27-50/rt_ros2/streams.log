@@ -1,0 +1,7 @@
+[0.053s] Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[0.288s] gmake[1]: *** [CMakeFiles/Makefile2:406: vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/all] Interrupt
+[0.289s] gmake[1]: *** [CMakeFiles/Makefile2:327: CMakeFiles/nodo_test.dir/all] Interrupt
+[0.290s] gmake[2]: *** [vendor/quill/quill/CMakeFiles/quill.dir/build.make:477: vendor/quill/quill/CMakeFiles/quill.dir/depend] Interrupt
+[0.291s] gmake[1]: *** [CMakeFiles/Makefile2:352: vendor/quill/quill/CMakeFiles/quill.dir/all] Interrupt
+[0.292s] gmake: *** [Makefile:146: all] Interrupt
+[0.299s] Invoked command in '/code/brickpi/build/rt_ros2' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4

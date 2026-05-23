@@ -1,9 +1,9 @@
 #include "rt_ros2/nodo_actuador.h"
 
-#define KP            2.0f        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
-#define VEL_LINEAL    0.1f        // Velocidad lineal base cuando sigue la línea
-#define VEL_REC       0.05f       // Velocidad lineal cuando tiene que recuperar la línea
-#define VEL_ANGULAR   (KP * 2.0f) // Velocidad angular el doble de agresiva al recuperar
+#define KP            0.5f        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
+#define VEL_LINEAL    0.03f       // Velocidad lineal base cuando sigue la línea
+#define VEL_REC       0.02f       // Velocidad lineal cuando tiene que recuperar la línea
+#define VEL_ANGULAR   0.3f // Velocidad angular el doble de agresiva al recuperar
 #define TAM_COLA_ROS  10          // Tamaño del buffer antes de descartar los mensajes más viejos
 #define FREC_TOPIC_MS 50          // Frecuencia a la que se publica un topic (en ms, no en Hz)
 
@@ -57,17 +57,21 @@ void NodoActuador::publicar_cmd_vel()
     auto topic_vel = geometry_msgs::msg::TwistStamped();
     topic_vel.header.stamp = this->now();
 
-    // Si esta siguiendo la línea, hace corrección sutil
+    // LÓGICA PROPORCIONAL: 
+    // Siempre corregimos el ángulo basándonos en el error.
+    // Si error_actual > 0 (más blanco), angular.z será positivo/negativo para girar hacia la línea.
     if (estado_actual == "SEGUIR_LINEA") {
         topic_vel.twist.linear.x  = VEL_LINEAL;
-        topic_vel.twist.angular.z = -KP * error_actual;
+        // El signo de KP dependerá de hacia qué lado quieres que gire el robot cuando vea blanco.
+        // Si el sensor está a la derecha del eje central: blanco -> girar izquierda (angular.z positivo)
+        topic_vel.twist.angular.z = -KP * error_actual; 
     } 
-    // Si tiene que recuperar la posición, giro más agresivo y disminuye la velocidad lineal
+    // Si ha perdido la línea por completo (blanco puro)
     else if (estado_actual == "RECUPERAR") {
         topic_vel.twist.linear.x  = VEL_REC;
-        topic_vel.twist.angular.z = -VEL_ANGULAR * (error_actual >= 0 ? 1.0f : -1.0f);
+        // Gira en la última dirección conocida o hacia donde cree que está la línea
+        topic_vel.twist.angular.z = (error_actual >= 0) ? -VEL_ANGULAR : VEL_ANGULAR;
     } 
-    // En cualquier otro estado (PARAR), detenemos el movimiento
     else {
         topic_vel.twist.linear.x = topic_vel.twist.angular.z = 0.0;
     }
