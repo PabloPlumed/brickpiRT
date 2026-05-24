@@ -1,0 +1,40 @@
+[  2%] Built target nodo_test
+[ 28%] Built target cactus_tracing_embedded_perfetto_protos
+[ 65%] Built target quill
+[ 79%] Built target cactus_rt
+[35m[1mConsolidate compiler generated dependencies of target main_rt[0m
+[35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[35m[1mConsolidate compiler generated dependencies of target main_be[0m
+[ 82%] Built target nodo_ruido
+[ 83%] [32mBuilding CXX object CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/main_be.dir/src/nodo_actuador.cpp.o[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o[0m
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:[m[K In member function ‘[01m[Kvoid rt_ros2::NodoActuador::publicar_cmd_vel()[m[K’:
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:3:23:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+    3 | #define KP            [01;31m[K1f[m[K        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
+      |                       [01;31m[K^~[m[K
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:3:23:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KKP[m[K’
+    3 | #define KP            [01;36m[K1f[m[K        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
+      |                       [01;36m[K^~[m[K
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:[m[K In member function ‘[01m[Kvoid rt_ros2::NodoActuador::publicar_cmd_vel()[m[K’:
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:3:23:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+    3 | #define KP            [01;31m[K1f[m[K        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
+      |                       [01;31m[K^~[m[K
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:3:23:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KKP[m[K’
+    3 | #define KP            [01;36m[K1f[m[K        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
+      |                       [01;36m[K^~[m[K
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:[m[K In member function ‘[01m[Kvoid rt_ros2::NodoActuador::publicar_cmd_vel()[m[K’:
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:3:23:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+    3 | #define KP            [01;31m[K1f[m[K        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
+      |                       [01;31m[K^~[m[K
+[01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:3:23:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KKP[m[K’
+    3 | #define KP            [01;36m[K1f[m[K        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
+      |                       [01;36m[K^~[m[K
+gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:90: CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:247: CMakeFiles/rt_ros2.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/main_rt.dir/build.make:90: CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:275: CMakeFiles/main_rt.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/main_be.dir/build.make:90: CMakeFiles/main_be.dir/src/nodo_actuador.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:303: CMakeFiles/main_be.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

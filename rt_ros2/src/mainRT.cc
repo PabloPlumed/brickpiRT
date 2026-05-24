@@ -43,10 +43,11 @@ int main(int argc, char ** argv)
     rclcpp::executors::SingleThreadedExecutor best_effort_executor;
    
     // Añadimos nodos que queramos que sean best effort
-    best_effort_executor.add_node(nodo_me);
+    //best_effort_executor.add_node(nodo_me);
 
     // Añadimos nodos que queramos que sean real time
     real_time_executor.add_node(nodo_act);
+    real_time_executor.add_node(nodo_me);
 
     // Launch real-time Executor in a thread
     std::thread real_time_thread([&real_time_executor]() {

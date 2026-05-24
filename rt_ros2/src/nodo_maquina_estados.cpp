@@ -4,7 +4,7 @@
 #define UMBRAL_BLANCO 0.7f  // Por encima de esta valor, se ha salido de la línea
 #define RECUPERAR_TO  10.0   // Timeout en segundos del estado de recuperar, si lo supera, el robot se para
 #define TAM_COLA_ROS  10    // Tamaño del buffer antes de descartar los mensajes más viejos
-#define FREC_TOPIC_MS 100   // Frecuencia a la que se publica un topic (en ms, no en Hz)
+#define FREC_TOPIC_MS 50    // Frecuencia a la que se publica un topic (en ms, no en Hz)
 
 namespace rt_ros2
 {
@@ -70,6 +70,9 @@ void NodoMaquinaEstados::color_callback(const sensor_msgs::msg::Illuminance::Sha
             }
             break;
     }
+    
+    // Publico directramente el estado del robot, buscando reacción más rápida
+    publicar_estado_robot();
 }
 
 void NodoMaquinaEstados::publicar_estado_robot()

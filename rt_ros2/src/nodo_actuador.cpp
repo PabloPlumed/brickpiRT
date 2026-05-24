@@ -1,11 +1,10 @@
 #include "rt_ros2/nodo_actuador.h"
 
-#define KP            0.1f        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
-#define VEL_LINEAL    0.015f       // Velocidad lineal base cuando sigue la línea
-#define VEL_REC       0.01f       // Velocidad lineal cuando tiene que recuperar la línea
-#define VEL_ANGULAR   0.2f        // Velocidad angular el doble de agresiva al recuperar
+#define KP            0.3f        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
+#define KP_REC        0.2f        // Ganancia proporcional para saber cuanto girar cuando se recupera (tenemos valores entre 0 y 0.5)
+#define VEL_LINEAL    0.02f       // Velocidad lineal base cuando sigue la línea
 #define TAM_COLA_ROS  10          // Tamaño del buffer antes de descartar los mensajes más viejos
-#define FREC_TOPIC_MS 50          // Frecuencia a la que se publica un topic (en ms, no en Hz)
+#define FREC_TOPIC_MS 25          // Frecuencia a la que se publica un topic (en ms, no en Hz)
 
 namespace rt_ros2
 {
@@ -23,7 +22,7 @@ NodoActuador::NodoActuador(std::shared_ptr<cactus_rt::tracing::ThreadTracer> tra
     // Creación del topic del estado de comando de velocidad para el controlador
     cmd_vel = this->create_publisher<geometry_msgs::msg::TwistStamped>("/cmd_vel", TAM_COLA_ROS);
 
-    // Cada 50 milis se publica /cmd_vel, aunque no lleguen mensajes necesitamos 20Hz para que diff_drive_controller no pare el robot por timeout
+    // Cada 25 milis se publica /cmd_vel, aunque no lleguen mensajes necesitamos 40Hz para que diff_drive_controller no pare el robot por timeout
     auto cb_timer = [this]() { publicar_cmd_vel(); };
     timer_publicacion = this->create_wall_timer(std::chrono::milliseconds(FREC_TOPIC_MS), cb_timer);
 
@@ -57,27 +56,16 @@ void NodoActuador::publicar_cmd_vel()
     auto topic_vel = geometry_msgs::msg::TwistStamped();
     topic_vel.header.stamp = this->now();
 
-    // LÓGICA PROPORCIONAL: 
-    // Siempre corregimos el ángulo basándonos en el error.
-    // Si error_actual > 0 (más blanco), angular.z será positivo/negativo para girar hacia la línea.
-    /*
-    if (estado_actual == "SEGUIR_LINEA") {
-        topic_vel.twist.linear.x  = VEL_LINEAL;
-        // El signo de KP dependerá de hacia qué lado quieres que gire el robot cuando vea blanco.
-        // Si el sensor está a la derecha del eje central: blanco -> girar izquierda (angular.z positivo)
-        topic_vel.twist.angular.z = -KP * error_actual; 
-    } 
-    // Si ha perdido la línea por completo (blanco puro)
-    else if (estado_actual == "RECUPERAR") {
-        topic_vel.twist.linear.x  = VEL_REC;
-        // Gira en la última dirección conocida o hacia donde cree que está la línea
-        topic_vel.twist.angular.z = (error_actual >= 0) ? -VEL_ANGULAR : VEL_ANGULAR;
-    } */
-    // Y la lógica simplificada:
+    // Si vemos necesario, cargarnos el estado recuperar
     if (estado_actual == "SEGUIR_LINEA" || estado_actual == "RECUPERAR") {
         topic_vel.twist.linear.x  = VEL_LINEAL;
         topic_vel.twist.angular.z = -KP * error_actual;
     }
+    /*
+    else if (estado_actual == "RECUPERAR") {
+        topic_vel.twist.linear.x  = VEL_LINEAL;
+        topic_vel.twist.angular.z = -KP_REC * error_actual;
+    }*/
     else {
         topic_vel.twist.linear.x = topic_vel.twist.angular.z = 0.0;
     }

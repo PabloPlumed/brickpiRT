@@ -17,12 +17,15 @@ def generate_launch_description():
         ])
     )
 
-    # Nodo del sensor de luz
+    # Nodo del sensor de luz, por defecto la frecuencia es 2Hz, pero eso es demasiado lento
     light_sensor_node = Node(
         package='brickpi3_sensors',
         executable='light_sensor_node',
         name='light_sensor_node',
-        parameters=[{'lego_port': 'PORT_2'}],
+        parameters=[{
+            'lego_port': 'PORT_2',
+            'frequency': 20.0
+        }],
         output='screen'
     )
 

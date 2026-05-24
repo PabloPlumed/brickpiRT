@@ -1,0 +1,42 @@
+[0.082s] Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[0.474s] [  2%] Built target nodo_test
+[0.519s] [ 28%] Built target cactus_tracing_embedded_perfetto_protos
+[0.617s] [ 65%] Built target quill
+[0.781s] [ 79%] Built target cactus_rt
+[0.880s] [35m[1mConsolidate compiler generated dependencies of target main_rt[0m
+[0.911s] [35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[0.980s] [35m[1mConsolidate compiler generated dependencies of target main_be[0m
+[1.024s] [ 82%] Built target nodo_ruido
+[1.194s] [ 83%] [32mBuilding CXX object CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.o[0m
+[1.262s] [ 85%] [32mBuilding CXX object CMakeFiles/main_be.dir/src/nodo_actuador.cpp.o[0m
+[1.289s] [ 86%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o[0m
+[26.631s] [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:[m[K In member function ‘[01m[Kvoid rt_ros2::NodoActuador::publicar_cmd_vel()[m[K’:
+[26.634s] [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:3:23:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[26.638s]     3 | #define KP            [01;31m[K1f[m[K        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
+[26.641s]       |                       [01;31m[K^~[m[K
+[26.644s] [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:3:23:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KKP[m[K’
+[26.653s]     3 | #define KP            [01;36m[K1f[m[K        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
+[26.657s]       |                       [01;36m[K^~[m[K
+[27.747s] [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:[m[K In member function ‘[01m[Kvoid rt_ros2::NodoActuador::publicar_cmd_vel()[m[K’:
+[27.750s] [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:3:23:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[27.753s]     3 | #define KP            [01;31m[K1f[m[K        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
+[27.757s]       |                       [01;31m[K^~[m[K
+[27.760s] [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:3:23:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KKP[m[K’
+[27.766s]     3 | #define KP            [01;36m[K1f[m[K        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
+[27.769s]       |                       [01;36m[K^~[m[K
+[28.066s] [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:[m[K In member function ‘[01m[Kvoid rt_ros2::NodoActuador::publicar_cmd_vel()[m[K’:
+[28.069s] [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:3:23:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[28.074s]     3 | #define KP            [01;31m[K1f[m[K        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
+[28.077s]       |                       [01;31m[K^~[m[K
+[28.083s] [01m[K/code/brickpi/rt_ros2/src/nodo_actuador.cpp:3:23:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KKP[m[K’
+[28.099s]     3 | #define KP            [01;36m[K1f[m[K        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
+[28.102s]       |                       [01;36m[K^~[m[K
+[53.194s] gmake[2]: *** [CMakeFiles/rt_ros2.dir/build.make:90: CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o] Error 1
+[53.195s] gmake[1]: *** [CMakeFiles/Makefile2:247: CMakeFiles/rt_ros2.dir/all] Error 2
+[53.197s] gmake[1]: *** Waiting for unfinished jobs....
+[55.122s] gmake[2]: *** [CMakeFiles/main_rt.dir/build.make:90: CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.o] Error 1
+[55.126s] gmake[1]: *** [CMakeFiles/Makefile2:275: CMakeFiles/main_rt.dir/all] Error 2
+[56.075s] gmake[2]: *** [CMakeFiles/main_be.dir/build.make:90: CMakeFiles/main_be.dir/src/nodo_actuador.cpp.o] Error 1
+[56.077s] gmake[1]: *** [CMakeFiles/Makefile2:303: CMakeFiles/main_be.dir/all] Error 2
+[56.079s] gmake: *** [Makefile:146: all] Error 2
+[56.089s] Invoked command in '/code/brickpi/build/rt_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4

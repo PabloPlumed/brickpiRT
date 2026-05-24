@@ -1,0 +1,35 @@
+[5.527s] Invoking command in '/code/brickpi/build/brickpi3_charlie': CMAKE_PREFIX_PATH=/code/brickpi/install/brickpi3_motors:/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs LD_LIBRARY_PATH=/code/brickpi/install/brickpi3_motors/lib:/code/brickpi/install/ev3_sensor_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/code/brickpi/build/brickpi3_charlie/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /code/brickpi/build/brickpi3_charlie/build
+[8.158s] running develop
+[9.614s] Removing /code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages/brickpi3-charlie.egg-link (link to .)
+[9.797s] Invoked command in '/code/brickpi/build/brickpi3_charlie' returned '0': CMAKE_PREFIX_PATH=/code/brickpi/install/brickpi3_motors:/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs LD_LIBRARY_PATH=/code/brickpi/install/brickpi3_motors/lib:/code/brickpi/install/ev3_sensor_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/code/brickpi/build/brickpi3_charlie/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /code/brickpi/build/brickpi3_charlie/build
+[9.812s] Invoking command in '/code/brickpi/brickpi3_charlie': CMAKE_PREFIX_PATH=/code/brickpi/install/brickpi3_motors:/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs LD_LIBRARY_PATH=/code/brickpi/install/brickpi3_motors/lib:/code/brickpi/install/ev3_sensor_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/code/brickpi/build/brickpi3_charlie/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/brickpi3_charlie build --build-base /code/brickpi/build/brickpi3_charlie/build install --record /code/brickpi/build/brickpi3_charlie/install.log --single-version-externally-managed install_data --force
+[11.614s] running egg_info
+[11.620s] writing ../build/brickpi3_charlie/brickpi3_charlie.egg-info/PKG-INFO
+[11.624s] writing dependency_links to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/dependency_links.txt
+[11.626s] writing entry points to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/entry_points.txt
+[11.628s] writing requirements to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/requires.txt
+[11.631s] writing top-level names to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/top_level.txt
+[11.645s] reading manifest file '../build/brickpi3_charlie/brickpi3_charlie.egg-info/SOURCES.txt'
+[11.667s] writing manifest file '../build/brickpi3_charlie/brickpi3_charlie.egg-info/SOURCES.txt'
+[11.670s] running build
+[11.671s] running build_py
+[11.673s] creating /code/brickpi/build/brickpi3_charlie/build
+[11.674s] creating /code/brickpi/build/brickpi3_charlie/build/lib
+[11.675s] creating /code/brickpi/build/brickpi3_charlie/build/lib/brickpi3_charlie
+[11.676s] copying brickpi3_charlie/__init__.py -> /code/brickpi/build/brickpi3_charlie/build/lib/brickpi3_charlie
+[11.679s] running install
+[11.681s] running install_lib
+[11.686s] creating /code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages/brickpi3_charlie
+[11.687s] copying /code/brickpi/build/brickpi3_charlie/build/lib/brickpi3_charlie/__init__.py -> /code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages/brickpi3_charlie
+[11.692s] byte-compiling /code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages/brickpi3_charlie/__init__.py to __init__.cpython-310.pyc
+[11.694s] running install_data
+[11.695s] copying resource/brickpi3_charlie -> /code/brickpi/install/brickpi3_charlie/share/ament_index/resource_index/packages
+[11.696s] copying package.xml -> /code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie
+[11.698s] copying launch/motors_launch.py -> /code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/launch
+[11.702s] copying config/controller_description.yaml -> /code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/config
+[11.703s] copying config/robot_hardware_description.urdf -> /code/brickpi/install/brickpi3_charlie/share/brickpi3_charlie/config
+[11.704s] running install_egg_info
+[11.715s] Copying ../build/brickpi3_charlie/brickpi3_charlie.egg-info to /code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages/brickpi3_charlie-0.0.0-py3.10.egg-info
+[11.728s] running install_scripts
+[11.839s] writing list of installed files to '/code/brickpi/build/brickpi3_charlie/install.log'
+[11.996s] Invoked command in '/code/brickpi/brickpi3_charlie' returned '0': CMAKE_PREFIX_PATH=/code/brickpi/install/brickpi3_motors:/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs LD_LIBRARY_PATH=/code/brickpi/install/brickpi3_motors/lib:/code/brickpi/install/ev3_sensor_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/code/brickpi/build/brickpi3_charlie/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/brickpi3_charlie build --build-base /code/brickpi/build/brickpi3_charlie/build install --record /code/brickpi/build/brickpi3_charlie/install.log --single-version-externally-managed install_data --force

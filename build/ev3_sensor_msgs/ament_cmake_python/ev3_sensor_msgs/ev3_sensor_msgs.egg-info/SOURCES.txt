@@ -4,3 +4,6 @@ ev3_sensor_msgs.egg-info/PKG-INFO
 ev3_sensor_msgs.egg-info/SOURCES.txt
 ev3_sensor_msgs.egg-info/dependency_links.txt
 ev3_sensor_msgs.egg-info/top_level.txt
+ev3_sensor_msgs/msg/__init__.py
+ev3_sensor_msgs/msg/_button.py
+ev3_sensor_msgs/msg/_color.py

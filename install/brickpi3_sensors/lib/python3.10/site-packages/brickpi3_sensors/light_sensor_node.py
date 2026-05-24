@@ -70,6 +70,7 @@ try:
 except KeyboardInterrupt:
     pass
 finally:
+    # Reseteamos brickpi para apagar el sensor al terminar
     color_sensor_node.bp.reset_all()
     color_sensor_node.destroy_node()
     rclpy.shutdown()
