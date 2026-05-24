@@ -3,6 +3,7 @@
 /code/brickpi/build/rt_ros2/CMakeFiles/rt_ros2.dir
 /code/brickpi/build/rt_ros2/CMakeFiles/main_rt.dir
 /code/brickpi/build/rt_ros2/CMakeFiles/main_be.dir
+/code/brickpi/build/rt_ros2/CMakeFiles/nodo_ruido.dir
 /code/brickpi/build/rt_ros2/CMakeFiles/nodo_test.dir
 /code/brickpi/build/rt_ros2/CMakeFiles/test.dir
 /code/brickpi/build/rt_ros2/CMakeFiles/edit_cache.dir

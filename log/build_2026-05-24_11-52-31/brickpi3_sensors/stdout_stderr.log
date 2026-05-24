@@ -1,0 +1,61 @@
+running develop
+Removing /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3-sensors.egg-link (link to .)
+running egg_info
+writing ../build/brickpi3_sensors/brickpi3_sensors.egg-info/PKG-INFO
+writing dependency_links to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/dependency_links.txt
+writing entry points to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/entry_points.txt
+writing requirements to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/requires.txt
+writing top-level names to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/top_level.txt
+reading manifest file '../build/brickpi3_sensors/brickpi3_sensors.egg-info/SOURCES.txt'
+writing manifest file '../build/brickpi3_sensors/brickpi3_sensors.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /code/brickpi/build/brickpi3_sensors/build
+creating /code/brickpi/build/brickpi3_sensors/build/lib
+creating /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+copying brickpi3_sensors/ultrasonic_distance_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+copying brickpi3_sensors/touch_sensor_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+copying brickpi3_sensors/light_sensor_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+copying brickpi3_sensors/infrared_distance_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+copying brickpi3_sensors/compass_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+copying brickpi3_sensors/battery_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+copying brickpi3_sensors/color_sensor_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+copying brickpi3_sensors/__init__.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+copying brickpi3_sensors/gyro_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+running install
+running install_lib
+creating /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/ultrasonic_distance_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/touch_sensor_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/light_sensor_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/infrared_distance_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/compass_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/battery_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/color_sensor_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/__init__.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/gyro_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/ultrasonic_distance_node.py to ultrasonic_distance_node.cpython-310.pyc
+byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/touch_sensor_node.py to touch_sensor_node.cpython-310.pyc
+byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/light_sensor_node.py to light_sensor_node.cpython-310.pyc
+byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/infrared_distance_node.py to infrared_distance_node.cpython-310.pyc
+byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/compass_node.py to compass_node.cpython-310.pyc
+byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/battery_node.py to battery_node.cpython-310.pyc
+byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/color_sensor_node.py to color_sensor_node.cpython-310.pyc
+byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/__init__.py to __init__.cpython-310.pyc
+byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/gyro_node.py to gyro_node.cpython-310.pyc
+running install_data
+copying resource/brickpi3_sensors -> /code/brickpi/install/brickpi3_sensors/share/ament_index/resource_index/packages
+copying package.xml -> /code/brickpi/install/brickpi3_sensors/share/brickpi3_sensors
+running install_egg_info
+Copying ../build/brickpi3_sensors/brickpi3_sensors.egg-info to /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors-0.0.0-py3.10.egg-info
+running install_scripts
+Installing battery_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing color_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing compass_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing differential_drive_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing gyro_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing infrared_distance_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing light_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing touch_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+Installing ultrasonic_distance_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+writing list of installed files to '/code/brickpi/build/brickpi3_sensors/install.log'

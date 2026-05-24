@@ -1,0 +1,49 @@
+[0.091s] Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[0.467s] [ 25%] Built target cactus_tracing_embedded_perfetto_protos
+[0.482s] [ 28%] Built target nodo_test
+[0.574s] [ 65%] Built target quill
+[0.738s] [ 79%] Built target cactus_rt
+[0.890s] [35m[1mConsolidate compiler generated dependencies of target rt_ros2[0m
+[0.929s] [35m[1mConsolidate compiler generated dependencies of target main_be[0m
+[0.940s] [35m[1mConsolidate compiler generated dependencies of target main_rt[0m
+[1.087s] [ 82%] Built target nodo_ruido
+[1.291s] [ 83%] [32mBuilding CXX object CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o[0m
+[1.358s] [ 85%] [32mBuilding CXX object CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.o[0m
+[1.366s] [ 86%] [32mBuilding CXX object CMakeFiles/main_be.dir/src/nodo_actuador.cpp.o[0m
+[105.909s] [ 88%] [32m[1mLinking CXX executable rt_ros2[0m
+[106.458s] [ 89%] [32m[1mLinking CXX executable main_rt[0m
+[108.007s] [ 91%] [32m[1mLinking CXX executable main_be[0m
+[110.475s] [ 94%] Built target main_rt
+[110.568s] [ 97%] Built target main_be
+[110.580s] [100%] Built target rt_ros2
+[110.635s] Invoked command in '/code/brickpi/build/rt_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[110.682s] Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/rt_ros2
+[110.712s] -- Install configuration: "Release"
+[110.715s] -- Execute custom install script
+[110.717s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/include/readerwriterqueue/atomicops.h
+[110.718s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/include/readerwriterqueue/readerwriterqueue.h
+[110.720s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/include/readerwriterqueue/readerwritercircularbuffer.h
+[110.721s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/include/readerwriterqueue/LICENSE.md
+[110.723s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/lib/rt_ros2/rt_ros2
+[110.724s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/lib/rt_ros2/main_rt
+[110.725s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/lib/rt_ros2/main_be
+[110.726s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/lib/rt_ros2/nodo_ruido
+[110.728s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/._infraestructura.launch.py
+[110.729s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/infraestructura.launch.py
+[110.731s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/lib/rt_ros2/nodo_test
+[110.733s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/package_run_dependencies/rt_ros2
+[110.734s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/parent_prefix_path/rt_ros2
+[110.735s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/ament_prefix_path.sh
+[110.736s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/ament_prefix_path.dsv
+[110.738s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/path.sh
+[110.739s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/path.dsv
+[110.740s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.bash
+[110.741s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.sh
+[110.742s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.zsh
+[110.743s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.dsv
+[110.744s] -- Symlinking: /code/brickpi/install/rt_ros2/share/rt_ros2/package.dsv
+[110.784s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/packages/rt_ros2
+[110.784s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/cmake/rt_ros2Config.cmake
+[110.785s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/cmake/rt_ros2Config-version.cmake
+[110.786s] -- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/package.xml
+[110.800s] Invoked command in '/code/brickpi/build/rt_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/rt_ros2

@@ -318,7 +318,7 @@ message(STATUS "Execute custom install script")
 # install(FILES "atomicops.h" "readerwriterqueue.h" "readerwritercircularbuffer.h" "LICENSE.md" "DESTINATION" "include/readerwriterqueue")
 ament_cmake_symlink_install_files("/code/brickpi/rt_ros2/vendor/readerwriterqueue" FILES "atomicops.h" "readerwriterqueue.h" "readerwritercircularbuffer.h" "LICENSE.md" "DESTINATION" "include/readerwriterqueue")
 
-# install("TARGETS" "rt_ros2" "main_rt" "main_be" "DESTINATION" "lib/rt_ros2")
+# install("TARGETS" "rt_ros2" "main_rt" "main_be" "nodo_ruido" "DESTINATION" "lib/rt_ros2")
 include("/code/brickpi/build/rt_ros2/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch/" "DESTINATION" "share/rt_ros2")

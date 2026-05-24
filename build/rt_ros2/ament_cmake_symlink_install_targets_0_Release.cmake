@@ -1,1 +1,1 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/code/brickpi/build/rt_ros2/rt_ros2" "/code/brickpi/build/rt_ros2/main_rt" "/code/brickpi/build/rt_ros2/main_be" "TARGETS" "rt_ros2" "main_rt" "main_be" "DESTINATION" "lib/rt_ros2")
+ament_cmake_symlink_install_targets("TARGET_FILES" "/code/brickpi/build/rt_ros2/rt_ros2" "/code/brickpi/build/rt_ros2/main_rt" "/code/brickpi/build/rt_ros2/main_be" "/code/brickpi/build/rt_ros2/nodo_ruido" "TARGETS" "rt_ros2" "main_rt" "main_be" "nodo_ruido" "DESTINATION" "lib/rt_ros2")

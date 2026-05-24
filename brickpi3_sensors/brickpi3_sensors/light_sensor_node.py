@@ -65,6 +65,12 @@ class ColorSensorNode(Node):
 
 rclpy.init()
 color_sensor_node = ColorSensorNode()
-rclpy.spin(color_sensor_node)
-color_sensor_node.destroy_node()
-rclpy.shutdown()
+try:
+    rclpy.spin(color_sensor_node)
+except KeyboardInterrupt:
+    pass
+finally:
+    # Reseteamos brickpi para apagar el sensor al terminar
+    color_sensor_node.bp.reset_all()
+    color_sensor_node.destroy_node()
+    rclpy.shutdown()
