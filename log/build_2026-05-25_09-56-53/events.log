@@ -1,0 +1,7 @@
+[0.000000] (-) TimerEvent: {}
+[0.001514] (-) JobUnselected: {'identifier': 'brickpi3_charlie'}
+[0.001850] (-) JobUnselected: {'identifier': 'brickpi3_motors'}
+[0.001987] (-) JobUnselected: {'identifier': 'brickpi3_sensors'}
+[0.002227] (-) JobUnselected: {'identifier': 'ev3_sensor_msgs'}
+[0.002562] (-) JobUnselected: {'identifier': 'rt_ros2'}
+[0.003222] (-) EventReactorShutdown: {}

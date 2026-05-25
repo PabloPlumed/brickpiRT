@@ -1,0 +1,815 @@
+[0.000000] (-) TimerEvent: {}
+[0.004102] (brickpi3_motors) JobQueued: {'identifier': 'brickpi3_motors', 'dependencies': OrderedDict()}
+[0.004483] (brickpi3_sensors) JobQueued: {'identifier': 'brickpi3_sensors', 'dependencies': OrderedDict()}
+[0.004716] (ev3_sensor_msgs) JobQueued: {'identifier': 'ev3_sensor_msgs', 'dependencies': OrderedDict()}
+[0.004913] (rt_ros2) JobQueued: {'identifier': 'rt_ros2', 'dependencies': OrderedDict()}
+[0.005403] (brickpi3_charlie) JobQueued: {'identifier': 'brickpi3_charlie', 'dependencies': OrderedDict([('brickpi3_motors', '/code/brickpi/install/brickpi3_motors')])}
+[0.008629] (brickpi3_motors) JobStarted: {'identifier': 'brickpi3_motors'}
+[0.060253] (brickpi3_sensors) JobStarted: {'identifier': 'brickpi3_sensors'}
+[0.102683] (ev3_sensor_msgs) JobStarted: {'identifier': 'ev3_sensor_msgs'}
+[0.103270] (-) TimerEvent: {}
+[0.133874] (rt_ros2) JobStarted: {'identifier': 'rt_ros2'}
+[0.167327] (brickpi3_motors) JobProgress: {'identifier': 'brickpi3_motors', 'progress': 'cmake'}
+[0.171730] (brickpi3_motors) JobProgress: {'identifier': 'brickpi3_motors', 'progress': 'build'}
+[0.175508] (brickpi3_motors) Command: {'cmd': ['/usr/bin/cmake', '--build', '/code/brickpi/build/brickpi3_motors', '--', '-j4', '-l4'], 'cwd': '/code/brickpi/build/brickpi3_motors', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.10.114 49367 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/code/brickpi/install/ev3_sensor_msgs/lib:/code/brickpi/install/brickpi3_motors/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/code'), ('TERM_PROGRAM_VERSION', '1.121.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8f792fae-7dec-4c91-bacf-e3815119c111.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/code/brickpi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('BRICKPI3_ROOT_DIR', '/home/ubuntu/BrickPi3'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '21'), ('AMENT_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/code/brickpi/install/brickpi3_motors:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/code/brickpi/build/brickpi3_motors'), ('SSH_CONNECTION', '192.168.10.114 49367 192.168.10.100 22'), ('PYTHONPATH', '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_motors:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble')]), 'shell': False}
+[0.203522] (-) TimerEvent: {}
+[0.304711] (-) TimerEvent: {}
+[0.406887] (-) TimerEvent: {}
+[0.509845] (-) TimerEvent: {}
+[0.611731] (-) TimerEvent: {}
+[0.714259] (-) TimerEvent: {}
+[0.816052] (-) TimerEvent: {}
+[0.917422] (-) TimerEvent: {}
+[1.021561] (-) TimerEvent: {}
+[1.127002] (-) TimerEvent: {}
+[1.227850] (-) TimerEvent: {}
+[1.328758] (-) TimerEvent: {}
+[1.429668] (-) TimerEvent: {}
+[1.530693] (-) TimerEvent: {}
+[1.632051] (-) TimerEvent: {}
+[1.722183] (ev3_sensor_msgs) JobProgress: {'identifier': 'ev3_sensor_msgs', 'progress': 'cmake'}
+[1.725906] (ev3_sensor_msgs) JobProgress: {'identifier': 'ev3_sensor_msgs', 'progress': 'build'}
+[1.729258] (ev3_sensor_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/code/brickpi/build/ev3_sensor_msgs', '--', '-j4', '-l4'], 'cwd': '/code/brickpi/build/ev3_sensor_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.10.114 49367 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/code/brickpi/install/ev3_sensor_msgs/lib:/code/brickpi/install/brickpi3_motors/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/code'), ('TERM_PROGRAM_VERSION', '1.121.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8f792fae-7dec-4c91-bacf-e3815119c111.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/code/brickpi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('BRICKPI3_ROOT_DIR', '/home/ubuntu/BrickPi3'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '21'), ('AMENT_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/code/brickpi/install/brickpi3_motors:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/code/brickpi/build/ev3_sensor_msgs'), ('SSH_CONNECTION', '192.168.10.114 49367 192.168.10.100 22'), ('PYTHONPATH', '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_motors:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble')]), 'shell': False}
+[1.736284] (-) TimerEvent: {}
+[1.741151] (brickpi3_motors) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/brickpi3_motors.dir/src/brickpi3_motors.cpp.o\x1b[0m\n'}
+[1.751915] (rt_ros2) JobProgress: {'identifier': 'rt_ros2', 'progress': 'cmake'}
+[1.756531] (rt_ros2) JobProgress: {'identifier': 'rt_ros2', 'progress': 'build'}
+[1.760197] (rt_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/code/brickpi/build/rt_ros2', '--', '-j4', '-l4'], 'cwd': '/code/brickpi/build/rt_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.10.114 49367 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/code/brickpi/install/ev3_sensor_msgs/lib:/code/brickpi/install/brickpi3_motors/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/code'), ('TERM_PROGRAM_VERSION', '1.121.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8f792fae-7dec-4c91-bacf-e3815119c111.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/code/brickpi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('BRICKPI3_ROOT_DIR', '/home/ubuntu/BrickPi3'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '21'), ('AMENT_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/code/brickpi/install/brickpi3_motors:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/code/brickpi/build/rt_ros2'), ('SSH_CONNECTION', '192.168.10.114 49367 192.168.10.100 22'), ('PYTHONPATH', '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_motors:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble')]), 'shell': False}
+[1.836538] (-) TimerEvent: {}
+[1.938232] (-) TimerEvent: {}
+[2.039341] (-) TimerEvent: {}
+[2.141131] (-) TimerEvent: {}
+[2.244692] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 10%] Built target ev3_sensor_msgs__rosidl_generator_c\n'}
+[2.245898] (-) TimerEvent: {}
+[2.273394] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 15%] Built target ev3_sensor_msgs__cpp\n'}
+[2.277589] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 15%] Built target ev3_sensor_msgs__rs\n'}
+[2.340493] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 15%] Built target ament_cmake_python_symlink_ev3_sensor_msgs\n'}
+[2.346183] (-) TimerEvent: {}
+[2.448537] (-) TimerEvent: {}
+[2.459352] (rt_ros2) StdoutLine: {'line': b'[ 26%] Built target cactus_tracing_embedded_perfetto_protos\n'}
+[2.548845] (-) TimerEvent: {}
+[2.572420] (rt_ros2) StdoutLine: {'line': b'[ 31%] Built target nodo_test\n'}
+[2.600216] (rt_ros2) StdoutLine: {'line': b'[ 69%] Built target quill\n'}
+[2.649139] (-) TimerEvent: {}
+[2.672284] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 25%] Built target ev3_sensor_msgs__rosidl_typesupport_introspection_c\n'}
+[2.700327] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 35%] Built target ev3_sensor_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.726010] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 45%] Built target ev3_sensor_msgs__rosidl_typesupport_c\n'}
+[2.749718] (-) TimerEvent: {}
+[2.794882] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 55%] Built target ev3_sensor_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.850039] (-) TimerEvent: {}
+[2.933864] (rt_ros2) StdoutLine: {'line': b'[ 84%] Built target cactus_rt\n'}
+[2.950167] (-) TimerEvent: {}
+[3.001119] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 65%] Built target ev3_sensor_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.037909] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 75%] Built target ev3_sensor_msgs__rosidl_typesupport_cpp\n'}
+[3.050393] (-) TimerEvent: {}
+[3.082409] (rt_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target main_be\x1b[0m\n'}
+[3.153350] (-) TimerEvent: {}
+[3.164023] (rt_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target main_rt\x1b[0m\n'}
+[3.204596] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 75%] Built target ev3_sensor_msgs\n'}
+[3.254321] (-) TimerEvent: {}
+[3.342263] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 77%] Built target ev3_sensor_msgs__py\n'}
+[3.355172] (-) TimerEvent: {}
+[3.459358] (-) TimerEvent: {}
+[3.500645] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 85%] Built target ev3_sensor_msgs__rosidl_generator_py\n'}
+[3.559558] (-) TimerEvent: {}
+[3.660545] (-) TimerEvent: {}
+[3.717278] (rt_ros2) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/main_be.dir/src/mainBE.cc.o\x1b[0m\n'}
+[3.760757] (-) TimerEvent: {}
+[3.832753] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 90%] Built target ev3_sensor_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.854660] (ev3_sensor_msgs) StdoutLine: {'line': b'[ 97%] Built target ev3_sensor_msgs__rosidl_typesupport_c__pyext\n'}
+[3.857235] (ev3_sensor_msgs) StdoutLine: {'line': b'[100%] Built target ev3_sensor_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.861028] (-) TimerEvent: {}
+[3.929228] (rt_ros2) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/main_rt.dir/src/mainRT.cc.o\x1b[0m\n'}
+[3.961253] (-) TimerEvent: {}
+[4.063489] (-) TimerEvent: {}
+[4.165913] (-) TimerEvent: {}
+[4.266900] (-) TimerEvent: {}
+[4.368733] (-) TimerEvent: {}
+[4.470887] (-) TimerEvent: {}
+[4.573071] (-) TimerEvent: {}
+[4.676631] (-) TimerEvent: {}
+[4.777592] (-) TimerEvent: {}
+[4.879477] (-) TimerEvent: {}
+[4.985678] (-) TimerEvent: {}
+[5.088117] (-) TimerEvent: {}
+[5.191560] (-) TimerEvent: {}
+[5.298159] (-) TimerEvent: {}
+[5.403512] (-) TimerEvent: {}
+[5.505481] (-) TimerEvent: {}
+[5.607683] (-) TimerEvent: {}
+[5.710220] (-) TimerEvent: {}
+[5.828292] (-) TimerEvent: {}
+[5.831980] (brickpi3_sensors) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/brickpi3_sensors', 'build', '--build-base', '/code/brickpi/build/brickpi3_sensors/build', 'install', '--record', '/code/brickpi/build/brickpi3_sensors/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/code/brickpi/brickpi3_sensors', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.10.114 49367 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/code/brickpi/install/ev3_sensor_msgs/lib:/code/brickpi/install/brickpi3_motors/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/code', 'TERM_PROGRAM_VERSION': '1.121.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-8f792fae-7dec-4c91-bacf-e3815119c111.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/code/brickpi/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '0', 'BRICKPI3_ROOT_DIR': '/home/ubuntu/BrickPi3', 'PATH': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '21', 'AMENT_PREFIX_PATH': '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/code/brickpi/install/brickpi3_motors:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/code/brickpi/build/brickpi3_sensors', 'SSH_CONNECTION': '192.168.10.114 49367 192.168.10.100 22', 'PYTHONPATH': '/code/brickpi/build/brickpi3_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_motors'}, 'shell': False}
+[5.928541] (-) TimerEvent: {}
+[6.030515] (-) TimerEvent: {}
+[6.131592] (-) TimerEvent: {}
+[6.232637] (-) TimerEvent: {}
+[6.340088] (-) TimerEvent: {}
+[6.442140] (-) TimerEvent: {}
+[6.546573] (-) TimerEvent: {}
+[6.648425] (-) TimerEvent: {}
+[6.749744] (-) TimerEvent: {}
+[6.833428] (ev3_sensor_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[6.847908] (ev3_sensor_msgs) StdoutLine: {'line': b'writing ev3_sensor_msgs.egg-info/PKG-INFO\n'}
+[6.850194] (-) TimerEvent: {}
+[6.854708] (ev3_sensor_msgs) StdoutLine: {'line': b'writing dependency_links to ev3_sensor_msgs.egg-info/dependency_links.txt\n'}
+[6.862033] (ev3_sensor_msgs) StdoutLine: {'line': b'writing top-level names to ev3_sensor_msgs.egg-info/top_level.txt\n'}
+[6.893750] (ev3_sensor_msgs) StdoutLine: {'line': b"reading manifest file 'ev3_sensor_msgs.egg-info/SOURCES.txt'\n"}
+[6.906814] (ev3_sensor_msgs) StdoutLine: {'line': b"writing manifest file 'ev3_sensor_msgs.egg-info/SOURCES.txt'\n"}
+[6.950430] (-) TimerEvent: {}
+[7.051948] (-) TimerEvent: {}
+[7.153699] (-) TimerEvent: {}
+[7.255752] (-) TimerEvent: {}
+[7.359264] (-) TimerEvent: {}
+[7.385106] (ev3_sensor_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_ev3_sensor_msgs_egg\n'}
+[7.459514] (-) TimerEvent: {}
+[7.538107] (ev3_sensor_msgs) CommandEnded: {'returncode': 0}
+[7.549527] (ev3_sensor_msgs) JobProgress: {'identifier': 'ev3_sensor_msgs', 'progress': 'install'}
+[7.559765] (-) TimerEvent: {}
+[7.653525] (ev3_sensor_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/code/brickpi/build/ev3_sensor_msgs'], 'cwd': '/code/brickpi/build/ev3_sensor_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.10.114 49367 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/code/brickpi/install/ev3_sensor_msgs/lib:/code/brickpi/install/brickpi3_motors/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/code'), ('TERM_PROGRAM_VERSION', '1.121.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8f792fae-7dec-4c91-bacf-e3815119c111.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/code/brickpi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('BRICKPI3_ROOT_DIR', '/home/ubuntu/BrickPi3'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '21'), ('AMENT_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/code/brickpi/install/brickpi3_motors:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/code/brickpi/build/ev3_sensor_msgs'), ('SSH_CONNECTION', '192.168.10.114 49367 192.168.10.100 22'), ('PYTHONPATH', '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_motors:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble')]), 'shell': False}
+[7.669512] (-) TimerEvent: {}
+[7.751259] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.754230] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[7.757383] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ament_index/resource_index/rosidl_interfaces/ev3_sensor_msgs\n'}
+[7.765508] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/button.h\n'}
+[7.769127] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/color.h\n'}
+[7.769889] (-) TimerEvent: {}
+[7.771851] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__functions.h\n'}
+[7.778295] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__struct.h\n'}
+[7.782305] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__type_support.h\n'}
+[7.783386] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__functions.h\n'}
+[7.784643] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__struct.h\n'}
+[7.785574] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__type_support.h\n'}
+[7.786686] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.788092] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/library_path.sh\n'}
+[7.789346] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/library_path.dsv\n'}
+[7.805618] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__rosidl_typesupport_fastrtps_c.h\n'}
+[7.807222] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__rosidl_typesupport_fastrtps_c.h\n'}
+[7.810768] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.824248] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__rosidl_typesupport_introspection_c.h\n'}
+[7.830524] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__rosidl_typesupport_introspection_c.h\n'}
+[7.836651] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.848365] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/button.hpp\n'}
+[7.856481] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/color.hpp\n'}
+[7.861333] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__builder.hpp\n'}
+[7.862950] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__struct.hpp\n'}
+[7.863813] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__traits.hpp\n'}
+[7.864752] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__type_support.hpp\n'}
+[7.865821] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__builder.hpp\n'}
+[7.869706] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__struct.hpp\n'}
+[7.871919] (-) TimerEvent: {}
+[7.873675] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__traits.hpp\n'}
+[7.876067] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__type_support.hpp\n'}
+[7.884178] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[7.892118] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.896597] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.904703] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.913233] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/button__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.914227] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/include/ev3_sensor_msgs/ev3_sensor_msgs/msg/detail/color__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.919739] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/pythonpath.sh\n'}
+[7.923662] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/pythonpath.dsv\n'}
+[7.932736] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[7.958504] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[7.961572] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[7.965734] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[7.972195] (-) TimerEvent: {}
+[7.977441] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/__init__.py\n'}
+[7.981484] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/_ev3_sensor_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[7.986395] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/_ev3_sensor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[7.989749] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/_ev3_sensor_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[7.992604] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.995282] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.997772] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[8.000310] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/libev3_sensor_msgs__rosidl_generator_py.so\n'}
+[8.002713] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg/__init__.py\n'}
+[8.005307] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg/_button.py\n'}
+[8.008323] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg/_button_s.c\n'}
+[8.011087] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg/_color.py\n'}
+[8.013704] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg/_color_s.c\n'}
+[8.017223] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[8.020874] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[8.024345] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/ev3_sensor_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[8.027301] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ament_index/resource_index/rust_packages/ev3_sensor_msgs\n'}
+[8.030906] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/rust/Cargo.toml\n'}
+[8.032503] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/rust/build.rs\n'}
+[8.033916] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/rust/src/lib.rs\n'}
+[8.035479] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/rust/src/msg.rs\n'}
+[8.037298] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/rust/src/msg/rmw.rs\n'}
+[8.039778] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/msg/Button.idl\n'}
+[8.041500] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/msg/Color.idl\n'}
+[8.043261] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/msg/Button.msg\n'}
+[8.044717] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/msg/Color.msg\n'}
+[8.047670] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ament_index/resource_index/package_run_dependencies/ev3_sensor_msgs\n'}
+[8.049919] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ament_index/resource_index/parent_prefix_path/ev3_sensor_msgs\n'}
+[8.053015] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/ament_prefix_path.sh\n'}
+[8.055711] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/ament_prefix_path.dsv\n'}
+[8.059770] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/path.sh\n'}
+[8.061158] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/environment/path.dsv\n'}
+[8.062070] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/local_setup.bash\n'}
+[8.062726] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/local_setup.sh\n'}
+[8.067827] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/local_setup.zsh\n'}
+[8.068658] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/local_setup.dsv\n'}
+[8.069480] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Symlinking: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/package.dsv\n'}
+[8.072444] (-) TimerEvent: {}
+[8.130627] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ament_index/resource_index/packages/ev3_sensor_msgs\n'}
+[8.132649] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[8.136705] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.138226] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.139916] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.141456] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.142447] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.144416] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.146050] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgsConfig.cmake\n'}
+[8.146986] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgsConfig-version.cmake\n'}
+[8.147876] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/package.xml\n'}
+[8.148503] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_generator_c.so\n'}
+[8.150268] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[8.153040] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_introspection_c.so\n'}
+[8.155918] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_c.so\n'}
+[8.159123] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.162383] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[8.165326] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_typesupport_cpp.so\n'}
+[8.172773] (-) TimerEvent: {}
+[8.274879] (-) TimerEvent: {}
+[8.376659] (-) TimerEvent: {}
+[8.429619] (ev3_sensor_msgs) StdoutLine: {'line': b"Listing '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs'...\n"}
+[8.431513] (ev3_sensor_msgs) StdoutLine: {'line': b"Listing '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages/ev3_sensor_msgs/msg'...\n"}
+[8.468552] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/lib/libev3_sensor_msgs__rosidl_generator_py.so\n'}
+[8.471324] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_generator_cExport.cmake\n'}
+[8.472679] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.473986] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[8.475102] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[8.476358] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.477647] (-) TimerEvent: {}
+[8.479866] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.481038] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_cExport.cmake\n'}
+[8.481656] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.482303] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_generator_cppExport.cmake\n'}
+[8.484064] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[8.486314] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[8.489341] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.491432] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.493582] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[8.496093] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/ev3_sensor_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.498300] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_generator_pyExport.cmake\n'}
+[8.500404] (ev3_sensor_msgs) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/ev3_sensor_msgs/share/ev3_sensor_msgs/cmake/export_ev3_sensor_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[8.515094] (ev3_sensor_msgs) CommandEnded: {'returncode': 0}
+[8.579438] (-) TimerEvent: {}
+[8.681742] (-) TimerEvent: {}
+[8.752611] (ev3_sensor_msgs) JobEnded: {'identifier': 'ev3_sensor_msgs', 'rc': 0}
+[8.782055] (-) TimerEvent: {}
+[8.883447] (-) TimerEvent: {}
+[8.984920] (-) TimerEvent: {}
+[9.086478] (-) TimerEvent: {}
+[9.140906] (brickpi3_sensors) StdoutLine: {'line': b'running egg_info\n'}
+[9.148414] (brickpi3_sensors) StdoutLine: {'line': b'writing ../build/brickpi3_sensors/brickpi3_sensors.egg-info/PKG-INFO\n'}
+[9.153231] (brickpi3_sensors) StdoutLine: {'line': b'writing dependency_links to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/dependency_links.txt\n'}
+[9.157673] (brickpi3_sensors) StdoutLine: {'line': b'writing entry points to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/entry_points.txt\n'}
+[9.161182] (brickpi3_sensors) StdoutLine: {'line': b'writing requirements to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/requires.txt\n'}
+[9.164175] (brickpi3_sensors) StdoutLine: {'line': b'writing top-level names to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/top_level.txt\n'}
+[9.181408] (brickpi3_sensors) StdoutLine: {'line': b"reading manifest file '../build/brickpi3_sensors/brickpi3_sensors.egg-info/SOURCES.txt'\n"}
+[9.186785] (-) TimerEvent: {}
+[9.191440] (brickpi3_sensors) StdoutLine: {'line': b"writing manifest file '../build/brickpi3_sensors/brickpi3_sensors.egg-info/SOURCES.txt'\n"}
+[9.195879] (brickpi3_sensors) StdoutLine: {'line': b'running build\n'}
+[9.196905] (brickpi3_sensors) StdoutLine: {'line': b'running build_py\n'}
+[9.199326] (brickpi3_sensors) StdoutLine: {'line': b'copying brickpi3_sensors/light_sensor_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors\n'}
+[9.207508] (brickpi3_sensors) StdoutLine: {'line': b'running install\n'}
+[9.210905] (brickpi3_sensors) StdoutLine: {'line': b'running install_lib\n'}
+[9.220136] (brickpi3_sensors) StdoutLine: {'line': b'copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/light_sensor_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors\n'}
+[9.230319] (brickpi3_sensors) StdoutLine: {'line': b'byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/light_sensor_node.py to light_sensor_node.cpython-310.pyc\n'}
+[9.241206] (brickpi3_sensors) StdoutLine: {'line': b'running install_data\n'}
+[9.243387] (brickpi3_sensors) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.259034] (brickpi3_sensors) StdoutLine: {'line': b"removing '/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[9.277415] (brickpi3_sensors) StdoutLine: {'line': b'Copying ../build/brickpi3_sensors/brickpi3_sensors.egg-info to /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors-0.0.0-py3.10.egg-info\n'}
+[9.287046] (-) TimerEvent: {}
+[9.304320] (brickpi3_sensors) StdoutLine: {'line': b'running install_scripts\n'}
+[9.387409] (-) TimerEvent: {}
+[9.455253] (brickpi3_sensors) StdoutLine: {'line': b'Installing battery_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors\n'}
+[9.458463] (brickpi3_sensors) StdoutLine: {'line': b'Installing color_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors\n'}
+[9.462402] (brickpi3_sensors) StdoutLine: {'line': b'Installing compass_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors\n'}
+[9.465828] (brickpi3_sensors) StdoutLine: {'line': b'Installing differential_drive_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors\n'}
+[9.472880] (brickpi3_sensors) StdoutLine: {'line': b'Installing gyro_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors\n'}
+[9.474205] (brickpi3_sensors) StdoutLine: {'line': b'Installing infrared_distance_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors\n'}
+[9.482574] (brickpi3_sensors) StdoutLine: {'line': b'Installing light_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors\n'}
+[9.483615] (brickpi3_sensors) StdoutLine: {'line': b'Installing touch_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors\n'}
+[9.487580] (-) TimerEvent: {}
+[9.492136] (brickpi3_sensors) StdoutLine: {'line': b'Installing ultrasonic_distance_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors\n'}
+[9.504160] (brickpi3_sensors) StdoutLine: {'line': b"writing list of installed files to '/code/brickpi/build/brickpi3_sensors/install.log'\n"}
+[9.587968] (-) TimerEvent: {}
+[9.689413] (-) TimerEvent: {}
+[9.791490] (-) TimerEvent: {}
+[9.893736] (-) TimerEvent: {}
+[9.961066] (brickpi3_sensors) CommandEnded: {'returncode': 0}
+[9.994108] (-) TimerEvent: {}
+[10.098194] (-) TimerEvent: {}
+[10.147371] (brickpi3_sensors) JobEnded: {'identifier': 'brickpi3_sensors', 'rc': 0}
+[10.198452] (-) TimerEvent: {}
+[10.300056] (-) TimerEvent: {}
+[10.401554] (-) TimerEvent: {}
+[10.502983] (-) TimerEvent: {}
+[10.604500] (-) TimerEvent: {}
+[10.705904] (-) TimerEvent: {}
+[10.807198] (-) TimerEvent: {}
+[10.908524] (-) TimerEvent: {}
+[11.009888] (-) TimerEvent: {}
+[11.111226] (-) TimerEvent: {}
+[11.213238] (-) TimerEvent: {}
+[11.315106] (-) TimerEvent: {}
+[11.421248] (-) TimerEvent: {}
+[11.523630] (-) TimerEvent: {}
+[11.625330] (-) TimerEvent: {}
+[11.727133] (-) TimerEvent: {}
+[11.830299] (-) TimerEvent: {}
+[11.934098] (-) TimerEvent: {}
+[12.037008] (-) TimerEvent: {}
+[12.138959] (-) TimerEvent: {}
+[12.240543] (-) TimerEvent: {}
+[12.344348] (-) TimerEvent: {}
+[12.447023] (-) TimerEvent: {}
+[12.549896] (-) TimerEvent: {}
+[12.652740] (-) TimerEvent: {}
+[12.755487] (-) TimerEvent: {}
+[12.858526] (-) TimerEvent: {}
+[12.961755] (-) TimerEvent: {}
+[13.065250] (-) TimerEvent: {}
+[13.175885] (-) TimerEvent: {}
+[13.277626] (-) TimerEvent: {}
+[13.379407] (-) TimerEvent: {}
+[13.480753] (-) TimerEvent: {}
+[13.583128] (-) TimerEvent: {}
+[13.693579] (-) TimerEvent: {}
+[13.795128] (-) TimerEvent: {}
+[13.897848] (-) TimerEvent: {}
+[14.000746] (-) TimerEvent: {}
+[14.103362] (-) TimerEvent: {}
+[14.209663] (-) TimerEvent: {}
+[14.312326] (-) TimerEvent: {}
+[14.415188] (-) TimerEvent: {}
+[14.517746] (-) TimerEvent: {}
+[14.620090] (-) TimerEvent: {}
+[14.721768] (-) TimerEvent: {}
+[14.823159] (-) TimerEvent: {}
+[14.924380] (-) TimerEvent: {}
+[15.025611] (-) TimerEvent: {}
+[15.126795] (-) TimerEvent: {}
+[15.228542] (-) TimerEvent: {}
+[15.329853] (-) TimerEvent: {}
+[15.431457] (-) TimerEvent: {}
+[15.532889] (-) TimerEvent: {}
+[15.634334] (-) TimerEvent: {}
+[15.735583] (-) TimerEvent: {}
+[15.838113] (-) TimerEvent: {}
+[15.940682] (-) TimerEvent: {}
+[16.043162] (-) TimerEvent: {}
+[16.144834] (-) TimerEvent: {}
+[16.246657] (-) TimerEvent: {}
+[16.348139] (-) TimerEvent: {}
+[16.449307] (-) TimerEvent: {}
+[16.550646] (-) TimerEvent: {}
+[16.652137] (-) TimerEvent: {}
+[16.753343] (-) TimerEvent: {}
+[16.855812] (-) TimerEvent: {}
+[16.959147] (-) TimerEvent: {}
+[17.060840] (-) TimerEvent: {}
+[17.162210] (-) TimerEvent: {}
+[17.264675] (-) TimerEvent: {}
+[17.371092] (-) TimerEvent: {}
+[17.472291] (-) TimerEvent: {}
+[17.573591] (-) TimerEvent: {}
+[17.675359] (-) TimerEvent: {}
+[17.776665] (-) TimerEvent: {}
+[17.880073] (-) TimerEvent: {}
+[17.981512] (-) TimerEvent: {}
+[18.082632] (-) TimerEvent: {}
+[18.183979] (-) TimerEvent: {}
+[18.285243] (-) TimerEvent: {}
+[18.386623] (-) TimerEvent: {}
+[18.489316] (-) TimerEvent: {}
+[18.592381] (-) TimerEvent: {}
+[18.695044] (-) TimerEvent: {}
+[18.797623] (-) TimerEvent: {}
+[18.900009] (-) TimerEvent: {}
+[19.001281] (-) TimerEvent: {}
+[19.102672] (-) TimerEvent: {}
+[19.204092] (-) TimerEvent: {}
+[19.305471] (-) TimerEvent: {}
+[19.406785] (-) TimerEvent: {}
+[19.509496] (-) TimerEvent: {}
+[19.610875] (-) TimerEvent: {}
+[19.712492] (-) TimerEvent: {}
+[19.813701] (-) TimerEvent: {}
+[19.915008] (-) TimerEvent: {}
+[20.017400] (-) TimerEvent: {}
+[20.118774] (-) TimerEvent: {}
+[20.220462] (-) TimerEvent: {}
+[20.322847] (-) TimerEvent: {}
+[20.425143] (-) TimerEvent: {}
+[20.527916] (-) TimerEvent: {}
+[20.546637] (brickpi3_motors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:14\x1b[m\x1b[K:\n'}
+[20.547879] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KBrickPi3::BrickPi3(uint8_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.551139] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:21:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison is always false due to limited range of data type [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits\x07-Wtype-limits\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.556016] (brickpi3_motors) StderrLine: {'line': b'   21 |   if(addr < 1 || \x1b[01;35m\x1b[Kaddr > 255\x1b[m\x1b[K){\n'}
+[20.558537] (brickpi3_motors) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~^~~~~\x1b[m\x1b[K\n'}
+[20.561392] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BrickPi3::fatal_error(char*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.564241] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:65:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat not a string literal and no format arguments [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security\x07-Wformat-security\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.567220] (brickpi3_motors) StderrLine: {'line': b'   65 |     \x1b[01;35m\x1b[Kprintf(error)\x1b[m\x1b[K;\n'}
+[20.570080] (brickpi3_motors) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[20.572830] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BrickPi3::fatal_error(const char*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.575580] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:72:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat not a string literal and no format arguments [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security\x07-Wformat-security\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.578555] (brickpi3_motors) StderrLine: {'line': b'   72 |     \x1b[01;35m\x1b[Kprintf(error)\x1b[m\x1b[K;\n'}
+[20.581401] (brickpi3_motors) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[20.584159] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint BrickPi3::detect(bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.587169] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:159:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.590054] (brickpi3_motors) StderrLine: {'line': b'  159 |   if(\x1b[01;35m\x1b[Kerror = get_manufacturer(str)\x1b[m\x1b[K){\n'}
+[20.592901] (brickpi3_motors) StderrLine: {'line': b'      |      \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.595739] (brickpi3_motors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:14\x1b[m\x1b[K:\n'}
+[20.599120] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:175:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.602247] (brickpi3_motors) StderrLine: {'line': b'  175 |   if(\x1b[01;35m\x1b[Kerror = get_board(str)\x1b[m\x1b[K){\n'}
+[20.605158] (brickpi3_motors) StderrLine: {'line': b'      |      \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.608202] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:191:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.611242] (brickpi3_motors) StderrLine: {'line': b'  191 |   if(\x1b[01;35m\x1b[Kerror = get_version_firmware(str)\x1b[m\x1b[K){\n'}
+[20.614184] (brickpi3_motors) StderrLine: {'line': b'      |      \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.628159] (-) TimerEvent: {}
+[20.650650] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::CallbackReturn brickpi3_motors::BrickPi3MotorsHardware::on_init(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.653575] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:43:84:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Koverflow in conversion from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99} changes value from \xe2\x80\x98\x1b[01m\x1b[K+QNaN\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[K0\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow\x07-Woverflow\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.656706] (brickpi3_motors) StderrLine: {'line': b'   43 | ize(), \x1b[01;35m\x1b[Kstd::numeric_limits<double>::quiet_NaN()\x1b[m\x1b[K);\n'}
+[20.659632] (brickpi3_motors) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[20.663799] (brickpi3_motors) StderrLine: {'line': b'\n'}
+[20.728417] (-) TimerEvent: {}
+[20.756448] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type brickpi3_motors::BrickPi3MotorsHardware::read(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.759684] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:195:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kperiod\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.762897] (brickpi3_motors) StderrLine: {'line': b'  195 |  rclcpp::Time &, \x1b[01;35m\x1b[Kconst rclcpp::Duration & period\x1b[m\x1b[K)\n'}
+[20.766099] (brickpi3_motors) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[20.769410] (brickpi3_motors) StderrLine: {'line': b'\n'}
+[20.828670] (-) TimerEvent: {}
+[20.930910] (-) TimerEvent: {}
+[21.032633] (-) TimerEvent: {}
+[21.134297] (-) TimerEvent: {}
+[21.236076] (-) TimerEvent: {}
+[21.337734] (-) TimerEvent: {}
+[21.440732] (-) TimerEvent: {}
+[21.542465] (-) TimerEvent: {}
+[21.644369] (-) TimerEvent: {}
+[21.745991] (-) TimerEvent: {}
+[21.848355] (-) TimerEvent: {}
+[21.951177] (-) TimerEvent: {}
+[22.053912] (-) TimerEvent: {}
+[22.155080] (-) TimerEvent: {}
+[22.256360] (-) TimerEvent: {}
+[22.357772] (-) TimerEvent: {}
+[22.459048] (-) TimerEvent: {}
+[22.560270] (-) TimerEvent: {}
+[22.661585] (-) TimerEvent: {}
+[22.762823] (-) TimerEvent: {}
+[22.864173] (-) TimerEvent: {}
+[22.965550] (-) TimerEvent: {}
+[23.066884] (-) TimerEvent: {}
+[23.168432] (-) TimerEvent: {}
+[23.269700] (-) TimerEvent: {}
+[23.371054] (-) TimerEvent: {}
+[23.472261] (-) TimerEvent: {}
+[23.573452] (-) TimerEvent: {}
+[23.674732] (-) TimerEvent: {}
+[23.776084] (-) TimerEvent: {}
+[23.877459] (-) TimerEvent: {}
+[23.979280] (-) TimerEvent: {}
+[24.043641] (brickpi3_motors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:14\x1b[m\x1b[K:\n'}
+[24.044962] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint BrickPi3::BrickPi3_set_address(int, const char*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.046006] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:102:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcontrol reaches end of non-void function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[24.049768] (brickpi3_motors) StderrLine: {'line': b'  102 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[24.053246] (brickpi3_motors) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[24.056094] (brickpi3_motors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:14\x1b[m\x1b[K:\n'}
+[24.059232] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint BrickPi3::detect(bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.062243] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:200:107:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive writing up to 20 bytes into a region of size 17 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-overflow=\x07-Wformat-overflow=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[24.071831] (brickpi3_motors) StderrLine: {'line': b'  200 |  version %sx but is currently version \x1b[01;35m\x1b[K%s\x1b[m\x1b[K", FIRMWARE_VERSION_REQUIRED, \x1b[32m\x1b[Kstr\x1b[m\x1b[K);\n'}
+[24.090100] (-) TimerEvent: {}
+[24.091006] (brickpi3_motors) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K^~\x1b[m\x1b[K                              \x1b[32m\x1b[K~~~\x1b[m\x1b[K\n'}
+[24.092091] (brickpi3_motors) StderrLine: {'line': b'\n'}
+[24.095968] (brickpi3_motors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:200:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksprintf\x1b[m\x1b[K\xe2\x80\x99 output between 84 and 104 bytes into a destination of size 100\n'}
+[24.098615] (brickpi3_motors) StderrLine: {'line': b'  200 |       \x1b[01;36m\x1b[Ksprintf(ErrorStr, "detect error: BrickPi3 firmware needs to be version %sx but is currently version %s", FIRMWARE_VERSION_REQUIRED, str)\x1b[m\x1b[K;\n'}
+[24.101520] (brickpi3_motors) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.190320] (-) TimerEvent: {}
+[24.291891] (-) TimerEvent: {}
+[24.393257] (-) TimerEvent: {}
+[24.494813] (-) TimerEvent: {}
+[24.598360] (-) TimerEvent: {}
+[24.711120] (-) TimerEvent: {}
+[24.812372] (-) TimerEvent: {}
+[24.914060] (-) TimerEvent: {}
+[25.015671] (-) TimerEvent: {}
+[25.116858] (-) TimerEvent: {}
+[25.219265] (-) TimerEvent: {}
+[25.321111] (-) TimerEvent: {}
+[25.422736] (-) TimerEvent: {}
+[25.524159] (-) TimerEvent: {}
+[25.626523] (-) TimerEvent: {}
+[25.729297] (-) TimerEvent: {}
+[25.837580] (-) TimerEvent: {}
+[25.940384] (-) TimerEvent: {}
+[26.043148] (-) TimerEvent: {}
+[26.145506] (-) TimerEvent: {}
+[26.247260] (-) TimerEvent: {}
+[26.349740] (-) TimerEvent: {}
+[26.451359] (-) TimerEvent: {}
+[26.554030] (-) TimerEvent: {}
+[26.655513] (-) TimerEvent: {}
+[26.757948] (-) TimerEvent: {}
+[26.861203] (-) TimerEvent: {}
+[26.964089] (-) TimerEvent: {}
+[27.066423] (-) TimerEvent: {}
+[27.169081] (-) TimerEvent: {}
+[27.271828] (-) TimerEvent: {}
+[27.375148] (-) TimerEvent: {}
+[27.477397] (-) TimerEvent: {}
+[27.579824] (-) TimerEvent: {}
+[27.682411] (-) TimerEvent: {}
+[27.784282] (-) TimerEvent: {}
+[27.886489] (-) TimerEvent: {}
+[27.988773] (-) TimerEvent: {}
+[28.091162] (-) TimerEvent: {}
+[28.193627] (-) TimerEvent: {}
+[28.296011] (-) TimerEvent: {}
+[28.397320] (-) TimerEvent: {}
+[28.498465] (-) TimerEvent: {}
+[28.564642] (brickpi3_motors) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libbrickpi3_motors.so\x1b[0m\n'}
+[28.598770] (-) TimerEvent: {}
+[28.701442] (-) TimerEvent: {}
+[28.804192] (-) TimerEvent: {}
+[28.905659] (-) TimerEvent: {}
+[29.009143] (-) TimerEvent: {}
+[29.113123] (-) TimerEvent: {}
+[29.214520] (-) TimerEvent: {}
+[29.316176] (-) TimerEvent: {}
+[29.418189] (-) TimerEvent: {}
+[29.522031] (-) TimerEvent: {}
+[29.624646] (-) TimerEvent: {}
+[29.727285] (-) TimerEvent: {}
+[29.830348] (-) TimerEvent: {}
+[29.930165] (brickpi3_motors) StdoutLine: {'line': b'[100%] Built target brickpi3_motors\n'}
+[29.931466] (-) TimerEvent: {}
+[30.001179] (brickpi3_motors) CommandEnded: {'returncode': 0}
+[30.005124] (brickpi3_motors) JobProgress: {'identifier': 'brickpi3_motors', 'progress': 'install'}
+[30.011705] (brickpi3_motors) Command: {'cmd': ['/usr/bin/cmake', '--install', '/code/brickpi/build/brickpi3_motors'], 'cwd': '/code/brickpi/build/brickpi3_motors', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.10.114 49367 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/code/brickpi/install/ev3_sensor_msgs/lib:/code/brickpi/install/brickpi3_motors/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/code'), ('TERM_PROGRAM_VERSION', '1.121.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8f792fae-7dec-4c91-bacf-e3815119c111.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/code/brickpi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('BRICKPI3_ROOT_DIR', '/home/ubuntu/BrickPi3'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '21'), ('AMENT_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/code/brickpi/install/brickpi3_motors:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/code/brickpi/build/brickpi3_motors'), ('SSH_CONNECTION', '192.168.10.114 49367 192.168.10.100 22'), ('PYTHONPATH', '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_motors:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble')]), 'shell': False}
+[30.031738] (-) TimerEvent: {}
+[30.054194] (brickpi3_motors) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.057626] (brickpi3_motors) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[30.070251] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors//brickpi3_motors.xml\n'}
+[30.077316] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/include/brickpi3_motors/.DS_Store\n'}
+[30.078901] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/include/brickpi3_motors/._.DS_Store\n'}
+[30.081422] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/include/brickpi3_motors/brickpi3_motors/brickpi3_motors.hpp\n'}
+[30.082454] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/environment/library_path.sh\n'}
+[30.087050] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/environment/library_path.dsv\n'}
+[30.088775] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/ament_index/resource_index/package_run_dependencies/brickpi3_motors\n'}
+[30.093377] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/ament_index/resource_index/parent_prefix_path/brickpi3_motors\n'}
+[30.097471] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/environment/ament_prefix_path.sh\n'}
+[30.101906] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/environment/ament_prefix_path.dsv\n'}
+[30.106039] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/environment/path.sh\n'}
+[30.111040] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/environment/path.dsv\n'}
+[30.114870] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/local_setup.bash\n'}
+[30.119967] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/local_setup.sh\n'}
+[30.123755] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/local_setup.zsh\n'}
+[30.128177] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/local_setup.dsv\n'}
+[30.132041] (-) TimerEvent: {}
+[30.135776] (brickpi3_motors) StdoutLine: {'line': b'-- Symlinking: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/package.dsv\n'}
+[30.194212] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/ament_index/resource_index/packages/brickpi3_motors\n'}
+[30.197154] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/brickpi3_motors\n'}
+[30.199641] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[30.202375] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[30.205296] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/cmake/brickpi3_motorsConfig.cmake\n'}
+[30.207566] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/cmake/brickpi3_motorsConfig-version.cmake\n'}
+[30.210309] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/package.xml\n'}
+[30.213323] (brickpi3_motors) StdoutLine: {'line': b'-- Installing: /code/brickpi/install/brickpi3_motors/lib/libbrickpi3_motors.so\n'}
+[30.232249] (-) TimerEvent: {}
+[30.284459] (brickpi3_motors) StdoutLine: {'line': b'-- Set runtime path of "/code/brickpi/install/brickpi3_motors/lib/libbrickpi3_motors.so" to ""\n'}
+[30.288366] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/cmake/export_brickpi3_motorsExport.cmake\n'}
+[30.289449] (brickpi3_motors) StdoutLine: {'line': b'-- Up-to-date: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/cmake/export_brickpi3_motorsExport-noconfig.cmake\n'}
+[30.300452] (brickpi3_motors) CommandEnded: {'returncode': 0}
+[30.333822] (-) TimerEvent: {}
+[30.436824] (-) TimerEvent: {}
+[30.472333] (brickpi3_motors) JobEnded: {'identifier': 'brickpi3_motors', 'rc': 0}
+[30.493721] (brickpi3_charlie) JobStarted: {'identifier': 'brickpi3_charlie'}
+[30.537358] (-) TimerEvent: {}
+[30.639075] (-) TimerEvent: {}
+[30.740867] (-) TimerEvent: {}
+[30.842502] (-) TimerEvent: {}
+[30.943910] (-) TimerEvent: {}
+[31.045148] (-) TimerEvent: {}
+[31.146391] (-) TimerEvent: {}
+[31.249278] (-) TimerEvent: {}
+[31.352156] (-) TimerEvent: {}
+[31.455642] (-) TimerEvent: {}
+[31.556767] (-) TimerEvent: {}
+[31.659250] (-) TimerEvent: {}
+[31.761825] (-) TimerEvent: {}
+[31.864234] (-) TimerEvent: {}
+[31.966693] (-) TimerEvent: {}
+[32.067915] (-) TimerEvent: {}
+[32.169170] (-) TimerEvent: {}
+[32.270474] (-) TimerEvent: {}
+[32.371680] (-) TimerEvent: {}
+[32.472970] (-) TimerEvent: {}
+[32.574225] (-) TimerEvent: {}
+[32.675530] (-) TimerEvent: {}
+[32.778127] (-) TimerEvent: {}
+[32.880771] (-) TimerEvent: {}
+[32.985488] (-) TimerEvent: {}
+[33.089559] (-) TimerEvent: {}
+[33.190739] (-) TimerEvent: {}
+[33.292076] (-) TimerEvent: {}
+[33.393374] (-) TimerEvent: {}
+[33.494739] (-) TimerEvent: {}
+[33.596232] (-) TimerEvent: {}
+[33.697858] (-) TimerEvent: {}
+[33.800753] (-) TimerEvent: {}
+[33.903579] (-) TimerEvent: {}
+[34.006239] (-) TimerEvent: {}
+[34.108507] (-) TimerEvent: {}
+[34.210045] (-) TimerEvent: {}
+[34.311181] (-) TimerEvent: {}
+[34.412353] (-) TimerEvent: {}
+[34.513521] (-) TimerEvent: {}
+[34.614689] (-) TimerEvent: {}
+[34.716037] (-) TimerEvent: {}
+[34.817130] (-) TimerEvent: {}
+[34.918330] (-) TimerEvent: {}
+[35.019749] (-) TimerEvent: {}
+[35.121022] (-) TimerEvent: {}
+[35.223407] (-) TimerEvent: {}
+[35.325748] (-) TimerEvent: {}
+[35.428207] (-) TimerEvent: {}
+[35.531113] (-) TimerEvent: {}
+[35.635202] (-) TimerEvent: {}
+[35.686770] (brickpi3_charlie) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/brickpi3_charlie', 'build', '--build-base', '/code/brickpi/build/brickpi3_charlie/build', 'install', '--record', '/code/brickpi/build/brickpi3_charlie/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/code/brickpi/brickpi3_charlie', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.10.114 49367 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/code/brickpi/install/brickpi3_motors/lib:/code/brickpi/install/ev3_sensor_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/code', 'TERM_PROGRAM_VERSION': '1.121.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-8f792fae-7dec-4c91-bacf-e3815119c111.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/code/brickpi/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '0', 'BRICKPI3_ROOT_DIR': '/home/ubuntu/BrickPi3', 'PATH': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '21', 'AMENT_PREFIX_PATH': '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/code/brickpi/install/brickpi3_motors:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/code/brickpi/build/brickpi3_charlie', 'SSH_CONNECTION': '192.168.10.114 49367 192.168.10.100 22', 'PYTHONPATH': '/code/brickpi/build/brickpi3_charlie/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/code/brickpi/install/brickpi3_motors:/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs'}, 'shell': False}
+[35.735399] (-) TimerEvent: {}
+[35.837898] (-) TimerEvent: {}
+[35.940380] (-) TimerEvent: {}
+[36.042824] (-) TimerEvent: {}
+[36.145196] (-) TimerEvent: {}
+[36.246501] (-) TimerEvent: {}
+[36.347607] (-) TimerEvent: {}
+[36.448646] (-) TimerEvent: {}
+[36.549642] (-) TimerEvent: {}
+[36.651020] (-) TimerEvent: {}
+[36.753126] (-) TimerEvent: {}
+[36.856183] (-) TimerEvent: {}
+[36.958526] (-) TimerEvent: {}
+[37.061021] (-) TimerEvent: {}
+[37.163216] (-) TimerEvent: {}
+[37.266730] (-) TimerEvent: {}
+[37.367869] (-) TimerEvent: {}
+[37.468860] (-) TimerEvent: {}
+[37.570164] (-) TimerEvent: {}
+[37.666627] (brickpi3_charlie) StdoutLine: {'line': b'running egg_info\n'}
+[37.670370] (-) TimerEvent: {}
+[37.672303] (brickpi3_charlie) StdoutLine: {'line': b'writing ../build/brickpi3_charlie/brickpi3_charlie.egg-info/PKG-INFO\n'}
+[37.679856] (brickpi3_charlie) StdoutLine: {'line': b'writing dependency_links to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/dependency_links.txt\n'}
+[37.684558] (brickpi3_charlie) StdoutLine: {'line': b'writing entry points to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/entry_points.txt\n'}
+[37.687613] (brickpi3_charlie) StdoutLine: {'line': b'writing requirements to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/requires.txt\n'}
+[37.690644] (brickpi3_charlie) StdoutLine: {'line': b'writing top-level names to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/top_level.txt\n'}
+[37.694196] (brickpi3_charlie) StdoutLine: {'line': b"reading manifest file '../build/brickpi3_charlie/brickpi3_charlie.egg-info/SOURCES.txt'\n"}
+[37.702355] (brickpi3_charlie) StdoutLine: {'line': b"writing manifest file '../build/brickpi3_charlie/brickpi3_charlie.egg-info/SOURCES.txt'\n"}
+[37.705360] (brickpi3_charlie) StdoutLine: {'line': b'running build\n'}
+[37.718602] (brickpi3_charlie) StdoutLine: {'line': b'running build_py\n'}
+[37.721624] (brickpi3_charlie) StdoutLine: {'line': b'running install\n'}
+[37.724598] (brickpi3_charlie) StdoutLine: {'line': b'running install_lib\n'}
+[37.737491] (brickpi3_charlie) StdoutLine: {'line': b'running install_data\n'}
+[37.741743] (brickpi3_charlie) StdoutLine: {'line': b'running install_egg_info\n'}
+[37.744814] (brickpi3_charlie) StdoutLine: {'line': b"removing '/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages/brickpi3_charlie-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[37.747861] (brickpi3_charlie) StdoutLine: {'line': b'Copying ../build/brickpi3_charlie/brickpi3_charlie.egg-info to /code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages/brickpi3_charlie-0.0.0-py3.10.egg-info\n'}
+[37.750589] (brickpi3_charlie) StdoutLine: {'line': b'running install_scripts\n'}
+[37.770595] (-) TimerEvent: {}
+[37.872162] (-) TimerEvent: {}
+[37.884550] (brickpi3_charlie) StdoutLine: {'line': b"writing list of installed files to '/code/brickpi/build/brickpi3_charlie/install.log'\n"}
+[37.972508] (-) TimerEvent: {}
+[38.040123] (brickpi3_charlie) CommandEnded: {'returncode': 0}
+[38.073329] (-) TimerEvent: {}
+[38.103075] (brickpi3_charlie) JobEnded: {'identifier': 'brickpi3_charlie', 'rc': 0}
+[38.173571] (-) TimerEvent: {}
+[38.275501] (-) TimerEvent: {}
+[38.376806] (-) TimerEvent: {}
+[38.477791] (-) TimerEvent: {}
+[38.578839] (-) TimerEvent: {}
+[38.679843] (-) TimerEvent: {}
+[38.780860] (-) TimerEvent: {}
+[38.881857] (-) TimerEvent: {}
+[38.983004] (-) TimerEvent: {}
+[39.083999] (-) TimerEvent: {}
+[39.185041] (-) TimerEvent: {}
+[39.286185] (-) TimerEvent: {}
+[39.387258] (-) TimerEvent: {}
+[39.488324] (-) TimerEvent: {}
+[39.589393] (-) TimerEvent: {}
+[39.690485] (-) TimerEvent: {}
+[39.791843] (-) TimerEvent: {}
+[39.893116] (-) TimerEvent: {}
+[39.994382] (-) TimerEvent: {}
+[40.095879] (-) TimerEvent: {}
+[40.197157] (-) TimerEvent: {}
+[40.298286] (-) TimerEvent: {}
+[40.399380] (-) TimerEvent: {}
+[40.500433] (-) TimerEvent: {}
+[40.601536] (-) TimerEvent: {}
+[40.702734] (-) TimerEvent: {}
+[40.803781] (-) TimerEvent: {}
+[40.904783] (-) TimerEvent: {}
+[41.006281] (-) TimerEvent: {}
+[41.107315] (-) TimerEvent: {}
+[41.208293] (-) TimerEvent: {}
+[41.309157] (-) TimerEvent: {}
+[41.410227] (-) TimerEvent: {}
+[41.511498] (-) TimerEvent: {}
+[41.612453] (-) TimerEvent: {}
+[41.713402] (-) TimerEvent: {}
+[41.814398] (-) TimerEvent: {}
+[41.915329] (-) TimerEvent: {}
+[42.016408] (-) TimerEvent: {}
+[42.117400] (-) TimerEvent: {}
+[42.218387] (-) TimerEvent: {}
+[42.319365] (-) TimerEvent: {}
+[42.420440] (-) TimerEvent: {}
+[42.521783] (-) TimerEvent: {}
+[42.622915] (-) TimerEvent: {}
+[42.724061] (-) TimerEvent: {}
+[42.825302] (-) TimerEvent: {}
+[42.926248] (-) TimerEvent: {}
+[43.027335] (-) TimerEvent: {}
+[43.128231] (-) TimerEvent: {}
+[43.229259] (-) TimerEvent: {}
+[43.330432] (-) TimerEvent: {}
+[43.431521] (-) TimerEvent: {}
+[43.532630] (-) TimerEvent: {}
+[43.633623] (-) TimerEvent: {}
+[43.734705] (-) TimerEvent: {}
+[43.835863] (-) TimerEvent: {}
+[43.936900] (-) TimerEvent: {}
+[44.037856] (-) TimerEvent: {}
+[44.138895] (-) TimerEvent: {}
+[44.241153] (-) TimerEvent: {}
+[44.342102] (-) TimerEvent: {}
+[44.443084] (-) TimerEvent: {}
+[44.544055] (-) TimerEvent: {}
+[44.645076] (-) TimerEvent: {}
+[44.746203] (-) TimerEvent: {}
+[44.847164] (-) TimerEvent: {}
+[44.948156] (-) TimerEvent: {}
+[45.049207] (-) TimerEvent: {}
+[45.150386] (-) TimerEvent: {}
+[45.173112] (rt_ros2) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable main_be\x1b[0m\n'}
+[45.250888] (-) TimerEvent: {}
+[45.352134] (-) TimerEvent: {}
+[45.453589] (-) TimerEvent: {}
+[45.512819] (rt_ros2) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable main_rt\x1b[0m\n'}
+[45.553879] (-) TimerEvent: {}
+[45.655182] (-) TimerEvent: {}
+[45.757767] (-) TimerEvent: {}
+[45.859918] (-) TimerEvent: {}
+[45.961325] (-) TimerEvent: {}
+[46.071725] (-) TimerEvent: {}
+[46.173473] (-) TimerEvent: {}
+[46.274552] (-) TimerEvent: {}
+[46.375754] (-) TimerEvent: {}
+[46.477000] (-) TimerEvent: {}
+[46.577986] (-) TimerEvent: {}
+[46.679040] (-) TimerEvent: {}
+[46.782480] (-) TimerEvent: {}
+[46.883339] (-) TimerEvent: {}
+[46.984282] (-) TimerEvent: {}
+[47.038077] (rt_ros2) StdoutLine: {'line': b'[ 95%] Built target main_be\n'}
+[47.084462] (-) TimerEvent: {}
+[47.185203] (-) TimerEvent: {}
+[47.285915] (-) TimerEvent: {}
+[47.322459] (rt_ros2) StdoutLine: {'line': b'[100%] Built target main_rt\n'}
+[47.376609] (rt_ros2) CommandEnded: {'returncode': 0}
+[47.379849] (rt_ros2) JobProgress: {'identifier': 'rt_ros2', 'progress': 'install'}
+[47.382521] (rt_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/code/brickpi/build/rt_ros2'], 'cwd': '/code/brickpi/build/rt_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.10.114 49367 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/code/brickpi/install/ev3_sensor_msgs/lib:/code/brickpi/install/brickpi3_motors/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/code'), ('TERM_PROGRAM_VERSION', '1.121.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8f792fae-7dec-4c91-bacf-e3815119c111.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/code/brickpi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('BRICKPI3_ROOT_DIR', '/home/ubuntu/BrickPi3'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '21'), ('AMENT_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/code/brickpi/install/brickpi3_motors:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/code/brickpi/build/rt_ros2'), ('SSH_CONNECTION', '192.168.10.114 49367 192.168.10.100 22'), ('PYTHONPATH', '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_motors:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble')]), 'shell': False}
+[47.387202] (-) TimerEvent: {}
+[47.415789] (rt_ros2) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[47.417754] (rt_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[47.419129] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/include/readerwriterqueue/atomicops.h\n'}
+[47.419915] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/include/readerwriterqueue/readerwriterqueue.h\n'}
+[47.420815] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/include/readerwriterqueue/readerwritercircularbuffer.h\n'}
+[47.421653] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/include/readerwriterqueue/LICENSE.md\n'}
+[47.423211] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/lib/rt_ros2/main_rt\n'}
+[47.424138] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/lib/rt_ros2/main_be\n'}
+[47.425873] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/._infraestructura.launch.py\n'}
+[47.426586] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/infraestructura.launch.py\n'}
+[47.428019] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/lib/rt_ros2/nodo_test\n'}
+[47.429277] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/package_run_dependencies/rt_ros2\n'}
+[47.430526] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/parent_prefix_path/rt_ros2\n'}
+[47.431646] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/ament_prefix_path.sh\n'}
+[47.432701] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/ament_prefix_path.dsv\n'}
+[47.433813] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/path.sh\n'}
+[47.434815] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/path.dsv\n'}
+[47.435801] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.bash\n'}
+[47.436809] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.sh\n'}
+[47.437890] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.zsh\n'}
+[47.438844] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.dsv\n'}
+[47.439661] (rt_ros2) StdoutLine: {'line': b'-- Symlinking: /code/brickpi/install/rt_ros2/share/rt_ros2/package.dsv\n'}
+[47.478547] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/packages/rt_ros2\n'}
+[47.479496] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/cmake/rt_ros2Config.cmake\n'}
+[47.480381] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/cmake/rt_ros2Config-version.cmake\n'}
+[47.481385] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/package.xml\n'}
+[47.487427] (-) TimerEvent: {}
+[47.490866] (rt_ros2) CommandEnded: {'returncode': 0}
+[47.564642] (rt_ros2) JobEnded: {'identifier': 'rt_ros2', 'rc': 0}
+[47.569461] (-) EventReactorShutdown: {}

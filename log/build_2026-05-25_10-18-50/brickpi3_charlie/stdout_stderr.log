@@ -1,0 +1,18 @@
+running egg_info
+writing ../build/brickpi3_charlie/brickpi3_charlie.egg-info/PKG-INFO
+writing dependency_links to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/dependency_links.txt
+writing entry points to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/entry_points.txt
+writing requirements to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/requires.txt
+writing top-level names to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/top_level.txt
+reading manifest file '../build/brickpi3_charlie/brickpi3_charlie.egg-info/SOURCES.txt'
+writing manifest file '../build/brickpi3_charlie/brickpi3_charlie.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages/brickpi3_charlie-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/brickpi3_charlie/brickpi3_charlie.egg-info to /code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages/brickpi3_charlie-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/code/brickpi/build/brickpi3_charlie/install.log'

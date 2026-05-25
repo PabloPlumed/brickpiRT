@@ -86,13 +86,13 @@ class ColorSensorNode(Node):
         super().destroy_node()
 
 
-# Pineamos el thread al core 3 y le damos la mayor prioridad entre los otros procesos
+# Pineamos el thread al core 1 y le damos la mayor prioridad entre los otros procesos
 set_cpu_affinity(1)
-#ret = set_rt_priority(55)
-#if ret != 0:
-#    print("WARN: No se pudo establecer prioridad RT, ejecuta: sudo setcap cap_sys_nice+ep $(which python3)")
-#else:
-#    print("INFO: Prioridad RT 55 y core 3 asignados al sensor")
+ret = set_rt_priority(55)
+if ret != 0:
+    print("WARN: No se pudo establecer prioridad RT, ejecuta: sudo setcap cap_sys_nice+ep $(which python3)")
+else:
+    print("INFO: Prioridad RT 55 y core 3 asignados al sensor")
 
 rclpy.init()
 color_sensor_node = ColorSensorNode()

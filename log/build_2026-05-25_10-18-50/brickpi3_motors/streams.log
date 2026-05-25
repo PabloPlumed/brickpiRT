@@ -1,0 +1,85 @@
+[0.178s] Invoking command in '/code/brickpi/build/brickpi3_motors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/brickpi3_motors -- -j4 -l4
+[1.738s] [ 50%] [32mBuilding CXX object CMakeFiles/brickpi3_motors.dir/src/brickpi3_motors.cpp.o[0m
+[20.539s] In file included from [01m[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:14[m[K:
+[20.542s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:[m[K In constructor ‘[01m[KBrickPi3::BrickPi3(uint8_t)[m[K’:
+[20.546s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:21:23:[m[K [01;35m[Kwarning: [m[Kcomparison is always false due to limited range of data type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits-Wtype-limits]8;;[m[K]
+[20.549s]    21 |   if(addr < 1 || [01;35m[Kaddr > 255[m[K){
+[20.552s]       |                  [01;35m[K~~~~~^~~~~[m[K
+[20.555s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:[m[K In member function ‘[01m[Kvoid BrickPi3::fatal_error(char*)[m[K’:
+[20.558s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:65:11:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security-Wformat-security]8;;[m[K]
+[20.561s]    65 |     [01;35m[Kprintf(error)[m[K;
+[20.563s]       |     [01;35m[K~~~~~~^~~~~~~[m[K
+[20.566s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:[m[K In member function ‘[01m[Kvoid BrickPi3::fatal_error(const char*)[m[K’:
+[20.569s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:72:11:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security-Wformat-security]8;;[m[K]
+[20.572s]    72 |     [01;35m[Kprintf(error)[m[K;
+[20.575s]       |     [01;35m[K~~~~~~^~~~~~~[m[K
+[20.578s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:[m[K In member function ‘[01m[Kint BrickPi3::detect(bool)[m[K’:
+[20.581s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:159:12:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[20.583s]   159 |   if([01;35m[Kerror = get_manufacturer(str)[m[K){
+[20.586s]       |      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[20.589s] In file included from [01m[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:14[m[K:
+[20.593s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:175:12:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[20.596s]   175 |   if([01;35m[Kerror = get_board(str)[m[K){
+[20.599s]       |      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~[m[K
+[20.602s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:191:12:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[20.605s]   191 |   if([01;35m[Kerror = get_version_firmware(str)[m[K){
+[20.608s]       |      [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[20.644s] [01m[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn brickpi3_motors::BrickPi3MotorsHardware::on_init(const hardware_interface::HardwareInfo&)[m[K’:
+[20.647s] [01m[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:43:84:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Kdouble[m[K’ to ‘[01m[Kstd::vector<int>::value_type[m[K’ {aka ‘[01m[Kint[m[K’} changes value from ‘[01m[K+QNaN[m[K’ to ‘[01m[K0[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+[20.650s]    43 | ize(), [01;35m[Kstd::numeric_limits<double>::quiet_NaN()[m[K);
+[20.654s]       |        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[20.657s] 
+[20.750s] [01m[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type brickpi3_motors::BrickPi3MotorsHardware::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[20.753s] [01m[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:195:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[20.757s]   195 |  rclcpp::Time &, [01;35m[Kconst rclcpp::Duration & period[m[K)
+[20.760s]       |                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[20.763s] 
+[24.036s] In file included from [01m[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:14[m[K:
+[24.037s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:[m[K In member function ‘[01m[Kint BrickPi3::BrickPi3_set_address(int, const char*)[m[K’:
+[24.040s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:102:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[24.044s]   102 | [01;35m[K}[m[K
+[24.047s]       | [01;35m[K^[m[K
+[24.050s] In file included from [01m[K/code/brickpi/brickpi3_motors/src/brickpi3_motors.cpp:14[m[K:
+[24.053s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:[m[K In member function ‘[01m[Kint BrickPi3::detect(bool)[m[K’:
+[24.056s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:200:107:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive writing up to 20 bytes into a region of size 17 [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-overflow=-Wformat-overflow=]8;;[m[K]
+[24.067s]   200 |  version %sx but is currently version [01;35m[K%s[m[K", FIRMWARE_VERSION_REQUIRED, [32m[Kstr[m[K);
+[24.083s]       |                                       [01;35m[K^~[m[K                              [32m[K~~~[m[K
+[24.086s] 
+[24.089s] [01m[K/home/ubuntu/BrickPi3/Software/C/BrickPi3.cpp:200:14:[m[K [01;36m[Knote: [m[K‘[01m[Ksprintf[m[K’ output between 84 and 104 bytes into a destination of size 100
+[24.092s]   200 |       [01;36m[Ksprintf(ErrorStr, "detect error: BrickPi3 firmware needs to be version %sx but is currently version %s", FIRMWARE_VERSION_REQUIRED, str)[m[K;
+[24.095s]       |       [01;36m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[28.557s] [100%] [32m[1mLinking CXX shared library libbrickpi3_motors.so[0m
+[29.922s] [100%] Built target brickpi3_motors
+[29.993s] Invoked command in '/code/brickpi/build/brickpi3_motors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/brickpi3_motors -- -j4 -l4
+[30.005s] Invoking command in '/code/brickpi/build/brickpi3_motors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/brickpi3_motors
+[30.047s] -- Install configuration: ""
+[30.050s] -- Execute custom install script
+[30.065s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors//brickpi3_motors.xml
+[30.070s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/include/brickpi3_motors/.DS_Store
+[30.072s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/include/brickpi3_motors/._.DS_Store
+[30.073s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/include/brickpi3_motors/brickpi3_motors/brickpi3_motors.hpp
+[30.075s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/environment/library_path.sh
+[30.079s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/environment/library_path.dsv
+[30.082s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/ament_index/resource_index/package_run_dependencies/brickpi3_motors
+[30.085s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/ament_index/resource_index/parent_prefix_path/brickpi3_motors
+[30.090s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/environment/ament_prefix_path.sh
+[30.094s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/environment/ament_prefix_path.dsv
+[30.099s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/environment/path.sh
+[30.103s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/environment/path.dsv
+[30.108s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/local_setup.bash
+[30.112s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/local_setup.sh
+[30.116s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/local_setup.zsh
+[30.122s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/local_setup.dsv
+[30.131s] -- Symlinking: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/package.dsv
+[30.186s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/ament_index/resource_index/packages/brickpi3_motors
+[30.189s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/brickpi3_motors
+[30.192s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/cmake/ament_cmake_export_targets-extras.cmake
+[30.194s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/cmake/ament_cmake_export_dependencies-extras.cmake
+[30.197s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/cmake/brickpi3_motorsConfig.cmake
+[30.200s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/cmake/brickpi3_motorsConfig-version.cmake
+[30.202s] -- Up-to-date symlink: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/package.xml
+[30.205s] -- Installing: /code/brickpi/install/brickpi3_motors/lib/libbrickpi3_motors.so
+[30.276s] -- Set runtime path of "/code/brickpi/install/brickpi3_motors/lib/libbrickpi3_motors.so" to ""
+[30.280s] -- Up-to-date: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/cmake/export_brickpi3_motorsExport.cmake
+[30.285s] -- Up-to-date: /code/brickpi/install/brickpi3_motors/share/brickpi3_motors/cmake/export_brickpi3_motorsExport-noconfig.cmake
+[30.295s] Invoked command in '/code/brickpi/build/brickpi3_motors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --install /code/brickpi/build/brickpi3_motors

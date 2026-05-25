@@ -51,6 +51,22 @@ int main(int argc, char ** argv)
     real_time_executor.add_node(nodo_act);
     real_time_executor.add_node(nodo_me);
 
+    // Ejecutamos el ejecutor RT en otro thread y lo pineamos a una cpu
+    std::thread real_time_thread([&real_time_executor]() {
+        cpu_set_t cpuset;
+        CPU_ZERO(&cpuset);
+        CPU_SET(1, &cpuset);
+        pthread_setaffinity_np(pthread_self(), sizeof(cpuset), &cpuset);
+
+        sched_param sch;
+        sch.sched_priority = 49;
+        if (sched_setscheduler(0, SCHED_FIFO, &sch) == -1) {
+            perror("sched_setscheduler failed");
+            exit(-1);
+        }
+        real_time_executor.spin();
+    });
+
     // Pinar el thread principal a la cpu 1
     cpu_set_t cpuset_be;
     CPU_ZERO(&cpuset_be);
@@ -60,21 +76,7 @@ int main(int argc, char ** argv)
     // Ejecutor best effort en el thread principal
     best_effort_executor.spin();
 
-    // Ejecutamos el ejecutor RT en otro thread
-    std::thread real_time_thread([&real_time_executor]() {
-        cpu_set_t cpuset;
-        CPU_ZERO(&cpuset);
-        CPU_SET(1, &cpuset);
-        pthread_setaffinity_np(pthread_self(), sizeof(cpuset), &cpuset);
-
-        sched_param sch;
-        sch.sched_priority = 60;
-        if (sched_setscheduler(0, SCHED_FIFO, &sch) == -1) {
-            perror("sched_setscheduler failed");
-            exit(-1);
-        }
-        real_time_executor.spin();
-    });
+    real_time_thread.join();
     
     rclcpp::shutdown();
 

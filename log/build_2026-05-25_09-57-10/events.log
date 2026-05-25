@@ -1,0 +1,364 @@
+[0.000000] (-) TimerEvent: {}
+[0.001173] (-) JobUnselected: {'identifier': 'brickpi3_charlie'}
+[0.002241] (-) JobUnselected: {'identifier': 'brickpi3_motors'}
+[0.002909] (-) JobUnselected: {'identifier': 'brickpi3_sensors'}
+[0.003496] (-) JobUnselected: {'identifier': 'ev3_sensor_msgs'}
+[0.003770] (rt_ros2) JobQueued: {'identifier': 'rt_ros2', 'dependencies': OrderedDict()}
+[0.003967] (rt_ros2) JobStarted: {'identifier': 'rt_ros2'}
+[0.045774] (rt_ros2) JobProgress: {'identifier': 'rt_ros2', 'progress': 'cmake'}
+[0.049035] (rt_ros2) JobProgress: {'identifier': 'rt_ros2', 'progress': 'build'}
+[0.052262] (rt_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/code/brickpi/build/rt_ros2', '--', '-j4', '-l4'], 'cwd': '/code/brickpi/build/rt_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.10.114 49367 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/code/brickpi/install/ev3_sensor_msgs/lib:/code/brickpi/install/brickpi3_motors/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/code'), ('TERM_PROGRAM_VERSION', '1.121.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8f792fae-7dec-4c91-bacf-e3815119c111.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/code/brickpi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('BRICKPI3_ROOT_DIR', '/home/ubuntu/BrickPi3'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '21'), ('AMENT_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/code/brickpi/install/brickpi3_motors:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/code/brickpi/build/rt_ros2'), ('SSH_CONNECTION', '192.168.10.114 49367 192.168.10.100 22'), ('PYTHONPATH', '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_motors:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble')]), 'shell': False}
+[0.099019] (-) TimerEvent: {}
+[0.200042] (-) TimerEvent: {}
+[0.301168] (-) TimerEvent: {}
+[0.358969] (rt_ros2) StdoutLine: {'line': b'[  3%] Built target nodo_test\n'}
+[0.366816] (rt_ros2) StdoutLine: {'line': b'[ 30%] Built target cactus_tracing_embedded_perfetto_protos\n'}
+[0.401376] (-) TimerEvent: {}
+[0.417232] (rt_ros2) StdoutLine: {'line': b'[ 69%] Built target quill\n'}
+[0.501648] (-) TimerEvent: {}
+[0.557806] (rt_ros2) StdoutLine: {'line': b'[ 84%] Built target cactus_rt\n'}
+[0.601912] (-) TimerEvent: {}
+[0.683081] (rt_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target main_rt\x1b[0m\n'}
+[0.705863] (-) TimerEvent: {}
+[0.807279] (-) TimerEvent: {}
+[0.817010] (rt_ros2) StdoutLine: {'line': b'[ 92%] Built target main_be\n'}
+[0.907596] (-) TimerEvent: {}
+[0.919403] (rt_ros2) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/main_rt.dir/src/mainRT.cc.o\x1b[0m\n'}
+[1.007758] (-) TimerEvent: {}
+[1.108733] (-) TimerEvent: {}
+[1.209493] (-) TimerEvent: {}
+[1.310391] (-) TimerEvent: {}
+[1.411479] (-) TimerEvent: {}
+[1.513139] (-) TimerEvent: {}
+[1.614361] (-) TimerEvent: {}
+[1.715828] (-) TimerEvent: {}
+[1.816643] (-) TimerEvent: {}
+[1.917423] (-) TimerEvent: {}
+[2.018676] (-) TimerEvent: {}
+[2.119513] (-) TimerEvent: {}
+[2.220360] (-) TimerEvent: {}
+[2.321183] (-) TimerEvent: {}
+[2.422120] (-) TimerEvent: {}
+[2.522989] (-) TimerEvent: {}
+[2.623868] (-) TimerEvent: {}
+[2.724830] (-) TimerEvent: {}
+[2.825902] (-) TimerEvent: {}
+[2.926729] (-) TimerEvent: {}
+[3.027709] (-) TimerEvent: {}
+[3.128504] (-) TimerEvent: {}
+[3.229421] (-) TimerEvent: {}
+[3.330344] (-) TimerEvent: {}
+[3.431365] (-) TimerEvent: {}
+[3.532862] (-) TimerEvent: {}
+[3.634247] (-) TimerEvent: {}
+[3.735712] (-) TimerEvent: {}
+[3.837114] (-) TimerEvent: {}
+[3.939714] (-) TimerEvent: {}
+[4.040635] (-) TimerEvent: {}
+[4.141530] (-) TimerEvent: {}
+[4.242663] (-) TimerEvent: {}
+[4.343520] (-) TimerEvent: {}
+[4.444514] (-) TimerEvent: {}
+[4.545386] (-) TimerEvent: {}
+[4.646253] (-) TimerEvent: {}
+[4.747379] (-) TimerEvent: {}
+[4.848362] (-) TimerEvent: {}
+[4.949353] (-) TimerEvent: {}
+[5.050319] (-) TimerEvent: {}
+[5.151321] (-) TimerEvent: {}
+[5.252295] (-) TimerEvent: {}
+[5.353223] (-) TimerEvent: {}
+[5.454129] (-) TimerEvent: {}
+[5.555021] (-) TimerEvent: {}
+[5.655918] (-) TimerEvent: {}
+[5.756794] (-) TimerEvent: {}
+[5.857679] (-) TimerEvent: {}
+[5.958700] (-) TimerEvent: {}
+[6.059516] (-) TimerEvent: {}
+[6.160533] (-) TimerEvent: {}
+[6.261413] (-) TimerEvent: {}
+[6.362455] (-) TimerEvent: {}
+[6.463391] (-) TimerEvent: {}
+[6.564301] (-) TimerEvent: {}
+[6.665200] (-) TimerEvent: {}
+[6.766335] (-) TimerEvent: {}
+[6.867366] (-) TimerEvent: {}
+[6.968365] (-) TimerEvent: {}
+[7.069320] (-) TimerEvent: {}
+[7.170402] (-) TimerEvent: {}
+[7.271314] (-) TimerEvent: {}
+[7.372201] (-) TimerEvent: {}
+[7.473103] (-) TimerEvent: {}
+[7.574061] (-) TimerEvent: {}
+[7.675348] (-) TimerEvent: {}
+[7.776350] (-) TimerEvent: {}
+[7.877252] (-) TimerEvent: {}
+[7.978221] (-) TimerEvent: {}
+[8.079201] (-) TimerEvent: {}
+[8.180154] (-) TimerEvent: {}
+[8.281066] (-) TimerEvent: {}
+[8.381969] (-) TimerEvent: {}
+[8.482884] (-) TimerEvent: {}
+[8.583917] (-) TimerEvent: {}
+[8.684904] (-) TimerEvent: {}
+[8.785768] (-) TimerEvent: {}
+[8.886699] (-) TimerEvent: {}
+[8.987647] (-) TimerEvent: {}
+[9.088627] (-) TimerEvent: {}
+[9.189489] (-) TimerEvent: {}
+[9.290385] (-) TimerEvent: {}
+[9.391267] (-) TimerEvent: {}
+[9.492179] (-) TimerEvent: {}
+[9.593085] (-) TimerEvent: {}
+[9.693978] (-) TimerEvent: {}
+[9.795084] (-) TimerEvent: {}
+[9.896028] (-) TimerEvent: {}
+[9.996936] (-) TimerEvent: {}
+[10.097798] (-) TimerEvent: {}
+[10.198692] (-) TimerEvent: {}
+[10.299574] (-) TimerEvent: {}
+[10.400439] (-) TimerEvent: {}
+[10.501349] (-) TimerEvent: {}
+[10.602269] (-) TimerEvent: {}
+[10.703230] (-) TimerEvent: {}
+[10.804368] (-) TimerEvent: {}
+[10.905264] (-) TimerEvent: {}
+[11.006155] (-) TimerEvent: {}
+[11.107114] (-) TimerEvent: {}
+[11.208027] (-) TimerEvent: {}
+[11.308978] (-) TimerEvent: {}
+[11.409878] (-) TimerEvent: {}
+[11.510797] (-) TimerEvent: {}
+[11.611708] (-) TimerEvent: {}
+[11.712678] (-) TimerEvent: {}
+[11.813731] (-) TimerEvent: {}
+[11.915020] (-) TimerEvent: {}
+[12.015886] (-) TimerEvent: {}
+[12.116769] (-) TimerEvent: {}
+[12.217701] (-) TimerEvent: {}
+[12.318636] (-) TimerEvent: {}
+[12.419633] (-) TimerEvent: {}
+[12.520519] (-) TimerEvent: {}
+[12.621410] (-) TimerEvent: {}
+[12.722404] (-) TimerEvent: {}
+[12.823448] (-) TimerEvent: {}
+[12.924339] (-) TimerEvent: {}
+[13.025258] (-) TimerEvent: {}
+[13.126218] (-) TimerEvent: {}
+[13.227133] (-) TimerEvent: {}
+[13.328063] (-) TimerEvent: {}
+[13.428948] (-) TimerEvent: {}
+[13.529878] (-) TimerEvent: {}
+[13.630909] (-) TimerEvent: {}
+[13.731760] (-) TimerEvent: {}
+[13.832730] (-) TimerEvent: {}
+[13.933684] (-) TimerEvent: {}
+[14.034620] (-) TimerEvent: {}
+[14.135479] (-) TimerEvent: {}
+[14.236392] (-) TimerEvent: {}
+[14.337297] (-) TimerEvent: {}
+[14.438184] (-) TimerEvent: {}
+[14.539105] (-) TimerEvent: {}
+[14.640043] (-) TimerEvent: {}
+[14.741012] (-) TimerEvent: {}
+[14.841989] (-) TimerEvent: {}
+[14.942866] (-) TimerEvent: {}
+[15.043779] (-) TimerEvent: {}
+[15.144729] (-) TimerEvent: {}
+[15.245699] (-) TimerEvent: {}
+[15.346696] (-) TimerEvent: {}
+[15.447666] (-) TimerEvent: {}
+[15.548573] (-) TimerEvent: {}
+[15.649432] (-) TimerEvent: {}
+[15.750344] (-) TimerEvent: {}
+[15.851263] (-) TimerEvent: {}
+[15.952178] (-) TimerEvent: {}
+[16.053037] (-) TimerEvent: {}
+[16.153970] (-) TimerEvent: {}
+[16.254862] (-) TimerEvent: {}
+[16.355756] (-) TimerEvent: {}
+[16.456684] (-) TimerEvent: {}
+[16.557580] (-) TimerEvent: {}
+[16.658447] (-) TimerEvent: {}
+[16.759351] (-) TimerEvent: {}
+[16.860213] (-) TimerEvent: {}
+[16.961090] (-) TimerEvent: {}
+[17.061963] (-) TimerEvent: {}
+[17.162843] (-) TimerEvent: {}
+[17.263714] (-) TimerEvent: {}
+[17.364614] (-) TimerEvent: {}
+[17.465567] (-) TimerEvent: {}
+[17.566409] (-) TimerEvent: {}
+[17.667290] (-) TimerEvent: {}
+[17.768274] (-) TimerEvent: {}
+[17.869228] (-) TimerEvent: {}
+[17.970141] (-) TimerEvent: {}
+[18.071046] (-) TimerEvent: {}
+[18.171948] (-) TimerEvent: {}
+[18.272822] (-) TimerEvent: {}
+[18.373676] (-) TimerEvent: {}
+[18.474590] (-) TimerEvent: {}
+[18.575452] (-) TimerEvent: {}
+[18.676317] (-) TimerEvent: {}
+[18.777218] (-) TimerEvent: {}
+[18.878304] (-) TimerEvent: {}
+[18.979747] (-) TimerEvent: {}
+[19.080642] (-) TimerEvent: {}
+[19.181517] (-) TimerEvent: {}
+[19.282401] (-) TimerEvent: {}
+[19.383281] (-) TimerEvent: {}
+[19.484179] (-) TimerEvent: {}
+[19.585187] (-) TimerEvent: {}
+[19.686407] (-) TimerEvent: {}
+[19.787323] (-) TimerEvent: {}
+[19.888347] (-) TimerEvent: {}
+[19.989251] (-) TimerEvent: {}
+[20.090155] (-) TimerEvent: {}
+[20.191042] (-) TimerEvent: {}
+[20.291960] (-) TimerEvent: {}
+[20.392909] (-) TimerEvent: {}
+[20.493932] (-) TimerEvent: {}
+[20.594866] (-) TimerEvent: {}
+[20.695840] (-) TimerEvent: {}
+[20.796849] (-) TimerEvent: {}
+[20.897740] (-) TimerEvent: {}
+[20.998631] (-) TimerEvent: {}
+[21.099491] (-) TimerEvent: {}
+[21.200413] (-) TimerEvent: {}
+[21.301317] (-) TimerEvent: {}
+[21.402222] (-) TimerEvent: {}
+[21.503129] (-) TimerEvent: {}
+[21.604033] (-) TimerEvent: {}
+[21.704978] (-) TimerEvent: {}
+[21.805937] (-) TimerEvent: {}
+[21.906814] (-) TimerEvent: {}
+[22.007695] (-) TimerEvent: {}
+[22.108587] (-) TimerEvent: {}
+[22.209453] (-) TimerEvent: {}
+[22.310350] (-) TimerEvent: {}
+[22.411256] (-) TimerEvent: {}
+[22.512146] (-) TimerEvent: {}
+[22.613020] (-) TimerEvent: {}
+[22.713986] (-) TimerEvent: {}
+[22.814994] (-) TimerEvent: {}
+[22.915859] (-) TimerEvent: {}
+[23.016704] (-) TimerEvent: {}
+[23.117611] (-) TimerEvent: {}
+[23.218657] (-) TimerEvent: {}
+[23.319552] (-) TimerEvent: {}
+[23.420407] (-) TimerEvent: {}
+[23.521341] (-) TimerEvent: {}
+[23.622209] (-) TimerEvent: {}
+[23.723125] (-) TimerEvent: {}
+[23.823991] (-) TimerEvent: {}
+[23.925007] (-) TimerEvent: {}
+[24.025879] (-) TimerEvent: {}
+[24.126730] (-) TimerEvent: {}
+[24.227607] (-) TimerEvent: {}
+[24.328464] (-) TimerEvent: {}
+[24.429381] (-) TimerEvent: {}
+[24.530296] (-) TimerEvent: {}
+[24.631173] (-) TimerEvent: {}
+[24.732096] (-) TimerEvent: {}
+[24.832948] (-) TimerEvent: {}
+[24.934028] (-) TimerEvent: {}
+[25.034933] (-) TimerEvent: {}
+[25.135973] (-) TimerEvent: {}
+[25.236924] (-) TimerEvent: {}
+[25.337859] (-) TimerEvent: {}
+[25.438707] (-) TimerEvent: {}
+[25.539525] (-) TimerEvent: {}
+[25.640379] (-) TimerEvent: {}
+[25.741344] (-) TimerEvent: {}
+[25.842340] (-) TimerEvent: {}
+[25.943174] (-) TimerEvent: {}
+[26.044053] (-) TimerEvent: {}
+[26.144957] (-) TimerEvent: {}
+[26.245810] (-) TimerEvent: {}
+[26.346676] (-) TimerEvent: {}
+[26.447504] (-) TimerEvent: {}
+[26.548435] (-) TimerEvent: {}
+[26.649298] (-) TimerEvent: {}
+[26.750182] (-) TimerEvent: {}
+[26.851005] (-) TimerEvent: {}
+[26.951931] (-) TimerEvent: {}
+[27.052820] (-) TimerEvent: {}
+[27.153681] (-) TimerEvent: {}
+[27.254568] (-) TimerEvent: {}
+[27.355412] (-) TimerEvent: {}
+[27.456294] (-) TimerEvent: {}
+[27.557221] (-) TimerEvent: {}
+[27.658079] (-) TimerEvent: {}
+[27.759105] (-) TimerEvent: {}
+[27.860085] (-) TimerEvent: {}
+[27.960953] (-) TimerEvent: {}
+[28.061814] (-) TimerEvent: {}
+[28.162759] (-) TimerEvent: {}
+[28.263693] (-) TimerEvent: {}
+[28.364789] (-) TimerEvent: {}
+[28.465635] (-) TimerEvent: {}
+[28.566576] (-) TimerEvent: {}
+[28.667435] (-) TimerEvent: {}
+[28.768312] (-) TimerEvent: {}
+[28.869397] (-) TimerEvent: {}
+[28.970277] (-) TimerEvent: {}
+[29.071202] (-) TimerEvent: {}
+[29.172246] (-) TimerEvent: {}
+[29.273177] (-) TimerEvent: {}
+[29.374114] (-) TimerEvent: {}
+[29.475081] (-) TimerEvent: {}
+[29.576004] (-) TimerEvent: {}
+[29.636789] (rt_ros2) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable main_rt\x1b[0m\n'}
+[29.676212] (-) TimerEvent: {}
+[29.777284] (-) TimerEvent: {}
+[29.878339] (-) TimerEvent: {}
+[29.979762] (-) TimerEvent: {}
+[30.080971] (-) TimerEvent: {}
+[30.182118] (-) TimerEvent: {}
+[30.283812] (-) TimerEvent: {}
+[30.385093] (-) TimerEvent: {}
+[30.486240] (-) TimerEvent: {}
+[30.587347] (-) TimerEvent: {}
+[30.688159] (-) TimerEvent: {}
+[30.789031] (-) TimerEvent: {}
+[30.889846] (-) TimerEvent: {}
+[30.991021] (-) TimerEvent: {}
+[31.092181] (-) TimerEvent: {}
+[31.192964] (-) TimerEvent: {}
+[31.293866] (-) TimerEvent: {}
+[31.299403] (rt_ros2) StdoutLine: {'line': b'[100%] Built target main_rt\n'}
+[31.353897] (rt_ros2) CommandEnded: {'returncode': 0}
+[31.356599] (rt_ros2) JobProgress: {'identifier': 'rt_ros2', 'progress': 'install'}
+[31.393853] (rt_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/code/brickpi/build/rt_ros2'], 'cwd': '/code/brickpi/build/rt_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.10.114 49367 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/code/brickpi/install/ev3_sensor_msgs/lib:/code/brickpi/install/brickpi3_motors/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/code'), ('TERM_PROGRAM_VERSION', '1.121.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8f792fae-7dec-4c91-bacf-e3815119c111.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/code/brickpi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('BRICKPI3_ROOT_DIR', '/home/ubuntu/BrickPi3'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '21'), ('AMENT_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/code/brickpi/install/brickpi3_motors:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/code/brickpi/build/rt_ros2'), ('SSH_CONNECTION', '192.168.10.114 49367 192.168.10.100 22'), ('PYTHONPATH', '/code/brickpi/install/ev3_sensor_msgs/local/lib/python3.10/dist-packages:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs:/code/brickpi/install/brickpi3_motors:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble')]), 'shell': False}
+[31.400810] (-) TimerEvent: {}
+[31.431901] (rt_ros2) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[31.433780] (rt_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[31.435017] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/include/readerwriterqueue/atomicops.h\n'}
+[31.435861] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/include/readerwriterqueue/readerwriterqueue.h\n'}
+[31.436745] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/include/readerwriterqueue/readerwritercircularbuffer.h\n'}
+[31.437506] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/include/readerwriterqueue/LICENSE.md\n'}
+[31.439050] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/lib/rt_ros2/main_rt\n'}
+[31.440019] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/lib/rt_ros2/main_be\n'}
+[31.441929] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/._infraestructura.launch.py\n'}
+[31.442828] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/infraestructura.launch.py\n'}
+[31.444217] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/lib/rt_ros2/nodo_test\n'}
+[31.445491] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/package_run_dependencies/rt_ros2\n'}
+[31.446789] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/parent_prefix_path/rt_ros2\n'}
+[31.447961] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/ament_prefix_path.sh\n'}
+[31.448954] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/ament_prefix_path.dsv\n'}
+[31.450030] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/path.sh\n'}
+[31.451062] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/environment/path.dsv\n'}
+[31.452065] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.bash\n'}
+[31.453057] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.sh\n'}
+[31.454018] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.zsh\n'}
+[31.454982] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/local_setup.dsv\n'}
+[31.455728] (rt_ros2) StdoutLine: {'line': b'-- Symlinking: /code/brickpi/install/rt_ros2/share/rt_ros2/package.dsv\n'}
+[31.494676] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/ament_index/resource_index/packages/rt_ros2\n'}
+[31.495633] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/cmake/rt_ros2Config.cmake\n'}
+[31.496396] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/cmake/rt_ros2Config-version.cmake\n'}
+[31.497311] (rt_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /code/brickpi/install/rt_ros2/share/rt_ros2/package.xml\n'}
+[31.501014] (-) TimerEvent: {}
+[31.507109] (rt_ros2) CommandEnded: {'returncode': 0}
+[31.601191] (-) TimerEvent: {}
+[31.612593] (rt_ros2) JobEnded: {'identifier': 'rt_ros2', 'rc': 0}
+[31.616050] (-) EventReactorShutdown: {}
