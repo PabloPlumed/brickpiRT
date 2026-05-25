@@ -1,0 +1,14 @@
+[ 26%] Built target cactus_tracing_embedded_perfetto_protos
+[ 30%] Built target nodo_test
+[ 69%] Built target quill
+[ 84%] Built target cactus_rt
+[35m[1mConsolidate compiler generated dependencies of target main_rt[0m
+[35m[1mConsolidate compiler generated dependencies of target main_be[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/main_rt.dir/src/nodo_maquina_estados.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/main_rt.dir/src/mainRT.cc.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/main_be.dir/src/mainBE.cc.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/main_be.dir/src/nodo_actuador.cpp.o[0m
+[ 93%] [32m[1mLinking CXX executable main_rt[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/main_be.dir/src/nodo_maquina_estados.cpp.o[0m
+[ 96%] [32m[1mLinking CXX executable main_be[0m

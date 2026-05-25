@@ -1,0 +1,269 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-bbb9bfa98ff70ff77a5f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						6,
+						7
+					]
+				},
+				{
+					"build" : "vendor",
+					"childIndexes" : 
+					[
+						2,
+						4,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-vendor-Debug-650fd368ad88650ee272.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "vendor"
+				},
+				{
+					"build" : "vendor/quill",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-vendor.quill-Debug-719bd246d7f52831f43b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "vendor/quill"
+				},
+				{
+					"build" : "vendor/quill/quill",
+					"jsonFile" : "directory-vendor.quill.quill-Debug-80904210cfefb541db89.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "vendor/quill/quill",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "vendor/readerwriterqueue",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-vendor.readerwriterqueue-Debug-dab75a22f8210d01a36c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.9"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "vendor/readerwriterqueue"
+				},
+				{
+					"build" : "vendor/cactus-rt",
+					"childIndexes" : 
+					[
+						6
+					],
+					"jsonFile" : "directory-vendor.cactus-rt-Debug-59d345f8c5765b59010a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 4,
+					"source" : "vendor/cactus-rt",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "vendor/cactus-rt/protos",
+					"jsonFile" : "directory-vendor.cactus-rt.protos-Debug-57631d915d661f6fcd87.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 4,
+					"source" : "vendor/cactus-rt/protos",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "rt_ros2",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						6,
+						7
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "cactus-rt-integrated",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "quill",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "readerwriterqueue",
+					"parentIndex" : 1
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5,
+						6
+					],
+					"name" : "cactus_rt",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "cactus_rt::@23a450d1280fcf66a13e",
+					"jsonFile" : "target-cactus_rt-Debug-b1e99af0a79d9641e5e6.json",
+					"name" : "cactus_rt",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "cactus_tracing_embedded_perfetto_protos::@b7c54c46426fb5263dc2",
+					"jsonFile" : "target-cactus_tracing_embedded_perfetto_protos-Debug-979eed3644673aa85719.json",
+					"name" : "cactus_tracing_embedded_perfetto_protos",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "main_be::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main_be-Debug-29ced8cbba6afdfd07c9.json",
+					"name" : "main_be",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "main_rt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main_rt-Debug-1bee6160ab46ceeb4cf2.json",
+					"name" : "main_rt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nodo_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nodo_test-Debug-f0c8be881a701e63eded.json",
+					"name" : "nodo_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "quill::@1258a61c3f23066ad3da",
+					"jsonFile" : "target-quill-Debug-123ba8b7d91dc5513485.json",
+					"name" : "quill",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt_ros2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt_ros2_uninstall-Debug-36c9e45af5186acc06ff.json",
+					"name" : "rt_ros2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-8caf3b2a9ea7ff99563b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/code/brickpi/build",
+		"source" : "/code/brickpi/rt_ros2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

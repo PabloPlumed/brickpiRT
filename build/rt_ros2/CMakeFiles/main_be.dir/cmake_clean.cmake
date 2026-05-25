@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main_be.dir/src/nodo_actuador.cpp.o.d"
   "CMakeFiles/main_be.dir/src/nodo_maquina_estados.cpp.o"
   "CMakeFiles/main_be.dir/src/nodo_maquina_estados.cpp.o.d"
+  "CMakeFiles/main_be.dir/src/nodo_ruido.cpp.o"
+  "CMakeFiles/main_be.dir/src/nodo_ruido.cpp.o.d"
   "main_be"
   "main_be.pdb"
 )

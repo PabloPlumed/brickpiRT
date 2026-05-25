@@ -1,0 +1,20 @@
+[11.461s] Invoking command in '/code/brickpi/brickpi3_charlie': CMAKE_PREFIX_PATH=/code/brickpi/install/brickpi3_motors:/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs LD_LIBRARY_PATH=/code/brickpi/install/brickpi3_motors/lib:/code/brickpi/install/ev3_sensor_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/code/brickpi/build/brickpi3_charlie/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/brickpi3_charlie build --build-base /code/brickpi/build/brickpi3_charlie/build install --record /code/brickpi/build/brickpi3_charlie/install.log --single-version-externally-managed install_data
+[15.868s] running egg_info
+[15.877s] writing ../build/brickpi3_charlie/brickpi3_charlie.egg-info/PKG-INFO
+[15.881s] writing dependency_links to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/dependency_links.txt
+[15.890s] writing entry points to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/entry_points.txt
+[15.894s] writing requirements to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/requires.txt
+[15.897s] writing top-level names to ../build/brickpi3_charlie/brickpi3_charlie.egg-info/top_level.txt
+[15.930s] reading manifest file '../build/brickpi3_charlie/brickpi3_charlie.egg-info/SOURCES.txt'
+[15.962s] writing manifest file '../build/brickpi3_charlie/brickpi3_charlie.egg-info/SOURCES.txt'
+[15.968s] running build
+[15.981s] running build_py
+[15.991s] running install
+[15.992s] running install_lib
+[16.013s] running install_data
+[16.016s] running install_egg_info
+[16.045s] removing '/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages/brickpi3_charlie-0.0.0-py3.10.egg-info' (and everything under it)
+[16.068s] Copying ../build/brickpi3_charlie/brickpi3_charlie.egg-info to /code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages/brickpi3_charlie-0.0.0-py3.10.egg-info
+[16.160s] running install_scripts
+[16.476s] writing list of installed files to '/code/brickpi/build/brickpi3_charlie/install.log'
+[16.937s] Invoked command in '/code/brickpi/brickpi3_charlie' returned '0': CMAKE_PREFIX_PATH=/code/brickpi/install/brickpi3_motors:/code/brickpi/install/rt_ros2:/code/brickpi/install/ev3_sensor_msgs LD_LIBRARY_PATH=/code/brickpi/install/brickpi3_motors/lib:/code/brickpi/install/ev3_sensor_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/code/brickpi/build/brickpi3_charlie/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_charlie/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/brickpi3_charlie build --build-base /code/brickpi/build/brickpi3_charlie/build install --record /code/brickpi/build/brickpi3_charlie/install.log --single-version-externally-managed install_data

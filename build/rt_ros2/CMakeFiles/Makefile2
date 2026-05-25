@@ -63,10 +63,8 @@ CMAKE_BINARY_DIR = /code/brickpi/build/rt_ros2
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/rt_ros2.dir/all
 all: CMakeFiles/main_rt.dir/all
 all: CMakeFiles/main_be.dir/all
-all: CMakeFiles/nodo_ruido.dir/all
 all: CMakeFiles/nodo_test.dir/all
 all: vendor/all
 .PHONY : all
@@ -78,10 +76,8 @@ preinstall: vendor/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/rt_ros2_uninstall.dir/clean
-clean: CMakeFiles/rt_ros2.dir/clean
 clean: CMakeFiles/main_rt.dir/clean
 clean: CMakeFiles/main_be.dir/clean
-clean: CMakeFiles/nodo_ruido.dir/clean
 clean: CMakeFiles/nodo_test.dir/clean
 clean: vendor/clean
 .PHONY : clean
@@ -237,34 +233,6 @@ CMakeFiles/rt_ros2_uninstall.dir/clean:
 .PHONY : CMakeFiles/rt_ros2_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/rt_ros2.dir
-
-# All Build rule for target.
-CMakeFiles/rt_ros2.dir/all: vendor/quill/quill/CMakeFiles/quill.dir/all
-CMakeFiles/rt_ros2.dir/all: vendor/cactus-rt/CMakeFiles/cactus_rt.dir/all
-CMakeFiles/rt_ros2.dir/all: vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/code/brickpi/build/rt_ros2/CMakeFiles --progress-num=64,65,66,67 "Built target rt_ros2"
-.PHONY : CMakeFiles/rt_ros2.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/rt_ros2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /code/brickpi/build/rt_ros2/CMakeFiles 55
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rt_ros2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /code/brickpi/build/rt_ros2/CMakeFiles 0
-.PHONY : CMakeFiles/rt_ros2.dir/rule
-
-# Convenience name for target.
-rt_ros2: CMakeFiles/rt_ros2.dir/rule
-.PHONY : rt_ros2
-
-# clean rule for target.
-CMakeFiles/rt_ros2.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/clean
-.PHONY : CMakeFiles/rt_ros2.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/main_rt.dir
 
 # All Build rule for target.
@@ -273,12 +241,12 @@ CMakeFiles/main_rt.dir/all: vendor/cactus-rt/CMakeFiles/cactus_rt.dir/all
 CMakeFiles/main_rt.dir/all: vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/code/brickpi/build/rt_ros2/CMakeFiles --progress-num=31,32,33,34 "Built target main_rt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/code/brickpi/build/rt_ros2/CMakeFiles --progress-num=32,33,34,35,36 "Built target main_rt"
 .PHONY : CMakeFiles/main_rt.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main_rt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /code/brickpi/build/rt_ros2/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /code/brickpi/build/rt_ros2/CMakeFiles 56
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main_rt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /code/brickpi/build/rt_ros2/CMakeFiles 0
 .PHONY : CMakeFiles/main_rt.dir/rule
@@ -301,12 +269,12 @@ CMakeFiles/main_be.dir/all: vendor/cactus-rt/CMakeFiles/cactus_rt.dir/all
 CMakeFiles/main_be.dir/all: vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/code/brickpi/build/rt_ros2/CMakeFiles --progress-num=27,28,29,30 "Built target main_be"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/code/brickpi/build/rt_ros2/CMakeFiles --progress-num=27,28,29,30,31 "Built target main_be"
 .PHONY : CMakeFiles/main_be.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main_be.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /code/brickpi/build/rt_ros2/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /code/brickpi/build/rt_ros2/CMakeFiles 56
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main_be.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /code/brickpi/build/rt_ros2/CMakeFiles 0
 .PHONY : CMakeFiles/main_be.dir/rule
@@ -319,34 +287,6 @@ main_be: CMakeFiles/main_be.dir/rule
 CMakeFiles/main_be.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/clean
 .PHONY : CMakeFiles/main_be.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/nodo_ruido.dir
-
-# All Build rule for target.
-CMakeFiles/nodo_ruido.dir/all: vendor/quill/quill/CMakeFiles/quill.dir/all
-CMakeFiles/nodo_ruido.dir/all: vendor/cactus-rt/CMakeFiles/cactus_rt.dir/all
-CMakeFiles/nodo_ruido.dir/all: vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_ruido.dir/build.make CMakeFiles/nodo_ruido.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_ruido.dir/build.make CMakeFiles/nodo_ruido.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/code/brickpi/build/rt_ros2/CMakeFiles --progress-num=35,36 "Built target nodo_ruido"
-.PHONY : CMakeFiles/nodo_ruido.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/nodo_ruido.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /code/brickpi/build/rt_ros2/CMakeFiles 53
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nodo_ruido.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /code/brickpi/build/rt_ros2/CMakeFiles 0
-.PHONY : CMakeFiles/nodo_ruido.dir/rule
-
-# Convenience name for target.
-nodo_ruido: CMakeFiles/nodo_ruido.dir/rule
-.PHONY : nodo_ruido
-
-# clean rule for target.
-CMakeFiles/nodo_ruido.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_ruido.dir/build.make CMakeFiles/nodo_ruido.dir/clean
-.PHONY : CMakeFiles/nodo_ruido.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/nodo_test.dir

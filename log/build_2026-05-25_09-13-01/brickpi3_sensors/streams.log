@@ -1,0 +1,32 @@
+[3.961s] Invoking command in '/code/brickpi/brickpi3_sensors': PYTHONPATH=/code/brickpi/build/brickpi3_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/brickpi3_sensors build --build-base /code/brickpi/build/brickpi3_sensors/build install --record /code/brickpi/build/brickpi3_sensors/install.log --single-version-externally-managed install_data
+[5.162s] running egg_info
+[5.166s] writing ../build/brickpi3_sensors/brickpi3_sensors.egg-info/PKG-INFO
+[5.167s] writing dependency_links to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/dependency_links.txt
+[5.169s] writing entry points to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/entry_points.txt
+[5.170s] writing requirements to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/requires.txt
+[5.171s] writing top-level names to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/top_level.txt
+[5.180s] reading manifest file '../build/brickpi3_sensors/brickpi3_sensors.egg-info/SOURCES.txt'
+[5.185s] writing manifest file '../build/brickpi3_sensors/brickpi3_sensors.egg-info/SOURCES.txt'
+[5.186s] running build
+[5.186s] running build_py
+[5.188s] copying brickpi3_sensors/light_sensor_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+[5.191s] running install
+[5.193s] running install_lib
+[5.198s] copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/light_sensor_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+[5.203s] byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/light_sensor_node.py to light_sensor_node.cpython-310.pyc
+[5.209s] running install_data
+[5.210s] running install_egg_info
+[5.219s] removing '/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors-0.0.0-py3.10.egg-info' (and everything under it)
+[5.221s] Copying ../build/brickpi3_sensors/brickpi3_sensors.egg-info to /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors-0.0.0-py3.10.egg-info
+[5.229s] running install_scripts
+[5.322s] Installing battery_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[5.323s] Installing color_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[5.325s] Installing compass_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[5.326s] Installing differential_drive_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[5.327s] Installing gyro_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[5.328s] Installing infrared_distance_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[5.329s] Installing light_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[5.330s] Installing touch_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[5.331s] Installing ultrasonic_distance_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[5.334s] writing list of installed files to '/code/brickpi/build/brickpi3_sensors/install.log'
+[5.466s] Invoked command in '/code/brickpi/brickpi3_sensors' returned '0': PYTHONPATH=/code/brickpi/build/brickpi3_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/brickpi3_sensors build --build-base /code/brickpi/build/brickpi3_sensors/build install --record /code/brickpi/build/brickpi3_sensors/install.log --single-version-externally-managed install_data

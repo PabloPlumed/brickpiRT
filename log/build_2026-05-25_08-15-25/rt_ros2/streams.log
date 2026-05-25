@@ -1,0 +1,28 @@
+[1.919s] Invoking command in '/code/brickpi/build/rt_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4
+[2.698s] [ 26%] Built target cactus_tracing_embedded_perfetto_protos
+[2.783s] [ 30%] Built target nodo_test
+[2.995s] [ 69%] Built target quill
+[3.414s] [ 84%] Built target cactus_rt
+[3.621s] [35m[1mConsolidate compiler generated dependencies of target main_rt[0m
+[3.646s] [35m[1mConsolidate compiler generated dependencies of target main_be[0m
+[4.285s] [ 85%] [32mBuilding CXX object CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.o[0m
+[4.351s] [ 87%] [32mBuilding CXX object CMakeFiles/main_rt.dir/src/nodo_maquina_estados.cpp.o[0m
+[4.359s] [ 88%] [32mBuilding CXX object CMakeFiles/main_rt.dir/src/mainRT.cc.o[0m
+[4.374s] [ 90%] [32mBuilding CXX object CMakeFiles/main_be.dir/src/mainBE.cc.o[0m
+[59.059s] [ 92%] [32mBuilding CXX object CMakeFiles/main_be.dir/src/nodo_actuador.cpp.o[0m
+[142.842s] [ 93%] [32m[1mLinking CXX executable main_rt[0m
+[144.466s] /usr/bin/ld: CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.o: in function `std::_Function_handler<void (std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >), rt_ros2::NodoActuador::NodoActuador(std::shared_ptr<cactus_rt::tracing::ThreadTracer>)::{lambda(std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >)#3}>::_M_invoke(std::_Any_data const&, std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >&&)':
+[144.467s] nodo_actuador.cpp:(.text+0x1d84): undefined reference to `rt_ros2::NodoActuador::sensor_stamp_callback(std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >)'
+[144.735s] collect2: error: ld returned 1 exit status
+[144.742s] gmake[2]: *** [CMakeFiles/main_rt.dir/build.make:227: main_rt] Error 1
+[144.743s] gmake[1]: *** [CMakeFiles/Makefile2:243: CMakeFiles/main_rt.dir/all] Error 2
+[144.744s] gmake[1]: *** Waiting for unfinished jobs....
+[175.060s] [ 95%] [32mBuilding CXX object CMakeFiles/main_be.dir/src/nodo_maquina_estados.cpp.o[0m
+[237.130s] [ 96%] [32m[1mLinking CXX executable main_be[0m
+[238.496s] /usr/bin/ld: CMakeFiles/main_be.dir/src/nodo_actuador.cpp.o: in function `std::_Function_handler<void (std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >), rt_ros2::NodoActuador::NodoActuador(std::shared_ptr<cactus_rt::tracing::ThreadTracer>)::{lambda(std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >)#3}>::_M_invoke(std::_Any_data const&, std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >&&)':
+[238.496s] nodo_actuador.cpp:(.text+0x1d84): undefined reference to `rt_ros2::NodoActuador::sensor_stamp_callback(std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >)'
+[238.733s] collect2: error: ld returned 1 exit status
+[238.738s] gmake[2]: *** [CMakeFiles/main_be.dir/build.make:227: main_be] Error 1
+[238.739s] gmake[1]: *** [CMakeFiles/Makefile2:271: CMakeFiles/main_be.dir/all] Error 2
+[238.740s] gmake: *** [Makefile:146: all] Error 2
+[238.748s] Invoked command in '/code/brickpi/build/rt_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/code/brickpi/install/brickpi3_sensors:/code/brickpi/install/brickpi3_charlie:/opt/ros/humble /usr/bin/cmake --build /code/brickpi/build/rt_ros2 -- -j4 -l4

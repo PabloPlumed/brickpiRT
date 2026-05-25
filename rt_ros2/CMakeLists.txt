@@ -24,18 +24,12 @@ add_subdirectory(vendor)
 
 # --- EJECUTABLES ---
 
-# Ejecutable original
-add_executable(rt_ros2
-  src/main.cc
-  src/nodo_actuador.cpp
-  src/nodo_maquina_estados.cpp
-)
-
 # Ejecutable para experimentos RT
 add_executable(main_rt
   src/mainRT.cc
   src/nodo_actuador.cpp
   src/nodo_maquina_estados.cpp
+  src/nodo_ruido.cpp 
 )
 
 # Ejecutable para experimentos normales
@@ -43,14 +37,10 @@ add_executable(main_be
   src/mainBE.cc
   src/nodo_actuador.cpp
   src/nodo_maquina_estados.cpp
+  src/nodo_ruido.cpp 
 )
 
-# Ejecutable para introducir ruido en los experimentos
-add_executable(nodo_ruido
-  src/nodo_ruido.cpp
-)
-
-foreach(exe rt_ros2 main_rt main_be nodo_ruido)
+foreach(exe main_rt main_be)
   target_include_directories(${exe} PRIVATE include)
   target_compile_features(${exe} PRIVATE cxx_std_17)
   ament_target_dependencies(${exe} ${THIS_PACKAGE_INCLUDE_DEPENDS})
@@ -61,10 +51,8 @@ endforeach()
 
 # Instalar los binarios
 install(TARGETS 
-  rt_ros2
   main_rt
   main_be
-  nodo_ruido
   DESTINATION lib/${PROJECT_NAME}
 )
 

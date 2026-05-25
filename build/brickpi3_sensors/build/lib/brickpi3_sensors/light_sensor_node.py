@@ -5,10 +5,28 @@
        (ie sensor does not activate illumination).
 """
 
+import os
+import ctypes
 import brickpi3
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Illuminance
+
+
+def set_rt_priority(priority):
+    """Asigna prioridad SCHED_FIFO al thread actual"""
+    SCHED_FIFO = 1
+    class sched_param(ctypes.Structure):
+        _fields_ = [('sched_priority', ctypes.c_int)]
+    param = sched_param(priority)
+    libc = ctypes.CDLL('libc.so.6')
+    ret = libc.sched_setscheduler(0, SCHED_FIFO, ctypes.byref(param))
+    return ret
+
+
+def set_cpu_affinity(core):
+    """Pina el proceso al core indicado"""
+    os.sched_setaffinity(0, {core})
 
 
 class ColorSensorNode(Node):
@@ -34,7 +52,7 @@ class ColorSensorNode(Node):
             self.get_parameter('detection_mode').get_parameter_value().string_value
         if self.detection_mode == "REFLECTED":
             self.publisher = self.create_publisher(Illuminance, "light_intensity", 10)
-            self.bp.set_sensor_type(self.lego_port, self.bp.SENSOR_TYPE.NXT_LIGHT_ON) 
+            self.bp.set_sensor_type(self.lego_port, self.bp.SENSOR_TYPE.NXT_LIGHT_ON)
         else:
             fatal_msg = f'Unknown mode: {self.detection_mode}'
             self.get_logger().fatal(fatal_msg)
@@ -53,7 +71,7 @@ class ColorSensorNode(Node):
                 msg = Illuminance()
                 # Normalizamos el valor del sensor, 1.0 -> blanco, 0.0 -> Negro
                 NEGRO_PURO = 2634   # Obtenidos empiricamente
-                BLANCO_PURO = 1926  
+                BLANCO_PURO = 1926
                 msg.illuminance = (NEGRO_PURO - value) / (NEGRO_PURO - BLANCO_PURO)
 
             msg.header.stamp = self.get_clock().now().to_msg()
@@ -63,6 +81,19 @@ class ColorSensorNode(Node):
             warn_msg = f'Invalid color sensor data on {self.lego_port_name}'
             self.get_logger().warn(warn_msg)
 
+    def destroy_node(self):
+        self.bp.reset_all()
+        super().destroy_node()
+
+
+# Pineamos el thread al core 3 y le damos la mayor prioridad entre los otros procesos
+set_cpu_affinity(1)
+#ret = set_rt_priority(55)
+#if ret != 0:
+#    print("WARN: No se pudo establecer prioridad RT, ejecuta: sudo setcap cap_sys_nice+ep $(which python3)")
+#else:
+#    print("INFO: Prioridad RT 55 y core 3 asignados al sensor")
+
 rclpy.init()
 color_sensor_node = ColorSensorNode()
 try:
@@ -70,7 +101,5 @@ try:
 except KeyboardInterrupt:
     pass
 finally:
-    # Reseteamos brickpi para apagar el sensor al terminar
-    color_sensor_node.bp.reset_all()
     color_sensor_node.destroy_node()
     rclpy.shutdown()

@@ -2,10 +2,8 @@
 /code/brickpi/install/rt_ros2/include/readerwriterqueue/readerwriterqueue.h
 /code/brickpi/install/rt_ros2/include/readerwriterqueue/readerwritercircularbuffer.h
 /code/brickpi/install/rt_ros2/include/readerwriterqueue/LICENSE.md
-/code/brickpi/install/rt_ros2/lib/rt_ros2/rt_ros2
 /code/brickpi/install/rt_ros2/lib/rt_ros2/main_rt
 /code/brickpi/install/rt_ros2/lib/rt_ros2/main_be
-/code/brickpi/install/rt_ros2/lib/rt_ros2/nodo_ruido
 /code/brickpi/install/rt_ros2/share/rt_ros2/._infraestructura.launch.py
 /code/brickpi/install/rt_ros2/share/rt_ros2/infraestructura.launch.py
 /code/brickpi/install/rt_ros2/lib/rt_ros2/nodo_test

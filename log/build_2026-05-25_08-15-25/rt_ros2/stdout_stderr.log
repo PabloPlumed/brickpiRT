@@ -1,0 +1,26 @@
+[ 26%] Built target cactus_tracing_embedded_perfetto_protos
+[ 30%] Built target nodo_test
+[ 69%] Built target quill
+[ 84%] Built target cactus_rt
+[35m[1mConsolidate compiler generated dependencies of target main_rt[0m
+[35m[1mConsolidate compiler generated dependencies of target main_be[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/main_rt.dir/src/nodo_maquina_estados.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/main_rt.dir/src/mainRT.cc.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/main_be.dir/src/mainBE.cc.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/main_be.dir/src/nodo_actuador.cpp.o[0m
+[ 93%] [32m[1mLinking CXX executable main_rt[0m
+/usr/bin/ld: CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.o: in function `std::_Function_handler<void (std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >), rt_ros2::NodoActuador::NodoActuador(std::shared_ptr<cactus_rt::tracing::ThreadTracer>)::{lambda(std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >)#3}>::_M_invoke(std::_Any_data const&, std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >&&)':
+nodo_actuador.cpp:(.text+0x1d84): undefined reference to `rt_ros2::NodoActuador::sensor_stamp_callback(std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/main_rt.dir/build.make:227: main_rt] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:243: CMakeFiles/main_rt.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 95%] [32mBuilding CXX object CMakeFiles/main_be.dir/src/nodo_maquina_estados.cpp.o[0m
+[ 96%] [32m[1mLinking CXX executable main_be[0m
+/usr/bin/ld: CMakeFiles/main_be.dir/src/nodo_actuador.cpp.o: in function `std::_Function_handler<void (std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >), rt_ros2::NodoActuador::NodoActuador(std::shared_ptr<cactus_rt::tracing::ThreadTracer>)::{lambda(std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >)#3}>::_M_invoke(std::_Any_data const&, std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >&&)':
+nodo_actuador.cpp:(.text+0x1d84): undefined reference to `rt_ros2::NodoActuador::sensor_stamp_callback(std::shared_ptr<std_msgs::msg::Header_<std::allocator<void> > >)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/main_be.dir/build.make:227: main_be] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:271: CMakeFiles/main_be.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

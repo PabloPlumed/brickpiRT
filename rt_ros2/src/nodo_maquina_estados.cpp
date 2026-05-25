@@ -21,6 +21,7 @@ NodoMaquinaEstados::NodoMaquinaEstados(std::shared_ptr<cactus_rt::tracing::Threa
     // Creación del topic del estado del robot y error en la posición
     robot_estado = this->create_publisher<std_msgs::msg::String>("/robot_estado", TAM_COLA_ROS);
     error_pos = this->create_publisher<std_msgs::msg::Float32>("/error_pos", TAM_COLA_ROS);
+    sensor_stamp_pub = this->create_publisher<std_msgs::msg::Header>("/sensor_stamp", TAM_COLA_ROS);
 
     // Cada 100 milis se publica el estado del robot, es decir, 10Hz
     auto cb_timer = [this]() { publicar_estado_robot(); };
@@ -32,10 +33,13 @@ NodoMaquinaEstados::NodoMaquinaEstados(std::shared_ptr<cactus_rt::tracing::Threa
 void NodoMaquinaEstados::color_callback(const sensor_msgs::msg::Illuminance::SharedPtr topic)
 {
     // Empezamos la traza para medir la latencia
-    auto trazaColor = tracer->WithSpan("color_callback");
+    auto trazaColor = tracer->WithSpan("color_callback");; 
 
     // Valor de iluminancia obtenido por el sensor
     valor_sensor = static_cast<float>(topic->illuminance);
+
+    // Guardamos el timestamp de la lectura del sensor
+    stamp_sensor = topic->header.stamp;
 
     switch (estado_actual) {
         case Estado::SEGUIR_LINEA:
@@ -70,9 +74,6 @@ void NodoMaquinaEstados::color_callback(const sensor_msgs::msg::Illuminance::Sha
             }
             break;
     }
-    
-    // Publico directramente el estado del robot, buscando reacción más rápida
-    publicar_estado_robot();
 }
 
 void NodoMaquinaEstados::publicar_estado_robot()
@@ -92,14 +93,17 @@ void NodoMaquinaEstados::publicar_estado_robot()
     // Publicar topic /error_pos
     auto topic_error = std_msgs::msg::Float32();
     
-    // IMPORTANTE: Definimos el "Punto de ajuste" (Set Point)
-    // Si el sensor da 0.6 (más blanco que negro), el error será positivo (0.1) -> giro a un lado.
-    // Si el sensor da 0.4 (más negro que blanco), el error será negativo (-0.1) -> giro al otro.
-    // Si el sensor da 0.5 (mitad y mitad), el error es 0.0 -> recto.
+    // Si el sensor da 0.6, el error será positivo (0.1) -> giro a un lado.
+    // Si el sensor da 0.4, el error será negativo (-0.1) -> giro al otro.
+    // Si el sensor da 0.5, el error es 0.0 -> recto.
     float set_point = 0.5f; 
     topic_error.data = valor_sensor - set_point;
-    
     error_pos->publish(topic_error);
+
+    // Propagamos timestamp del sensor
+    auto header_msg = std_msgs::msg::Header();
+    header_msg.stamp = stamp_sensor;
+    sensor_stamp_pub->publish(header_msg);
 }
 
 }  // namespace rt_ros2

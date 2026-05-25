@@ -1,7 +1,7 @@
 #include "rt_ros2/nodo_actuador.h"
 
-#define KP            0.3f        // Ganancia proporcional para saber cuanto girar (tenemos valores entre 0 y 0.5)
-#define KP_REC        0.2f        // Ganancia proporcional para saber cuanto girar cuando se recupera (tenemos valores entre 0 y 0.5)
+#define KP            0.3f        // Ganancia proporcional para saber cuanto girar
+#define KP_REC        0.2f        // Ganancia proporcional para saber cuanto girar cuando se recupera 
 #define VEL_LINEAL    0.02f       // Velocidad lineal base cuando sigue la línea
 #define TAM_COLA_ROS  10          // Tamaño del buffer antes de descartar los mensajes más viejos
 #define FREC_TOPIC_MS 25          // Frecuencia a la que se publica un topic (en ms, no en Hz)
@@ -19,8 +19,14 @@ NodoActuador::NodoActuador(std::shared_ptr<cactus_rt::tracing::ThreadTracer> tra
     auto cb_error  = [this](const std_msgs::msg::Float32::SharedPtr msg) { error_callback(msg); };
     error_pos = this->create_subscription<std_msgs::msg::Float32>("/error_pos", TAM_COLA_ROS, cb_error);
 
+    auto cb_stamp = [this](const std_msgs::msg::Header::SharedPtr msg) { sensor_stamp_callback(msg); };
+    sensor_stamp_sub = this->create_subscription<std_msgs::msg::Header>("/sensor_stamp", TAM_COLA_ROS, cb_stamp);
+
     // Creación del topic del estado de comando de velocidad para el controlador
     cmd_vel = this->create_publisher<geometry_msgs::msg::TwistStamped>("/cmd_vel", TAM_COLA_ROS);
+
+    // Publicamos tembién el end-to-end delay para visualizarlo
+    e2e_delay_pub = this->create_publisher<std_msgs::msg::Float32>("/e2e_delay_ms", TAM_COLA_ROS);
 
     // Cada 25 milis se publica /cmd_vel, aunque no lleguen mensajes necesitamos 40Hz para que diff_drive_controller no pare el robot por timeout
     auto cb_timer = [this]() { publicar_cmd_vel(); };
@@ -47,6 +53,9 @@ void printEstado(const rclcpp::Logger& logger, const std::string& estado, const 
         RCLCPP_ERROR(logger, "En que estado estoy!: %s", estado.c_str());
 }
 
+void NodoActuador::sensor_stamp_callback(const std_msgs::msg::Header::SharedPtr topic)
+{   ultimo_stamp_sensor = topic->stamp;   }
+
 void NodoActuador::publicar_cmd_vel()
 {
     // Empezamos la traza para medir la latencia
@@ -56,7 +65,7 @@ void NodoActuador::publicar_cmd_vel()
     auto topic_vel = geometry_msgs::msg::TwistStamped();
     topic_vel.header.stamp = this->now();
 
-    // Si vemos necesario, cargarnos el estado recuperar
+    // Lo dejo por si acaso, pero el estado recuperar en esta implementación es inutil, eliminar!
     if (estado_actual == "SEGUIR_LINEA" || estado_actual == "RECUPERAR") {
         topic_vel.twist.linear.x  = VEL_LINEAL;
         topic_vel.twist.angular.z = -KP * error_actual;
@@ -77,6 +86,15 @@ void NodoActuador::publicar_cmd_vel()
     }
 
     cmd_vel->publish(topic_vel);
+
+    // Cálculo del end-to-end delay desde que se tomó la medida del sensor hasta publicar comando de velocidad
+    double e2e_ms = 0.0;
+    if (ultimo_stamp_sensor.nanoseconds() > 0) {
+        e2e_ms = (this->now() - ultimo_stamp_sensor).nanoseconds() / 1e6;
+    }
+    auto delay_msg = std_msgs::msg::Float32();
+    delay_msg.data = static_cast<float>(e2e_ms);
+    e2e_delay_pub->publish(delay_msg);
 }
 
 }  // namespace rt_ros2

@@ -1,0 +1,29 @@
+[9.340s] Invoking command in '/code/brickpi/brickpi3_sensors': PYTHONPATH=/code/brickpi/build/brickpi3_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/brickpi3_sensors build --build-base /code/brickpi/build/brickpi3_sensors/build install --record /code/brickpi/build/brickpi3_sensors/install.log --single-version-externally-managed install_data
+[12.351s] running egg_info
+[12.355s] writing ../build/brickpi3_sensors/brickpi3_sensors.egg-info/PKG-INFO
+[12.359s] writing dependency_links to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/dependency_links.txt
+[12.364s] writing entry points to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/entry_points.txt
+[12.365s] writing requirements to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/requires.txt
+[12.370s] writing top-level names to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/top_level.txt
+[12.395s] reading manifest file '../build/brickpi3_sensors/brickpi3_sensors.egg-info/SOURCES.txt'
+[12.414s] writing manifest file '../build/brickpi3_sensors/brickpi3_sensors.egg-info/SOURCES.txt'
+[12.421s] running build
+[12.423s] running build_py
+[12.433s] running install
+[12.445s] running install_lib
+[12.477s] running install_data
+[12.483s] running install_egg_info
+[12.515s] removing '/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors-0.0.0-py3.10.egg-info' (and everything under it)
+[12.546s] Copying ../build/brickpi3_sensors/brickpi3_sensors.egg-info to /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors-0.0.0-py3.10.egg-info
+[12.596s] running install_scripts
+[12.920s] Installing battery_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[12.935s] Installing color_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[12.944s] Installing compass_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[12.959s] Installing differential_drive_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[12.968s] Installing gyro_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[12.975s] Installing infrared_distance_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[12.985s] Installing light_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[13.009s] Installing touch_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[13.016s] Installing ultrasonic_distance_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[13.025s] writing list of installed files to '/code/brickpi/build/brickpi3_sensors/install.log'
+[13.453s] Invoked command in '/code/brickpi/brickpi3_sensors' returned '0': PYTHONPATH=/code/brickpi/build/brickpi3_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/brickpi3_sensors build --build-base /code/brickpi/build/brickpi3_sensors/build install --record /code/brickpi/build/brickpi3_sensors/install.log --single-version-externally-managed install_data

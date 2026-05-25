@@ -198,19 +198,6 @@ rt_ros2_uninstall/fast:
 .PHONY : rt_ros2_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named rt_ros2
-
-# Build rule for target.
-rt_ros2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rt_ros2
-.PHONY : rt_ros2
-
-# fast build rule for target.
-rt_ros2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/build
-.PHONY : rt_ros2/fast
-
-#=============================================================================
 # Target rules for targets named main_rt
 
 # Build rule for target.
@@ -235,19 +222,6 @@ main_be: cmake_check_build_system
 main_be/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/build
 .PHONY : main_be/fast
-
-#=============================================================================
-# Target rules for targets named nodo_ruido
-
-# Build rule for target.
-nodo_ruido: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nodo_ruido
-.PHONY : nodo_ruido
-
-# fast build rule for target.
-nodo_ruido/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_ruido.dir/build.make CMakeFiles/nodo_ruido.dir/build
-.PHONY : nodo_ruido/fast
 
 #=============================================================================
 # Target rules for targets named nodo_test
@@ -300,30 +274,6 @@ cactus_tracing_embedded_perfetto_protos: cmake_check_build_system
 cactus_tracing_embedded_perfetto_protos/fast:
 	$(MAKE) $(MAKESILENT) -f vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/build.make vendor/cactus-rt/protos/CMakeFiles/cactus_tracing_embedded_perfetto_protos.dir/build
 .PHONY : cactus_tracing_embedded_perfetto_protos/fast
-
-src/main.o: src/main.cc.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/main.cc.o
-.PHONY : src/main.cc.o
-
-src/main.i: src/main.cc.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/main.cc.i
-.PHONY : src/main.cc.i
-
-src/main.s: src/main.cc.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/main.cc.s
-.PHONY : src/main.cc.s
 
 src/mainBE.o: src/mainBE.cc.o
 .PHONY : src/mainBE.o
@@ -378,7 +328,6 @@ src/nodo_actuador.o: src/nodo_actuador.cpp.o
 
 # target to build an object file
 src/nodo_actuador.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_actuador.cpp.o
 .PHONY : src/nodo_actuador.cpp.o
@@ -388,7 +337,6 @@ src/nodo_actuador.i: src/nodo_actuador.cpp.i
 
 # target to preprocess a source file
 src/nodo_actuador.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_actuador.cpp.i
 .PHONY : src/nodo_actuador.cpp.i
@@ -398,7 +346,6 @@ src/nodo_actuador.s: src/nodo_actuador.cpp.s
 
 # target to generate assembly for a file
 src/nodo_actuador.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/nodo_actuador.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_actuador.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_actuador.cpp.s
 .PHONY : src/nodo_actuador.cpp.s
@@ -408,7 +355,6 @@ src/nodo_maquina_estados.o: src/nodo_maquina_estados.cpp.o
 
 # target to build an object file
 src/nodo_maquina_estados.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_maquina_estados.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_maquina_estados.cpp.o
 .PHONY : src/nodo_maquina_estados.cpp.o
@@ -418,7 +364,6 @@ src/nodo_maquina_estados.i: src/nodo_maquina_estados.cpp.i
 
 # target to preprocess a source file
 src/nodo_maquina_estados.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_maquina_estados.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_maquina_estados.cpp.i
 .PHONY : src/nodo_maquina_estados.cpp.i
@@ -428,7 +373,6 @@ src/nodo_maquina_estados.s: src/nodo_maquina_estados.cpp.s
 
 # target to generate assembly for a file
 src/nodo_maquina_estados.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rt_ros2.dir/build.make CMakeFiles/rt_ros2.dir/src/nodo_maquina_estados.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_maquina_estados.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_maquina_estados.cpp.s
 .PHONY : src/nodo_maquina_estados.cpp.s
@@ -438,7 +382,8 @@ src/nodo_ruido.o: src/nodo_ruido.cpp.o
 
 # target to build an object file
 src/nodo_ruido.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_ruido.dir/build.make CMakeFiles/nodo_ruido.dir/src/nodo_ruido.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_ruido.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_ruido.cpp.o
 .PHONY : src/nodo_ruido.cpp.o
 
 src/nodo_ruido.i: src/nodo_ruido.cpp.i
@@ -446,7 +391,8 @@ src/nodo_ruido.i: src/nodo_ruido.cpp.i
 
 # target to preprocess a source file
 src/nodo_ruido.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_ruido.dir/build.make CMakeFiles/nodo_ruido.dir/src/nodo_ruido.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_ruido.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_ruido.cpp.i
 .PHONY : src/nodo_ruido.cpp.i
 
 src/nodo_ruido.s: src/nodo_ruido.cpp.s
@@ -454,7 +400,8 @@ src/nodo_ruido.s: src/nodo_ruido.cpp.s
 
 # target to generate assembly for a file
 src/nodo_ruido.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodo_ruido.dir/build.make CMakeFiles/nodo_ruido.dir/src/nodo_ruido.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_rt.dir/build.make CMakeFiles/main_rt.dir/src/nodo_ruido.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_be.dir/build.make CMakeFiles/main_be.dir/src/nodo_ruido.cpp.s
 .PHONY : src/nodo_ruido.cpp.s
 
 test/nodo_test.o: test/nodo_test.cpp.o
@@ -500,13 +447,8 @@ help:
 	@echo "... cactus_tracing_embedded_perfetto_protos"
 	@echo "... main_be"
 	@echo "... main_rt"
-	@echo "... nodo_ruido"
 	@echo "... nodo_test"
 	@echo "... quill"
-	@echo "... rt_ros2"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 	@echo "... src/mainBE.o"
 	@echo "... src/mainBE.i"
 	@echo "... src/mainBE.s"

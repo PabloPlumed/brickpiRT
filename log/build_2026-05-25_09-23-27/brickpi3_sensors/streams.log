@@ -1,0 +1,32 @@
+[7.123s] Invoking command in '/code/brickpi/brickpi3_sensors': PYTHONPATH=/code/brickpi/build/brickpi3_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/brickpi3_sensors build --build-base /code/brickpi/build/brickpi3_sensors/build install --record /code/brickpi/build/brickpi3_sensors/install.log --single-version-externally-managed install_data
+[8.880s] running egg_info
+[8.892s] writing ../build/brickpi3_sensors/brickpi3_sensors.egg-info/PKG-INFO
+[8.917s] writing dependency_links to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/dependency_links.txt
+[8.921s] writing entry points to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/entry_points.txt
+[8.923s] writing requirements to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/requires.txt
+[8.925s] writing top-level names to ../build/brickpi3_sensors/brickpi3_sensors.egg-info/top_level.txt
+[8.929s] reading manifest file '../build/brickpi3_sensors/brickpi3_sensors.egg-info/SOURCES.txt'
+[8.940s] writing manifest file '../build/brickpi3_sensors/brickpi3_sensors.egg-info/SOURCES.txt'
+[9.118s] running build
+[9.120s] running build_py
+[9.125s] copying brickpi3_sensors/light_sensor_node.py -> /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors
+[9.130s] running install
+[9.134s] running install_lib
+[9.141s] copying /code/brickpi/build/brickpi3_sensors/build/lib/brickpi3_sensors/light_sensor_node.py -> /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors
+[9.150s] byte-compiling /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors/light_sensor_node.py to light_sensor_node.cpython-310.pyc
+[10.204s] running install_data
+[10.212s] running install_egg_info
+[10.219s] removing '/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors-0.0.0-py3.10.egg-info' (and everything under it)
+[10.244s] Copying ../build/brickpi3_sensors/brickpi3_sensors.egg-info to /code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages/brickpi3_sensors-0.0.0-py3.10.egg-info
+[10.282s] running install_scripts
+[10.620s] Installing battery_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[10.658s] Installing color_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[10.671s] Installing compass_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[10.674s] Installing differential_drive_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[10.677s] Installing gyro_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[10.680s] Installing infrared_distance_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[10.685s] Installing light_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[10.695s] Installing touch_sensor_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[10.701s] Installing ultrasonic_distance_node script to /code/brickpi/install/brickpi3_sensors/lib/brickpi3_sensors
+[10.710s] writing list of installed files to '/code/brickpi/build/brickpi3_sensors/install.log'
+[11.172s] Invoked command in '/code/brickpi/brickpi3_sensors' returned '0': PYTHONPATH=/code/brickpi/build/brickpi3_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/code/brickpi/install/brickpi3_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/brickpi3_sensors build --build-base /code/brickpi/build/brickpi3_sensors/build install --record /code/brickpi/build/brickpi3_sensors/install.log --single-version-externally-managed install_data
