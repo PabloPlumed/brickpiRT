@@ -1,59 +1,150 @@
-**# ros2_brickpi3
-ROS2 packages to drive BrickPi3 (a Raspberry Pi to Lego EV3 hardware interface)
+# Proyecto BrickPi RT
 
+Robot seguidor de línea sobre plataforma **Charlie (BrickPi3 + Raspberry Pi)** con ROS2 Humble, incluyendo un análisis de comportamiento en tiempo real mediante `cactus_rt`.
 
-<img src=./brickpi3_charlie/images/accessorised_charlie.jpg width=300>
+---
 
-## YouTube Tutorial
-<a href="https://www.youtube.com/watch?v=NZwhyERJVbY">
-    <img src="https://img.youtube.com/vi/NZwhyERJVbY/0.jpg" height=320>
-</a>
+## Qué mirar y qué no
 
-## Packages
+### Código original del proyecto (lo que hemos implementado nosotros)
 
-|Package name|Description|
-|------------|-----------|
-|ev3_sensor_msgs|ROS2 custom message package to support the touch_sensor and color_sensor.|
-|brickpi3_sensors|Python package to broadcast sensor messages from the BrickPi3 board. Currently supporting EV3 Touch, EV3 Ultrasonic, EV3 Infrared, EV3 Color, HiTechnic EV3/NXT Compass, EV3 Gyro, Battery Status.|
-|brickpi3_motors|C++ package to provide a ROS2 Control hardware interface Plugin for the EV3 motors to the BrickPi3 board.|
-|brickpi3_charlie|A demonstration robot. Includes an example launch file (and configuration files) to configure a ROS2 Control Differential Drive Controller to use the brickpi3_motors plugin.|
+| Directorio / Fichero | Qué es |
+|---|---|
+| `rt_ros2/src/nodo_maquina_estados.cpp` | Máquina de estados del robot (SEGUIR_LINEA → RECUPERAR → PARAR) |
+| `rt_ros2/src/nodo_actuador.cpp` | Nodo actuador: traduce estado + error a comandos de velocidad `/cmd_vel` |
+| `rt_ros2/src/mainRT.cc` | Ejecutable RT: separa nodos en ejecutores best-effort y real-time (SCHED_FIFO pr=60) |
+| `rt_ros2/src/mainBE.cc` | Ejecutable BE: mismos nodos pero en un único ejecutor sin prioridades RT |
+| `rt_ros2/src/main.cc` | Variante base del ejecutable (misma estructura que mainRT) |
+| `rt_ros2/include/rt_ros2/nodo_maquina_estados.h` | Header de la máquina de estados |
+| `rt_ros2/include/rt_ros2/nodo_actuador.h` | Header del actuador |
+| `rt_ros2/launch/infraestructura.launch.py` | Launch file: arranca motores (Charlie) + sensor de luz juntos |
+| `rt_ros2/CMakeLists.txt` | Build del paquete rt_ros2 con los tres ejecutables + tests |
+| `brickpi3_sensors/brickpi3_sensors/light_sensor_node.py` | Nodo sensor NXT de luz (único sensor que usamos de este paquete) |
 
-### Tested Hardware
+### Código base reutilizado (no es nuestro, pero lo usamos)
 
-Raspberry Pi 3 Model B+, Dexter Industries BrickPi3
+| Directorio | Qué es | Qué hemos usado |
+|---|---|---|
+| `brickpi3_charlie/` | Robot de demostración Charlie | Solo su `motors_launch.py` y configs URDF/YAML para arrancar los motores |
+| `brickpi3_sensors/` | Paquete de nodos sensor para BrickPi3 | Únicamente `light_sensor_node.py` (sensor NXT de luz reflejada) |
+| `brickpi3_motors/` | Plugin ROS2 Control para motores BrickPi3 | Usado como dependencia, sin modificar |
+| `ev3_sensor_msgs/` | Definición de mensajes custom EV3 | Dependencia, sin modificar |
 
-### Tested Software
+### Tests
 
-Ubuntu 22.04, ROS2 Jazzy (RoboStack), BrickPi3
+| Fichero | Tipo | Qué hace |
+|---|---|---|
+| `rt_ros2/test/nodo_test.cpp` | Test automático de nodos | Publica secuencias de iluminancia predefinidas y comprueba que el estado y el error publicados por la máquina de estados son coherentes |
+| `rt_ros2/test/test_maquina_estados.py` | Test manual interactivo | Permite enviar valores de iluminancia desde teclado para probar transiciones de estado en tiempo real |
+| `rt_ros2/test/test_actuador.py` | Test manual interactivo | Permite forzar estado + error desde teclado para comprobar que el actuador genera los `/cmd_vel` correctos |
+| `rt_ros2/test/prueba_motores.py` | Test hardware directo | Prueba los motores A y D directamente vía BrickPi3 (sin ROS), útil para verificar el hardware antes de lanzar el sistema |
 
-## Installation
+---
 
-Note, the user account that you use for this install should be a member of the dialout group (in order to access /dev/spidev... to control the BrickPi3 hardware interface)
-
-I suggest for following the installation steps to have the BrickPi3 running off an external power supply (rather than relying on battery power).
-
-The below instructions are for a RoboStack ROS2 Jazzy install (for convenience). However, there is no dependency on RoboStack, any valid ROS2 Jazzy install should work.
-
-Follow the [RoboStack](https://robostack.github.io/GettingStarted.html) installation instructions to install ROS2 (use Jazzy)
-
-(Ensure you have also followed the step Installation tools for local development in the above instructions)
+## Arquitectura del sistema
 
 ```
-mamba activate ros2  # (use the name here you decided to call this conda environment)
-# scipy is used by the Gyro and Compass sensors. You can remove the scipy install if you do not intend to use
-# these sensors.
-mamba install scipy ros-jazzy-controller-manager
-cd ~
-git clone https://github.com/DexterInd/BrickPi3.git
-pip install BrickPi3/Software/Python
-mkdir -p ros2_ws/src
-cd ros2_ws
-git -C src clone https://github.com/jfrancis71/ros2_brickpi3.git
-export BRICKPI3_ROOT_DIR=~/BrickPi3
-colcon build --symlink-install
+/light_intensity  (Illuminance)
+        │
+        ▼
+ NodoMaquinaEstados
+  ├─ /robot_estado  (String: SEGUIR_LINEA | RECUPERAR | PARAR)
+  └─ /error_pos     (Float32: valor_sensor - 0.5)
+        │
+        ▼
+   NodoActuador
+        └─ /cmd_vel  (TwistStamped)
+                │
+                ▼
+  diff_drive_controller  →  Motores BrickPi3 (PORT_A izquierdo, PORT_D derecho)
 ```
-You may receive a warning on the colcon build step: "SetuptoolsDeprecationWarning: setup.py install is deprecated", this can be ignored.
 
+**Lógica de control (nodo_actuador.cpp):**
+- `SEGUIR_LINEA`: avanza a `VEL_LINEAL=0.1 m/s` con corrección proporcional `angular.z = -KP * error` (KP=2.0)
+- `RECUPERAR`: reduce velocidad a `VEL_REC=0.05 m/s` y gira agresivamente para reencontrar la línea
+- `PARAR`: velocidad cero
+
+**Thresholds del sensor (nodo_maquina_estados.cpp):**
+- `illuminance < 0.5` → negro (dentro de la línea)
+- `illuminance > 0.7` → blanco (fuera de la línea)
+- Timeout recuperación: 10 s → PARAR
+
+---
+
+## Cómo compilar y lanzar
+
+Se necesitan **dos terminales**: una en el Raspberry Pi (robot) y otra en el PC de desarrollo, o dos shells en el mismo sistema.
+
+### Terminal 1 — Compilar e instalar
+
+```bash
+# Situarse en la raíz del workspace ROS2
+cd ~/ros2_ws   # o donde tengas el workspace
+
+# Compilar solo los paquetes necesarios (más rápido)
+colcon build --symlink-install --packages-select rt_ros2 brickpi3_sensors brickpi3_charlie brickpi3_motors ev3_sensor_msgs
+
+# Cargar el entorno
+source install/setup.bash
+```
+
+> **Nota:** `brickpi3_motors` requiere la variable de entorno `BRICKPI3_ROOT_DIR` apuntando al directorio de BrickPi3:
+> ```bash
+> export BRICKPI3_ROOT_DIR=~/BrickPi3
+> ```
+
+### Terminal 2 — Lanzar la infraestructura (motores + sensor de luz)
+
+```bash
+source ~/ros2_ws/install/setup.bash
+
+ros2 launch rt_ros2 infraestructura.launch.py
+```
+
+Esto arranca en paralelo:
+- El controlador `diff_drive_controller` para los motores (puertos A y D)
+- El nodo `light_sensor_node` en `PORT_2`
+
+### Terminal 1 (o una tercera) — Lanzar el sistema RT o BE
+
+**Con tiempo real (SCHED_FIFO, requiere privilegios):**
+```bash
+sudo -E ros2 run rt_ros2 main_rt
+```
+
+**Sin tiempo real (best-effort, para comparativa):**
+```bash
+ros2 run rt_ros2 main_be
+```
+
+Las trazas de latencia se guardan automáticamente en `/code/brickpi/trazas/` en formato Perfetto (visualizables en https://ui.perfetto.dev).
+
+### Lanzar los tests
+
+```bash
+# Test automático (sin hardware)
+ros2 run rt_ros2 nodo_test
+
+# Test interactivo de la máquina de estados
+python3 rt_ros2/test/test_maquina_estados.py
+
+# Test interactivo del actuador
+python3 rt_ros2/test/test_actuador.py
+
+# Test de hardware directo (requiere BrickPi3 conectado)
+python3 rt_ros2/test/prueba_motores.py
+```
+
+---
+
+## Resumen de lo implementado
+
+- **Máquina de estados reactiva** con tres estados y transiciones basadas en umbral del sensor de luz
+- **Control proporcional** de velocidad angular para corrección de trayectoria
+- **Dos modos de ejecución**: RT (real-time con SCHED_FIFO) y BE (best-effort) para comparar latencias
+- **Instrumentación de latencias** con `cactus_rt` y volcado a ficheros Perfetto
+- **Launch file de infraestructura** que integra motores y sensor en un único punto de arranque
+- **Batería de tests**: tests automáticos de nodos, tests manuales interactivos y tests de hardware directo
 ### Troubleshooting
 
 I recommend having a seperate shell running htop so you can monitor progress. The Raspberry Pi 3B+ is quite memory limited which can cause problems installing some packages. If you see process status 'D' in htop relating to the install processes that persists this can indicate difficulties due to low memory. In this case I suggest before running the colcon build step (the final step in the instructions), adding:
