@@ -1,4 +1,4 @@
-# ros2_brickpi3
+**# ros2_brickpi3
 ROS2 packages to drive BrickPi3 (a Raspberry Pi to Lego EV3 hardware interface)
 
 
@@ -116,3 +116,4 @@ Useful reference, summary of ROS2 commands:
 
 Useful discussion on swap file on Ubuntu:
 https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
+**
